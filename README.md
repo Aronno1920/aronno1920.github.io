@@ -1,4 +1,4 @@
-# osamah-s7s.github.io
+<!-- # osamah-s7s.github.io
 Portfolio of a Yemeni software engineer focused on AI, cross-platform development, and real-world tech innovation.
 # Osamah Hussein's Personal Portfolio
 
@@ -61,5 +61,5 @@ This portfolio's initial template was graciously provided by [codewithsadee](htt
 
 ## License
 
-This project is open source and available under the [MIT License](LICENSE).
+This project is open source and available under the [MIT License](LICENSE). -->
 
