@@ -6,68 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>vCard - Personal Portfolio</title>
 
-    <!--
-    - favicon
-  -->
-    <link
-      rel="shortcut icon"
-      href="./assets/images/logo.ico"
-      type="image/x-icon"
-    />
+    <!--- favicon --->
+    <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon"/>
 
-    <!--
-    - custom css link
-  -->
+    <!--- custom css link --->
     <link rel="stylesheet" href="./assets/css/style.css" />
 
-    <!--
-    - google font link
-  -->
+    <!--- google font link --->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"/>
   </head>
 
   <body>
-    <!--
-    - #MAIN
-  -->
+    <!--- #MAIN --->
 
     <main>
-      <!--
-      - #SIDEBAR
-    -->
-
+      <!--- #SIDEBAR --->
       <aside class="sidebar" data-sidebar>
         <div class="sidebar-info">
           <figure class="avatar-box">
-            <img
-              src="./assets/images/my-avatar.png"
-              alt="Richard hanrick"
-              width="80"
-            />
+            <img src="./assets/images/my-avatar.png" alt="Selim Ahmed" width="50%"/>
           </figure>
 
           <div class="info-content">
-            <h1 class="name" title="Richard hanrick">Selim Ahmed</h1>
-
+            <h1 class="name" title="Selim Ahmed">Selim Ahmed</h1>
             <p class="title">Software Engineer</p>
-            <p class="title">AI Engineering Learner</p>
+            <p class="title" style="margin-top: 3px;">AI Engineering Learner</p>
           </div>
 
           <button class="info_more-btn" data-sidebar-btn>
             <span>Show Contacts</span>
-
             <ion-icon name="chevron-down"></ion-icon>
           </button>
         </div>
 
         <div class="sidebar-info_more">
           <div class="separator"></div>
-
           <ul class="contacts-list">
             <li class="contact-item">
               <div class="icon-box">
@@ -84,13 +59,9 @@
               <div class="icon-box">
                 <ion-icon name="phone-portrait-outline"></ion-icon>
               </div>
-
               <div class="contact-info">
                 <p class="contact-title">Phone</p>
-
-                <a href="tel:+12133522795" class="contact-link"
-                  >+880 1711-148432</a
-                >
+                <a href="tel:+12133522795" class="contact-link">+880 1711-148432</a>
               </div>
             </li>
 
@@ -98,10 +69,8 @@
               <div class="icon-box">
                 <ion-icon name="calendar-outline"></ion-icon>
               </div>
-
               <div class="contact-info">
                 <p class="contact-title">Birthday</p>
-
                 <time datetime="1982-06-23">Jun 19, 1988</time>
               </div>
             </li>
@@ -110,10 +79,8 @@
               <div class="icon-box">
                 <ion-icon name="location-outline"></ion-icon>
               </div>
-
               <div class="contact-info">
                 <p class="contact-title">Location</p>
-
                 <address>Dhaka, Bangladesh</address>
               </div>
             </li>
@@ -121,50 +88,39 @@
 
           <div class="separator"></div>
 
-
           <ul class="social-list">
-            <!-- LinkedIn -->
             <li class="social-item">
               <a href="https://www.linkedin.com/in/aronno1920/" class="social-link" target="_blank">
                 <ion-icon name="logo-linkedin"></ion-icon>
               </a>
             </li>
           
-            <!-- WhatsApp -->
             <li class="social-item">
               <a href="https://wa.me/8801711148432" class="social-link" target="_blank">
                 <ion-icon name="logo-whatsapp"></ion-icon>
               </a>
             </li>
-          
-            <!-- GitHub -->
+
             <li class="social-item">
               <a href="https://github.com/aronno1920" class="social-link" target="_blank">
                 <ion-icon name="logo-github"></ion-icon>
               </a>
             </li>
-          
-            <!-- Facebook -->
+
             <li class="social-item">
               <a href="https://www.instagram.com/aronno1920" class="social-link" target="_blank">
                 <ion-icon name="logo-facebook"></ion-icon>
               </a>
             </li>
           </ul>
-          
-
         </div>
       </aside>
 
-      <!--
-      - #main-content
-    -->
+      <!-------- #main-content -------->
 
       <div class="main-content">
-        <!--
-        - #NAVBAR
-      -->
 
+        <!--- #NAVBAR --->
         <nav class="navbar">
           <ul class="navbar-list">
             <li class="navbar-item">
@@ -176,7 +132,7 @@
             </li>
 
             <li class="navbar-item">
-              <button class="navbar-link" data-nav-link>Portfolio</button>
+              <button class="navbar-link" data-nav-link>Projects</button>
             </li>
 
             <li class="navbar-item">
@@ -189,15 +145,11 @@
           </ul>
         </nav>
 
-        <!--
-        - #ABOUT
-      -->
-
+        <!--- #ABOUT --->
         <article class="about active" data-page="about">
           <header>
             <h2 class="h2 article-title">About me</h2>
           </header>
-
           <section class="about-text">
             <p>
               With over a decade of experience as a System Analyst architecting scalable full-stack <strong>.NET solutions of microservices with clean architecture</strong>, 
@@ -221,174 +173,180 @@
             </p>
           </section>
 
-          <!--
-          - service
-        -->
+          <!--- Technologies -->
+          <section class="technology">
+            <h3 class="h3 technology-title">Technologies</h3>
 
+            <div align="center">
+              <img src="https://custom-icon-badges.demolab.com/badge/C%23-%23239120.svg?logo=cshrp&logoColor=white" alt="C#" />
+              <img src="https://img.shields.io/badge/.NET-512BD4?logoColor=white" alt=".NET" />
+              <img src="https://img.shields.io/badge/.NET%20Core-512BD4?logoColor=white" alt=".NET Core" />
+              <img src="https://img.shields.io/badge/ASP.NET%20MVC-5C2D91?logoColor=white" alt="ASP.NET MVC" />
+              <img src="https://img.shields.io/badge/Web%20API-API-25A163?logo=api&logoColor=white" alt="Web API" />
+              <img src="https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=white" alt="JavaScript" />
+              <img src="https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white" alt="TypeScript" />
+              <img src="https://img.shields.io/badge/Angular-red?logo=angular" alt="Angular" />
+              <img src="https://img.shields.io/badge/Java-007396?logo=openjdk&logoColor=white&logoColor=white" alt="Java" />
+              <img src="https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white" alt="HTML5" />
+              <img src="https://img.shields.io/badge/Bootstrap-7952B3?logo=bootstrap&logoColor=white" alt="Bootstrap" />
+              <img src="https://img.shields.io/badge/Microsoft%20SQL%20Server-CC2927?logo=microsoftsqlserver&logoColor=white" alt="MSSQL" />
+              <img src="https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white" alt="PostgreSQL" />
+              <img src="https://img.shields.io/badge/MongoDB-47A248?logo=mongodb&logoColor=white" alt="MongoDB" />
+              <img src="https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=white" alt="MySQL" />
+              <img src="https://img.shields.io/badge/Redis-DC382D?logo=redis&logoColor=white" alt="Redis" />
+              <img src="https://img.shields.io/badge/SQLite-%2307405e.svg?logo=sqlite&logoColor=white" alt="SQLite" />
+              <img src="https://img.shields.io/badge/GraphQL-E10098?logo=graphql&logoColor=white" alt="GraphQL" />
+              <img src="https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white" alt="Git" />
+              <img src="https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white" alt="Docker" />
+              <img src="https://img.shields.io/badge/WordPress-21759B?logo=wordpress&logoColor=white" alt="WordPress" />
+            </div>
+
+            <div align="center">
+              <img src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white" alt="Python" />
+              <img src="https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white" alt="FastAPI" />
+              <img src="https://img.shields.io/badge/PyTorch-EE4C2C?logo=pytorch&logoColor=white" alt="PyTorch" />
+              <img src="https://img.shields.io/badge/TensorFlow-FF6F00?logo=tensorflow&logoColor=white" alt="TensorFlow" />
+              <img src="https://img.shields.io/badge/scikit--learn-F7931E?logo=scikitlearn&logoColor=white" alt="scikit-learn" />
+              <img src="https://img.shields.io/badge/Machine%20Learning-102230?logo=apachespark&logoColor=white" alt="Machine Learning" />
+              <img src="https://img.shields.io/badge/Deep%20Learning-FF6F61?logo=deepnote&logoColor=white" alt="Deep Learning" />
+              <img src="https://img.shields.io/badge/NLP-FF6F00?logo=natural-language-processing&logoColor=white" alt="NLP" />
+              <img src="https://img.shields.io/badge/LangChain-1E40AF?logo=langchain&logoColor=white" alt="LangChain" />
+              <img src="https://img.shields.io/badge/YOLO-00FFFF?logo=yolo&logoColor=black" alt="YOLO" />
+            </div>
+          </section>
+
+          <!--- service --->
           <section class="service">
             <h3 class="h3 service-title">What I'm doing</h3>
 
             <ul class="service-list">
-              <li class="service-item">
-                <div class="service-icon-box">
-                  <img
-                    src="./assets/images/icon-ai.svg"
-                    alt="AI icon"
-                    width="40"
-                  />
-                </div>
-
-                <div class="service-content-box">
-                  <h4 class="h4 service-item-title">AI & Machine Learning</h4>
-
-                  <p class="service-item-text">
-                    Building intelligent systems like disease prediction models
-                    and computer vision solutions, combining accuracy with
-                    real-world impact.
-                  </p>
-                </div>
-              </li>
 
               <li class="service-item">
                 <div class="service-icon-box">
-                  <img
-                    src="./assets/images/icon-dev.svg"
-                    alt="Web development icon"
-                    width="40"
-                  />
+                  <img src="./assets/images/icon-dev.svg" alt="Software Development" width="40"/>
                 </div>
-
                 <div class="service-content-box">
                   <h4 class="h4 service-item-title">Software Development</h4>
-
                   <p class="service-item-text">
-                    Developing scalable and secure full-stack web applications
-                    with clean architecture and modern frameworks.
+                    Developing scalable and secure full-stack web applications with clean architecture and modern frameworks.
                   </p>
                 </div>
               </li>
 
               <li class="service-item">
                 <div class="service-icon-box">
-                  <img
-                    src="./assets/images/icon-app.svg"
-                    alt="Mobile app icon"
-                    width="40"
-                  />
+                  <img src="./assets/images/icon-ai.svg" alt="AI Engineering" width="40" />
                 </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">AI Engineering</h4>
+                  <p class="service-item-text">
+                    Building intelligent systems like disease prediction models and computer vision solutions, combining accuracy with real-world impact.
+                  </p>
+                </div>
+              </li>
 
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img src="./assets/images/icon-app.svg" alt="Mobile app icon" width="40"/>
+                </div>
                 <div class="service-content-box">
                   <h4 class="h4 service-item-title">Mobile Applications</h4>
-
                   <p class="service-item-text">
-                    Creating cross-platform Flutter apps with optimized
-                    performance and localized UX for Arabic-speaking users.
+                    Creating cross-platform Flutter apps with optimized performance and localized UX for Arabic-speaking users.
                   </p>
                 </div>
               </li>
 
               <li class="service-item">
                 <div class="service-icon-box">
-                  <img
-                    src="./assets/images/icon-BusinessDev.svg"
-                    alt="Communication icon"
-                    width="40"
-                  />
+                  <img src="./assets/images/icon-BusinessDev.svg" alt="Communication icon" width="40"/>
                 </div>
-
                 <div class="service-content-box">
                   <h4 class="h4 service-item-title">Business Development</h4>
-
                   <p class="service-item-text">
-                    Identifying growth opportunities, building client
-                    relationships, and aligning technical solutions with
-                    business goals to drive sustainable success.
+                    Identifying growth opportunities, building client relationships, and aligning technical solutions with business goals to drive sustainable success.
                   </p>
                 </div>
               </li>
             </ul>
           </section>
 
-          <!--
-          - testimonials
-        -->
-
+          <!--- testimonials --->
           <section class="testimonials">
             <h3 class="h3 testimonials-title">Testimonials</h3>
+            <div class="testimonials-wrapper">
+              <ul class="testimonials-list">
 
-            <ul class="testimonials-list has-scrollbar">
-              <li class="testimonials-item">
-                <div class="content-card" data-testimonials-item>
-                  <figure class="testimonials-avatar-box">
-                    <img src="./assets/images/avatar-1.png" alt="Md. Mahi Salman" width="60" data-testimonials-avatar/>
-                  </figure>
-                  <h4 class="h4 testimonials-item-title" data-testimonials-title>Md. Mahi Salman</h4>
-                  <p hidden data-testimonials-position>Senior Project Coordinator | AI Engineer</p>
-                  <div class="testimonials-text" data-testimonials-text>
-                    <p>Mr. Selim Ahmed is a great colleague who is willing to collaborate with others and work towards common goals with the best communication skill. He is very talented at developing and maintaining both the front-end and back-end of web applications using .NET technologies. He is open to feedback, shares ideas, and listens to others' input. He is able to maintain a positive attitude and energy and can create a pleasant work environment for everyone. He is respectful, maintains a positive work ethic, and exhibits strong problem-solving skills.</p>
+                <li class="testimonials-item">
+                  <div class="content-card" data-testimonials-item>
+                    <figure class="testimonials-avatar-box">
+                      <img src="./assets/images/avatar-1.png" alt="Md. Mahi Salman" width="60" data-testimonials-avatar/>
+                    </figure>
+                    <h4 class="h4 testimonials-item-title" data-testimonials-title>Md. Mahi Salman</h4>
+                    <p hidden data-testimonials-position>Senior Project Coordinator | AI Engineer</p>
+                    <div class="testimonials-text" data-testimonials-text>
+                      <p>Mr. Selim Ahmed is a great colleague who is willing to collaborate with others and work towards common goals with the best communication skill. He is very talented at developing and maintaining both the front-end and back-end of web applications using .NET technologies. He is open to feedback, shares ideas, and listens to others' input. He is able to maintain a positive attitude and energy and can create a pleasant work environment for everyone. He is respectful, maintains a positive work ethic, and exhibits strong problem-solving skills.</p>
+                    </div>
                   </div>
-                </div>
-              </li>
+                </li>
 
-              <li class="testimonials-item">
-                <div class="content-card" data-testimonials-item>
-                  <figure class="testimonials-avatar-box">
-                    <img src="./assets/images/avatar-1.png" alt="Md. Nurul Hoque" width="60" data-testimonials-avatar/>
-                  </figure>
-                  <h4 class="h4 testimonials-item-title" data-testimonials-title>Md. Nurul Hoque, PMP®</h4>
-                  <p hidden data-testimonials-position>Head of IT | SAP ERP | AWS Cloud | Project Management</p>
-                  <div class="testimonials-text" data-testimonials-text>
-                    <p>Selim Ahmed is a hard working and very sincere team player. He is creative, energetic, solutions oriented and highly motivated with exceptional skills and he is a great net-worker and as a team member.</p>
+                <li class="testimonials-item">
+                  <div class="content-card" data-testimonials-item>
+                    <figure class="testimonials-avatar-box">
+                      <img src="./assets/images/avatar-1.png" alt="Md. Nurul Hoque" width="60" data-testimonials-avatar/>
+                    </figure>
+                    <h4 class="h4 testimonials-item-title" data-testimonials-title>Md. Nurul Hoque, PMP®</h4>
+                    <p hidden data-testimonials-position>Head of IT | SAP ERP | AWS Cloud | Project Management</p>
+                    <div class="testimonials-text" data-testimonials-text>
+                      <p>Selim Ahmed is a hard working and very sincere team player. He is creative, energetic, solutions oriented and highly motivated with exceptional skills and he is a great net-worker and as a team member.</p>
+                    </div>
                   </div>
-                </div>
-              </li>
+                </li>
 
-              <li class="testimonials-item">
-                <div class="content-card" data-testimonials-item>
-                  <figure class="testimonials-avatar-box">
-                    <img src="./assets/images/avatar-1.png" alt="Md. Sazib Hosen" width="60" data-testimonials-avatar/>
-                  </figure>
-                  <h4 class="h4 testimonials-item-title" data-testimonials-title>Md. Sazib Hosen</h4>
-                  <p hidden data-testimonials-position>Programmer at Ministry of Environment, Forest and Climate Change, Bangladesh</p>
-                  <div class="testimonials-text" data-testimonials-text>
-                    <p>I wholeheartedly recommend Selim Ahmed for any software engineering role. His technical expertise, problem-solving abilities, and dedication to excellence make him an invaluable asset to any team.</p>
+                <li class="testimonials-item">
+                  <div class="content-card" data-testimonials-item>
+                    <figure class="testimonials-avatar-box">
+                      <img src="./assets/images/avatar-1.png" alt="Md. Sazib Hosen" width="60" data-testimonials-avatar/>
+                    </figure>
+                    <h4 class="h4 testimonials-item-title" data-testimonials-title>Md. Sazib Hosen</h4>
+                    <p hidden data-testimonials-position>Programmer at Ministry of Environment, Forest and Climate Change, Bangladesh</p>
+                    <div class="testimonials-text" data-testimonials-text>
+                      <p>I wholeheartedly recommend Selim Ahmed for any software engineering role. His technical expertise, problem-solving abilities, and dedication to excellence make him an invaluable asset to any team.</p>
+                    </div>
                   </div>
-                </div>
-              </li>
+                </li>
 
-              <li class="testimonials-item">
-                <div class="content-card" data-testimonials-item>
-                  <figure class="testimonials-avatar-box">
-                    <img src="./assets/images/avatar-1.png" alt="Mazharul Haque" width="60" data-testimonials-avatar/>
-                  </figure>
-                  <h4 class="h4 testimonials-item-title" data-testimonials-title>Mazharul Haque SSYB™, PRC™, SFPC™</h4>
-                  <p hidden data-testimonials-position>Google Certified PMP® | Deputy Project Manager @Pakiza Software Ltd.</p>
-                  <div class="testimonials-text" data-testimonials-text>
-                    <p>Selim Ahmed was a fantastic person to work with, and is not only a multi-skilled and insightful colleague, but also an inspiring strategist. Very good person. Great employee with a very strong problem solving skills.</p>
+                <li class="testimonials-item">
+                  <div class="content-card" data-testimonials-item>
+                    <figure class="testimonials-avatar-box">
+                      <img src="./assets/images/avatar-1.png" alt="Mazharul Haque" width="60" data-testimonials-avatar/>
+                    </figure>
+                    <h4 class="h4 testimonials-item-title" data-testimonials-title>Mazharul Haque SSYB™, PRC™, SFPC™</h4>
+                    <p hidden data-testimonials-position>Google Certified PMP® | Deputy Project Manager @Pakiza Software Ltd.</p>
+                    <div class="testimonials-text" data-testimonials-text>
+                      <p>Selim Ahmed was a fantastic person to work with, and is not only a multi-skilled and insightful colleague, but also an inspiring strategist. Very good person. Great employee with a very strong problem solving skills.</p>
+                    </div>
                   </div>
-                </div>
-              </li>
+                </li>
 
-              <li class="testimonials-item">
-                <div class="content-card" data-testimonials-item>
-                  <figure class="testimonials-avatar-box">
-                    <img src="./assets/images/avatar-1.png" alt="Md. Nasir Uddin" width="60" data-testimonials-avatar/>
-                  </figure>
-                  <h4 class="h4 testimonials-item-title" data-testimonials-title>Md. Nasir Uddin</h4>
-                  <p hidden data-testimonials-position>Senior SQA Engineer - III @Kona SL</p>
-                  <div class="testimonials-text" data-testimonials-text>
-                    <p>Selim Ahmed is a very hard-working person who can tackle any business problem. We have worked together on several projects, and I found him a highly skilled and dedicated professional. His expertise in the field of ASP.NET Core has helped our company immensely. But what makes him stand out is his willingness to help others. I am glad to have worked with him. I highly recommend him!</p>
+                <li class="testimonials-item">
+                  <div class="content-card" data-testimonials-item>
+                    <figure class="testimonials-avatar-box">
+                      <img src="./assets/images/avatar-1.png" alt="Md. Nasir Uddin" width="60" data-testimonials-avatar/>
+                    </figure>
+                    <h4 class="h4 testimonials-item-title" data-testimonials-title>Md. Nasir Uddin</h4>
+                    <p hidden data-testimonials-position>Senior SQA Engineer - III @Kona SL</p>
+                    <div class="testimonials-text" data-testimonials-text>
+                      <p>Selim Ahmed is a very hard-working person who can tackle any business problem. We have worked together on several projects, and I found him a highly skilled and dedicated professional. His expertise in the field of ASP.NET Core has helped our company immensely. But what makes him stand out is his willingness to help others. I am glad to have worked with him. I highly recommend him!</p>
+                    </div>
                   </div>
-                </div>
-              </li>
-
-            </ul>
+                </li>
+              
+              </ul>
+            </div>
           </section>
 
-          <!--
-          - testimonials modal
-        -->
-
+          <!--- testimonials modal --->
           <div class="modal-container" data-modal-container>
             <div class="overlay" data-overlay></div>
 
@@ -399,14 +357,8 @@
 
               <div class="modal-img-wrapper">
                 <figure class="modal-avatar-box">
-                  <img
-                    src="./assets/images/avatar-1.png"
-                    alt="Ali Khaled"
-                    width="80"
-                    data-modal-img
-                  />
+                  <img src="./assets/images/avatar-1.png" alt="Ali Khaled" width="80" data-modal-img/>
                 </figure>
-
                 <img src="./assets/images/icon-quote.svg" alt="quote icon" />
               </div>
 
@@ -427,10 +379,7 @@
             </section>
           </div>
 
-          <!--
-          - clients
-        -->
-
+          <!--- clients --->
           <!-- <section class="clients">
             <h3 class="h3 clients-title">Clients</h3>
 
@@ -456,14 +405,71 @@
           </section> -->
         </article>
 
-        <!--
-        - #RESUME
-      -->
-
+        <!--- #RESUME --->
         <article class="resume" data-page="resume">
           <header>
             <h2 class="h2 article-title">Resume</h2>
           </header>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Experience</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Business Developer and Flutter Developer | Bitlogicx
+                </h4>
+
+                <span>March 2024 — Present</span>
+
+                <p class="timeline-text">
+                  Spearheaded business development for Arabic-speaking markets,
+                  handling client communication and localization strategies.
+                  Contributed to mobile app development using Flutter and Dart,
+                  assisting in UI implementation and feature testing. Performed
+                  QA for Arabic projects, ensuring proper RTL functionality and
+                  translation.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  AI Developer | Freelance Projects
+                </h4>
+
+                <span>Nov 2022 — Present</span>
+
+                <p class="timeline-text">
+                  Developed AI-driven solutions including face mesh, pose, and
+                  hand detection systems. Created innovative products like a
+                  face-following drone using real-time detection. Delivered
+                  custom AI solutions for gesture and motion tracking with high
+                  accuracy.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Sales Representative | STARLINK AIT DUBAI UAE
+                </h4>
+
+                <span>Jan 2023 — Sept 2023</span>
+
+                <p class="timeline-text">
+                  Engaged with Arabic-speaking clients in a call center
+                  environment, demonstrating strong communication skills.
+                  Consistently achieved monthly sales targets through effective
+                  client interactions and customer-focused approach.
+                </p>
+              </li>
+            </ol>
+          </section>
 
           <section class="timeline">
             <div class="title-wrapper">
@@ -535,62 +541,66 @@
                 <ion-icon name="book-outline"></ion-icon>
               </div>
 
-              <h3 class="h3">Experience</h3>
+              <h3 class="h3">Courses & Certifications</h3>
             </div>
 
             <ol class="timeline-list">
               <li class="timeline-item">
                 <h4 class="h4 timeline-item-title">
-                  Business Developer and Flutter Developer | Bitlogicx
+                  Bachelor Software Engineering | Superior University Lahore
                 </h4>
 
-                <span>March 2024 — Present</span>
+                <span>Oct 2021 — Jun 2025</span>
 
                 <p class="timeline-text">
-                  Spearheaded business development for Arabic-speaking markets,
-                  handling client communication and localization strategies.
-                  Contributed to mobile app development using Flutter and Dart,
-                  assisting in UI implementation and feature testing. Performed
-                  QA for Arabic projects, ensuring proper RTL functionality and
-                  translation.
+                  Thesis: MediSense – AI-Driven Healthcare Platform. Research
+                  focused on integrating AI, machine learning, and IoT for
+                  real-time health monitoring and predictive analytics. Relevant
+                  coursework included Web Development, Mobile App Development,
+                  Data Structures, Artificial Intelligence, Machine Learning,
+                  and Cloud Computing.
                 </p>
               </li>
 
               <li class="timeline-item">
                 <h4 class="h4 timeline-item-title">
-                  AI Developer | Freelance Projects
+                  Lead Developer | MediSense – AI-Powered Healthcare Platform
                 </h4>
 
-                <span>Nov 2022 — Present</span>
+                <span>2023 — Present</span>
 
                 <p class="timeline-text">
-                  Developed AI-driven solutions including face mesh, pose, and
-                  hand detection systems. Created innovative products like a
-                  face-following drone using real-time detection. Delivered
-                  custom AI solutions for gesture and motion tracking with high
-                  accuracy.
+                  Designed and developed a virtual patient assistant integrating
+                  medical device and EHR data. Built predictive models using
+                  machine learning, implemented federated learning for secure
+                  training, and ensured data privacy with encrypted storage.
+                  Created user-friendly interfaces for enhanced patient
+                  engagement.
                 </p>
               </li>
 
               <li class="timeline-item">
                 <h4 class="h4 timeline-item-title">
-                  Sales Representative | STARLINK AIT DUBAI UAE
+                  First Author – Pending Research Paper | Symptom-Based Disease
+                  Prediction
                 </h4>
 
-                <span>Jan 2023 — Sept 2023</span>
+                <span>2024 — Present</span>
 
                 <p class="timeline-text">
-                  Engaged with Arabic-speaking clients in a call center
-                  environment, demonstrating strong communication skills.
-                  Consistently achieved monthly sales targets through effective
-                  client interactions and customer-focused approach.
+                  Developed a privacy-preserving ML system for disease
+                  prediction from symptoms using federated learning
+                  (TFF/PySyft). Evaluated models including decision trees,
+                  random forests, and neural networks. Tackled challenges like
+                  data bias and model explainability for decentralized
+                  healthcare diagnostics.
                 </p>
               </li>
             </ol>
           </section>
 
           <section class="skill">
-            <h3 class="h3 skills-title">My skills</h3>
+            <h3 class="h3 skills-title">skills</h3>
 
             <ul class="skills-list content-card">
               <li class="skills-item">
@@ -650,13 +660,10 @@
           </section>
         </article>
 
-        <!--
-        - #PORTFOLIO
-      -->
-
-        <article class="portfolio" data-page="portfolio">
+        <!--- #PORTFOLIO --->
+        <article class="portfolio" data-page="projects">
           <header>
-            <h2 class="h2 article-title">Portfolio</h2>
+            <h2 class="h2 article-title">Projects</h2>
           </header>
 
           <section class="projects">
@@ -668,10 +675,10 @@
                 <button data-filter-btn>AI Solutions</button>
               </li>
               <li class="filter-item">
-                <button data-filter-btn>Mobile Apps</button>
+                <button data-filter-btn>Official</button>
               </li>
               <li class="filter-item">
-                <button data-filter-btn>Web Development</button>
+                <button data-filter-btn>Prosonal</button>
               </li>
             </ul>
 
@@ -692,21 +699,17 @@
                   <button data-select-item>AI Solutions</button>
                 </li>
                 <li class="select-item">
-                  <button data-select-item>Mobile Apps</button>
+                  <button data-select-item>Official</button>
                 </li>
                 <li class="select-item">
-                  <button data-select-item>Web Development</button>
+                  <button data-select-item>Prosonal</button>
                 </li>
               </ul>
             </div>
 
             <ul class="project-list">
               <!-- AI Solutions -->
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="ai solutions"
-              >
+              <li class="project-item active" data-filter-item data-category="ai solutions">
                 <a href="#"
                   ><figure class="project-img">
                     <div class="project-item-icon-box">
@@ -723,11 +726,7 @@
                 >
               </li>
 
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="ai solutions"
-              >
+              <li class="project-item active" data-filter-item data-category="ai solutions">
                 <a href="#"
                   ><figure class="project-img">
                     <div class="project-item-icon-box">
@@ -921,353 +920,351 @@
           </section>
         </article>
 
-        <!--
-        - #BLOG
-      -->
-      <article class="blog" data-page="blog">
-        <header>
-          <h2 class="h2 article-title">Blog</h2>
-        </header>
-      
-        <section class="blog-posts">
-          <ul class="blog-posts-list">
-            <!-- Blog Post 1 -->
-            <li class="blog-post-item">
-              <a
-                href="./medisense-accuracy.html"
-                class="blog-post-link"
-                data-blog-id="medisense-accuracy"
-              >
-                <figure class="blog-banner-box">
-                  <img
-                    src="./assets/images/medisense-architecture-preview.jpg"
-                    alt="MediSense Architecture Preview"
-                    loading="lazy"
-                  />
-                </figure>
-      
-                <div class="blog-content">
-                  <div class="blog-meta">
-                    <p class="blog-category">AI Development</p>
-                    <span class="dot"></span>
-                    <time datetime="2024-06-10">Jun 10, 2024</time>
-                    <span class="dot"></span>
-                    <span class="read-time">12 min read</span>
+        <!--- #BLOG --->
+        <article class="blog" data-page="blog">
+          <header>
+            <h2 class="h2 article-title">Blog</h2>
+          </header>
+        
+          <section class="blog-posts">
+            <ul class="blog-posts-list">
+              <!-- Blog Post 1 -->
+              <li class="blog-post-item">
+                <a
+                  href="./medisense-accuracy.html"
+                  class="blog-post-link"
+                  data-blog-id="medisense-accuracy"
+                >
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/medisense-architecture-preview.jpg"
+                      alt="MediSense Architecture Preview"
+                      loading="lazy"
+                    />
+                  </figure>
+        
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">AI Development</p>
+                      <span class="dot"></span>
+                      <time datetime="2024-06-10">Jun 10, 2024</time>
+                      <span class="dot"></span>
+                      <span class="read-time">12 min read</span>
+                    </div>
+        
+                    <h3 class="h3 blog-item-title">
+                      Building MediSense: 98.7% Accuracy in Disease Prediction
+                    </h3>
+        
+                    <p class="blog-text">
+                      How we achieved record diagnostic accuracy through
+                      innovative machine learning architecture and careful
+                      medical data handling.
+                    </p>
+        
+                    <div class="blog-tags">
+                      <span class="blog-tag">Machine Learning</span>
+                      <span class="blog-tag">Healthcare</span>
+                    </div>
                   </div>
-      
-                  <h3 class="h3 blog-item-title">
-                    Building MediSense: 98.7% Accuracy in Disease Prediction
-                  </h3>
-      
-                  <p class="blog-text">
-                    How we achieved record diagnostic accuracy through
-                    innovative machine learning architecture and careful
-                    medical data handling.
-                  </p>
-      
-                  <div class="blog-tags">
-                    <span class="blog-tag">Machine Learning</span>
-                    <span class="blog-tag">Healthcare</span>
+                </a>
+              </li>
+        
+              <!-- Blog Post 2 -->
+              <li class="blog-post-item">
+                <a
+                  href="./from-python-to-production.html"
+                  class="blog-post-link"
+                  data-blog-id="arabic-ml-deployment"
+                >
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/arabic-ml-preview.jpg"
+                      alt="Arabic ML Deployment Preview"
+                      loading="lazy"
+                    />
+                  </figure>
+        
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Tutorial</p>
+                      <span class="dot"></span>
+                      <time datetime="2024-05-22">May 22, 2024</time>
+                      <span class="dot"></span>
+                      <span class="read-time">15 min read</span>
+                    </div>
+        
+                    <h3 class="h3 blog-item-title">
+                      From Python to Production: Deploying ML for Arabic Users
+                    </h3>
+        
+                    <p class="blog-text">
+                      A complete guide to production-ready Arabic ML systems
+                      covering RTL interfaces, dialect handling, and mobile
+                      optimization.
+                    </p>
+        
+                    <div class="blog-tags">
+                      <span class="blog-tag">Arabic NLP</span>
+                      <span class="blog-tag">Flutter</span>
+                    </div>
                   </div>
-                </div>
-              </a>
-            </li>
-      
-            <!-- Blog Post 2 -->
-            <li class="blog-post-item">
-              <a
-                href="./from-python-to-production.html"
-                class="blog-post-link"
-                data-blog-id="arabic-ml-deployment"
-              >
-                <figure class="blog-banner-box">
-                  <img
-                    src="./assets/images/arabic-ml-preview.jpg"
-                    alt="Arabic ML Deployment Preview"
-                    loading="lazy"
-                  />
-                </figure>
-      
-                <div class="blog-content">
-                  <div class="blog-meta">
-                    <p class="blog-category">Tutorial</p>
-                    <span class="dot"></span>
-                    <time datetime="2024-05-22">May 22, 2024</time>
-                    <span class="dot"></span>
-                    <span class="read-time">15 min read</span>
+                </a>
+              </li>
+        
+              <!-- Blog Post 3 -->
+              <li class="blog-post-item">
+                <a
+                  href="./developer-business-dev.html"
+                  class="blog-post-link"
+                  data-blog-id="tech-business"
+                >
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/tech-business-preview.jpg"
+                      alt="Tech and Business Skills Preview"
+                      loading="lazy"
+                    />
+                  </figure>
+        
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Career Development</p>
+                      <span class="dot"></span>
+                      <time datetime="2024-04-05">Apr 5, 2024</time>
+                      <span class="dot"></span>
+                      <span class="read-time">8 min read</span>
+                    </div>
+        
+                    <h3 class="h3 blog-item-title">
+                      Why Every Developer Should Learn Business Development
+                    </h3>
+        
+                    <p class="blog-text">
+                      How business skills make you a better developer, with
+                      practical lessons from my experience at Bitlogicx.
+                    </p>
+        
+                    <div class="blog-tags">
+                      <span class="blog-tag">Career Growth</span>
+                      <span class="blog-tag">Communication</span>
+                    </div>
                   </div>
-      
-                  <h3 class="h3 blog-item-title">
-                    From Python to Production: Deploying ML for Arabic Users
-                  </h3>
-      
-                  <p class="blog-text">
-                    A complete guide to production-ready Arabic ML systems
-                    covering RTL interfaces, dialect handling, and mobile
-                    optimization.
-                  </p>
-      
-                  <div class="blog-tags">
-                    <span class="blog-tag">Arabic NLP</span>
-                    <span class="blog-tag">Flutter</span>
+                </a>
+              </li>
+        
+              <!-- Blog Post 4 -->
+              <li class="blog-post-item">
+                <a
+                  href="./developer-acceleration.html"
+                  class="blog-post-link"
+                  data-blog-id="developer-acceleration"
+                >
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/dev-acceleration-preview.png"
+                      alt="Developer Acceleration Tools Preview"
+                      loading="lazy"
+                    />
+                  </figure>
+        
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Productivity</p>
+                      <span class="dot"></span>
+                      <time datetime="2024-06-25">Jun 25, 2024</time>
+                      <span class="dot"></span>
+                      <span class="read-time">10 min read</span>
+                    </div>
+        
+                    <h3 class="h3 blog-item-title">
+                      Developer Acceleration: Boosting Output with Tools & Mindset
+                    </h3>
+        
+                    <p class="blog-text">
+                      Explore how top engineers accelerate development using AI
+                      tools, better workflows, and strategic time management
+                      practices.
+                    </p>
+        
+                    <div class="blog-tags">
+                      <span class="blog-tag">Productivity</span>
+                      <span class="blog-tag">Developer Tools</span>
+                    </div>
                   </div>
-                </div>
-              </a>
-            </li>
-      
-            <!-- Blog Post 3 -->
-            <li class="blog-post-item">
-              <a
-                href="./developer-business-dev.html"
-                class="blog-post-link"
-                data-blog-id="tech-business"
-              >
-                <figure class="blog-banner-box">
-                  <img
-                    src="./assets/images/tech-business-preview.jpg"
-                    alt="Tech and Business Skills Preview"
-                    loading="lazy"
-                  />
-                </figure>
-      
-                <div class="blog-content">
-                  <div class="blog-meta">
-                    <p class="blog-category">Career Development</p>
-                    <span class="dot"></span>
-                    <time datetime="2024-04-05">Apr 5, 2024</time>
-                    <span class="dot"></span>
-                    <span class="read-time">8 min read</span>
+                </a>
+              </li>
+        
+              <!-- Blog Post 5 -->
+              <li class="blog-post-item">
+                <a
+                  href="./top-10-se-topics.html"
+                  class="blog-post-link"
+                  data-blog-id="core-se-topics"
+                >
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/software-engineering-topics.jpg"
+                      alt="Essential Software Engineering Topics"
+                      loading="lazy"
+                    />
+                  </figure>
+        
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Software Engineering</p>
+                      <span class="dot"></span>
+                      <time datetime="2024-06-18">Jun 18, 2024</time>
+                      <span class="dot"></span>
+                      <span class="read-time">14 min read</span>
+                    </div>
+        
+                    <h3 class="h3 blog-item-title">
+                      Top 10 Software Engineering Topics Every Pro Should Master
+                    </h3>
+        
+                    <p class="blog-text">
+                      From design patterns to CI/CD, here's a breakdown of the
+                      most essential software engineering concepts that build
+                      career-ready skills.
+                    </p>
+        
+                    <div class="blog-tags">
+                      <span class="blog-tag">System Design</span>
+                      <span class="blog-tag">Best Practices</span>
+                    </div>
                   </div>
-      
-                  <h3 class="h3 blog-item-title">
-                    Why Every Developer Should Learn Business Development
-                  </h3>
-      
-                  <p class="blog-text">
-                    How business skills make you a better developer, with
-                    practical lessons from my experience at Bitlogicx.
-                  </p>
-      
-                  <div class="blog-tags">
-                    <span class="blog-tag">Career Growth</span>
-                    <span class="blog-tag">Communication</span>
+                </a>
+              </li>
+        
+              <!-- Blog Post 6 -->
+              <li class="blog-post-item">
+                <a
+                  href="./clean-architecture.html"
+                  class="blog-post-link"
+                  data-blog-id="clean-architecture"
+                >
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/clean-architecture.jpg"
+                      alt="Clean Architecture Preview"
+                      loading="lazy"
+                    />
+                  </figure>
+        
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Architecture</p>
+                      <span class="dot"></span>
+                      <time datetime="2024-06-15">Jun 15, 2024</time>
+                      <span class="dot"></span>
+                      <span class="read-time">11 min read</span>
+                    </div>
+        
+                    <h3 class="h3 blog-item-title">
+                      Clean Architecture in Real-World Projects: Lessons Learned
+                    </h3>
+        
+                    <p class="blog-text">
+                      A practical dive into applying Clean Architecture in
+                      software projects—what works, common pitfalls, and how to
+                      ensure scalability.
+                    </p>
+        
+                    <div class="blog-tags">
+                      <span class="blog-tag">Clean Code</span>
+                      <span class="blog-tag">Architecture</span>
+                    </div>
                   </div>
-                </div>
-              </a>
-            </li>
-      
-            <!-- Blog Post 4 -->
-            <li class="blog-post-item">
-              <a
-                href="./developer-acceleration.html"
-                class="blog-post-link"
-                data-blog-id="developer-acceleration"
-              >
-                <figure class="blog-banner-box">
-                  <img
-                    src="./assets/images/dev-acceleration-preview.png"
-                    alt="Developer Acceleration Tools Preview"
-                    loading="lazy"
-                  />
-                </figure>
-      
-                <div class="blog-content">
-                  <div class="blog-meta">
-                    <p class="blog-category">Productivity</p>
-                    <span class="dot"></span>
-                    <time datetime="2024-06-25">Jun 25, 2024</time>
-                    <span class="dot"></span>
-                    <span class="read-time">10 min read</span>
+                </a>
+              </li>
+        
+              <!-- Blog Post 7 -->
+              <li class="blog-post-item">
+                <a
+                  href="./ai-integration.html"
+                  class="blog-post-link"
+                  data-blog-id="ai-integration"
+                >
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/ai-integration.jpg"
+                      alt="AI Integration in Software"
+                      loading="lazy"
+                    />
+                  </figure>
+        
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">AI Development</p>
+                      <span class="dot"></span>
+                      <time datetime="2024-06-01">Jun 1, 2024</time>
+                      <span class="dot"></span>
+                      <span class="read-time">13 min read</span>
+                    </div>
+        
+                    <h3 class="h3 blog-item-title">
+                      Integrating AI into Web and Mobile Apps: What You Need to Know
+                    </h3>
+        
+                    <p class="blog-text">
+                      Learn how to connect machine learning models to production
+                      apps—from API handling to edge deployment and performance
+                      tuning.
+                    </p>
+        
+                    <div class="blog-tags">
+                      <span class="blog-tag">AI Integration</span>
+                      <span class="blog-tag">Full Stack</span>
+                    </div>
                   </div>
-      
-                  <h3 class="h3 blog-item-title">
-                    Developer Acceleration: Boosting Output with Tools & Mindset
-                  </h3>
-      
-                  <p class="blog-text">
-                    Explore how top engineers accelerate development using AI
-                    tools, better workflows, and strategic time management
-                    practices.
-                  </p>
-      
-                  <div class="blog-tags">
-                    <span class="blog-tag">Productivity</span>
-                    <span class="blog-tag">Developer Tools</span>
+                </a>
+              </li>
+        
+              <!-- Blog Post 8 -->
+              <li class="blog-post-item">
+                <a
+                  href="./automating-testing-pipeline.html"
+                  class="blog-post-link"
+                  data-blog-id="testing-pipeline"
+                >
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/testing-pipeline.jpg"
+                      alt="Testing Pipeline Preview"
+                      loading="lazy"
+                    />
+                  </figure>
+        
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">DevOps</p>
+                      <span class="dot"></span>
+                      <time datetime="2024-05-28">May 28, 2024</time>
+                      <span class="dot"></span>
+                      <span class="read-time">9 min read</span>
+                    </div>
+        
+                    <h3 class="h3 blog-item-title">
+                      Automating Your Testing Pipeline with GitHub Actions
+                    </h3>
+        
+                    <p class="blog-text">
+                      A full walkthrough to automate testing pipelines using
+                      GitHub Actions, covering unit, integration, and E2E
+                      workflows with Docker support.
+                    </p>
+        
+                    <div class="blog-tags">
+                      <span class="blog-tag">CI/CD</span>
+                      <span class="blog-tag">Automation</span>
+                    </div>
                   </div>
-                </div>
-              </a>
-            </li>
-      
-            <!-- Blog Post 5 -->
-            <li class="blog-post-item">
-              <a
-                href="./top-10-se-topics.html"
-                class="blog-post-link"
-                data-blog-id="core-se-topics"
-              >
-                <figure class="blog-banner-box">
-                  <img
-                    src="./assets/images/software-engineering-topics.jpg"
-                    alt="Essential Software Engineering Topics"
-                    loading="lazy"
-                  />
-                </figure>
-      
-                <div class="blog-content">
-                  <div class="blog-meta">
-                    <p class="blog-category">Software Engineering</p>
-                    <span class="dot"></span>
-                    <time datetime="2024-06-18">Jun 18, 2024</time>
-                    <span class="dot"></span>
-                    <span class="read-time">14 min read</span>
-                  </div>
-      
-                  <h3 class="h3 blog-item-title">
-                    Top 10 Software Engineering Topics Every Pro Should Master
-                  </h3>
-      
-                  <p class="blog-text">
-                    From design patterns to CI/CD, here's a breakdown of the
-                    most essential software engineering concepts that build
-                    career-ready skills.
-                  </p>
-      
-                  <div class="blog-tags">
-                    <span class="blog-tag">System Design</span>
-                    <span class="blog-tag">Best Practices</span>
-                  </div>
-                </div>
-              </a>
-            </li>
-      
-            <!-- Blog Post 6 -->
-            <li class="blog-post-item">
-              <a
-                href="./clean-architecture.html"
-                class="blog-post-link"
-                data-blog-id="clean-architecture"
-              >
-                <figure class="blog-banner-box">
-                  <img
-                    src="./assets/images/clean-architecture.jpg"
-                    alt="Clean Architecture Preview"
-                    loading="lazy"
-                  />
-                </figure>
-      
-                <div class="blog-content">
-                  <div class="blog-meta">
-                    <p class="blog-category">Architecture</p>
-                    <span class="dot"></span>
-                    <time datetime="2024-06-15">Jun 15, 2024</time>
-                    <span class="dot"></span>
-                    <span class="read-time">11 min read</span>
-                  </div>
-      
-                  <h3 class="h3 blog-item-title">
-                    Clean Architecture in Real-World Projects: Lessons Learned
-                  </h3>
-      
-                  <p class="blog-text">
-                    A practical dive into applying Clean Architecture in
-                    software projects—what works, common pitfalls, and how to
-                    ensure scalability.
-                  </p>
-      
-                  <div class="blog-tags">
-                    <span class="blog-tag">Clean Code</span>
-                    <span class="blog-tag">Architecture</span>
-                  </div>
-                </div>
-              </a>
-            </li>
-      
-            <!-- Blog Post 7 -->
-            <li class="blog-post-item">
-              <a
-                href="./ai-integration.html"
-                class="blog-post-link"
-                data-blog-id="ai-integration"
-              >
-                <figure class="blog-banner-box">
-                  <img
-                    src="./assets/images/ai-integration.jpg"
-                    alt="AI Integration in Software"
-                    loading="lazy"
-                  />
-                </figure>
-      
-                <div class="blog-content">
-                  <div class="blog-meta">
-                    <p class="blog-category">AI Development</p>
-                    <span class="dot"></span>
-                    <time datetime="2024-06-01">Jun 1, 2024</time>
-                    <span class="dot"></span>
-                    <span class="read-time">13 min read</span>
-                  </div>
-      
-                  <h3 class="h3 blog-item-title">
-                    Integrating AI into Web and Mobile Apps: What You Need to Know
-                  </h3>
-      
-                  <p class="blog-text">
-                    Learn how to connect machine learning models to production
-                    apps—from API handling to edge deployment and performance
-                    tuning.
-                  </p>
-      
-                  <div class="blog-tags">
-                    <span class="blog-tag">AI Integration</span>
-                    <span class="blog-tag">Full Stack</span>
-                  </div>
-                </div>
-              </a>
-            </li>
-      
-            <!-- Blog Post 8 -->
-            <li class="blog-post-item">
-              <a
-                href="./automating-testing-pipeline.html"
-                class="blog-post-link"
-                data-blog-id="testing-pipeline"
-              >
-                <figure class="blog-banner-box">
-                  <img
-                    src="./assets/images/testing-pipeline.jpg"
-                    alt="Testing Pipeline Preview"
-                    loading="lazy"
-                  />
-                </figure>
-      
-                <div class="blog-content">
-                  <div class="blog-meta">
-                    <p class="blog-category">DevOps</p>
-                    <span class="dot"></span>
-                    <time datetime="2024-05-28">May 28, 2024</time>
-                    <span class="dot"></span>
-                    <span class="read-time">9 min read</span>
-                  </div>
-      
-                  <h3 class="h3 blog-item-title">
-                    Automating Your Testing Pipeline with GitHub Actions
-                  </h3>
-      
-                  <p class="blog-text">
-                    A full walkthrough to automate testing pipelines using
-                    GitHub Actions, covering unit, integration, and E2E
-                    workflows with Docker support.
-                  </p>
-      
-                  <div class="blog-tags">
-                    <span class="blog-tag">CI/CD</span>
-                    <span class="blog-tag">Automation</span>
-                  </div>
-                </div>
-              </a>
-            </li>
-          </ul>
-        </section>
-      </article>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
 
         <!-- Full Blog Post Template (Hidden by default) -->
         <div id="full-blog-container" class="full-blog-hidden">
@@ -1279,180 +1276,159 @@
           </div>
         </div>
 
-        <!--
-        - #CONTACT
-      -->
-
-      <article class="contact" data-page="contact">
-        <header>
-          <h2 class="h2 article-title">Contact</h2>
-        </header>
-      
-        <!-- Interactive Map Container -->
-        <section class="mapbox" data-mapbox>
-          <div id="map-container" style="width: 100%; height: 300px; position: relative;">
-            <div
-              id="map-loading"
-              style="
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                z-index: 1000;
-                background: rgba(255, 255, 255, 0.7);
-                display: flex;
-                justify-content: center;
-                align-items: center;
-              "
-            >
-              <div class="spinner"></div>
-            </div>
-          </div>
-          <small>Click to select location</small>
-        </section>
-      
-        <!-- Contact Form -->
-        <section class="contact-form">
-          <h3 class="h3 form-title">Contact Form</h3>
-      
-          <form
-          action="https://formspree.io/f/xovwyaao"
-            method="POST"
-            class="form"
-            data-form
-          >
-            <div class="input-wrapper">
-              <input
-                type="text"
-                name="fullname"
-                class="form-input"
-                placeholder="Full name"
-                required
-                data-form-input
-              />
-      
-              <input
-                type="email"
-                name="email"
-                class="form-input"
-                placeholder="Email address"
-                required
-                data-form-input
-              />
-            </div>
-      
-            <!-- Location Field -->
-            <div class="location-input-wrapper">
-              <input
-                type="text"
-                name="location"
-                id="manual-location"
-                class="form-input"
-                placeholder="Type address or click map"
-                required
-              />
-              <button
-                type="button"
-                id="detect-location-btn"
-                class="location-btn"
+        <!--- #CONTACT --->
+        <article class="contact" data-page="contact">
+          <header>
+            <h2 class="h2 article-title">Contact</h2>
+          </header>
+        
+          <!-- Interactive Map Container -->
+          <section class="mapbox" data-mapbox>
+            <div id="map-container" style="width: 100%; height: 300px; position: relative;">
+              <div
+                id="map-loading"
+                style="
+                  position: absolute;
+                  width: 100%;
+                  height: 100%;
+                  z-index: 1000;
+                  background: rgba(255, 255, 255, 0.7);
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                "
               >
-                <ion-icon name="locate-outline"></ion-icon>
-              </button>
-              <p id="form-response" style="margin-top: 10px;"></p>
+                <div class="spinner"></div>
+              </div>
             </div>
+            <small>Click to select location</small>
+          </section>
+        
+          <!-- Contact Form -->
+          <section class="contact-form">
+            <h3 class="h3 form-title">Contact Form</h3>
+        
+            <form
+            action="https://formspree.io/f/xovwyaao"
+              method="POST"
+              class="form"
+              data-form
+            >
+              <div class="input-wrapper">
+                <input
+                  type="text"
+                  name="fullname"
+                  class="form-input"
+                  placeholder="Full name"
+                  required
+                  data-form-input
+                />
+        
+                <input
+                  type="email"
+                  name="email"
+                  class="form-input"
+                  placeholder="Email address"
+                  required
+                  data-form-input
+                />
+              </div>
+        
+              <!-- Location Field -->
+              <div class="location-input-wrapper">
+                <input
+                  type="text"
+                  name="location"
+                  id="manual-location"
+                  class="form-input"
+                  placeholder="Type address or click map"
+                  required
+                />
+                <button
+                  type="button"
+                  id="detect-location-btn"
+                  class="location-btn"
+                >
+                  <ion-icon name="locate-outline"></ion-icon>
+                </button>
+                <p id="form-response" style="margin-top: 10px;"></p>
+              </div>
+        
+              <input type="hidden" name="coordinates" id="user-coordinates" />
+        
+              <textarea
+                name="message"
+                class="form-input"
+                placeholder="Your Message"
+                required
+                data-form-input
+              ></textarea>
+        
+              <button class="form-btn" type="submit" disabled data-form-btn>
+                <ion-icon name="paper-plane"></ion-icon>
+                <span>Send Message</span>
+              </button>
+            </form>
+          </section>
+        
+          <!-- Leaflet CSS -->
+          <link
+            rel="stylesheet"
+            href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+          />
+        </article>
       
-            <input type="hidden" name="coordinates" id="user-coordinates" />
-      
-            <textarea
-              name="message"
-              class="form-input"
-              placeholder="Your Message"
-              required
-              data-form-input
-            ></textarea>
-      
-            <button class="form-btn" type="submit" disabled data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
-          </form>
-        </section>
-      
-        <!-- Leaflet CSS -->
-        <link
-          rel="stylesheet"
-          href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-        />
-      </article>
-      
-      <style>
-         /* Gold text for location instruction */
-  .mapbox small {
-    color: var(--orange-yellow-crayola);
-    font-size: var(--fs-7);
-    display: block;
-    text-align: center;
-    margin-top: 8px;
-  }
+        <style>
+          /* Gold text for location instruction */
+          .mapbox small {
+            color: var(--orange-yellow-crayola);
+            font-size: var(--fs-7);
+            display: block;
+            text-align: center;
+            margin-top: 8px;
+          }
 
-  /* Larger map container */
-  #map-container {
-    height: 350px !important; /* Increased from 250px */
-    border-radius: 14px;
-    overflow: hidden;
-    border: 1px solid var(--jet);
-  }
+          /* Larger map container */
+          #map-container {
+            height: 350px !important; /* Increased from 250px */
+            border-radius: 14px;
+            overflow: hidden;
+            border: 1px solid var(--jet);
+          }
 
-  /* Spinner styling */
-  .spinner {
-    border: 4px solid var(--jet);
-    border-top: 4px solid var(--orange-yellow-crayola);
-    border-radius: 50%;
-    width: 36px;
-    height: 36px;
-    animation: spin 1s linear infinite;
-  }
+          /* Spinner styling */
+          .spinner {
+            border: 4px solid var(--jet);
+            border-top: 4px solid var(--orange-yellow-crayola);
+            border-radius: 50%;
+            width: 36px;
+            height: 36px;
+            animation: spin 1s linear infinite;
+          }
 
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  }
+          @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+          }
 
-  /* Ensure proper spacing for navbar */
-  article[data-page="contact"] {
-    padding-bottom: 100px;
-  }
-      </style>
+          /* Ensure proper spacing for navbar */
+          article[data-page="contact"] { padding-bottom: 100px;}
+        </style>
       
       <!-- Scripts -->
       <script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
       <script defer src="./assets/js/script.js"></script>
-      <script
-        type="module"
-        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-      ></script>
-      <script
-        nomodule
-        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-      ></script>
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
         </article>
       </div>
     </main>
  
-    <!--
-    - custom js link
-  -->
+    <!--- custom js link --->
     <script src="./assets/js/script.js"></script>
 
-    <!--
-    - ionicon link
-  -->
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
+    <!--- ionicon link --->
+    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" type="module"></script>
+    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" nomodule></script>
   </body>
 </html>

@@ -449,3 +449,37 @@ document.addEventListener("DOMContentLoaded", () => {
   const contactPage = document.querySelector('[data-page="contact"]');
   if (contactPage) contactObserver.observe(contactPage);
 });
+
+// slide testimonials-item side by side
+document.addEventListener("DOMContentLoaded", () => {
+  const aboutPage = document.querySelector('article.about.active[data-page="about"]');
+  if (!aboutPage) return;
+
+  const wrapper = aboutPage.querySelector(".testimonials-wrapper");
+  const list = wrapper.querySelector(".testimonials-list");
+  const items = list.querySelectorAll(".testimonials-item");
+
+  if (!list || items.length === 0) return;
+
+  const itemsPerView = 2;
+  const totalItems = items.length;
+  const step = itemsPerView;
+  let currentIndex = 0;
+
+  function slideTestimonials() {
+    currentIndex += step;
+
+    if (currentIndex >= totalItems) {
+      currentIndex = 0;
+    }
+
+    const wrapperWidth = wrapper.offsetWidth;
+    const offset = (currentIndex / itemsPerView) * wrapperWidth;
+    list.style.transform = `translateX(-${offset}px)`;
+  }
+
+  if (totalItems > itemsPerView) {
+    setInterval(slideTestimonials, 3000);
+  }
+});
+
