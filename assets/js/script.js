@@ -123,46 +123,46 @@ const formHandler = () => {
   responseMsg.id = "form-response";
   DOM.form?.appendChild(responseMsg);
 
-  const validateForm = utils.debounce(() => {
-    DOM.formBtn.toggleAttribute("disabled", !DOM.form.checkValidity());
-  }, 300);
+  // const validateForm = utils.debounce(() => {
+  //   DOM.formBtn.toggleAttribute("disabled", !DOM.form.checkValidity());
+  // }, 300);
 
-  DOM.formInputs.forEach((input) => {
-    input.addEventListener("input", validateForm);
-  });
+  // DOM.formInputs.forEach((input) => {
+  //   input.addEventListener("input", validateForm);
+  // });
 
-  DOM.form?.addEventListener("submit", async (e) => {
-    e.preventDefault();
+  // DOM.form?.addEventListener("submit", async (e) => {
+  //   e.preventDefault();
 
-    const buttonText = DOM.formBtn.querySelector("span");
-    const originalText = buttonText.textContent;
-    buttonText.textContent = "Sending...";
-    DOM.formBtn.disabled = true;
+  //   const buttonText = DOM.formBtn.querySelector("span");
+  //   const originalText = buttonText.textContent;
+  //   buttonText.textContent = "Sending...";
+  //   DOM.formBtn.disabled = true;
 
-    try {
-      const response = await fetch(DOM.form.action, {
-        method: "POST",
-        body: new FormData(DOM.form),
-        headers: { Accept: "application/json" },
-      });
+  //   try {
+  //     const response = await fetch(DOM.form.action, {
+  //       method: "POST",
+  //       body: new FormData(DOM.form),
+  //       headers: { Accept: "application/json" },
+  //     });
 
-      if (response.ok) {
-        responseMsg.textContent = "✅ Message sent successfully!";
-        responseMsg.style.color = "var(--success-color)";
-        DOM.form.reset();
-      } else {
-        throw new Error("Submission failed");
-      }
-    } catch (error) {
-      responseMsg.textContent = "❌ Failed to send. Please try again.";
-      responseMsg.style.color = "var(--error-color)";
-      console.error("Form error:", error);
-    } finally {
-      buttonText.textContent = originalText;
-      DOM.formBtn.disabled = false;
-      setTimeout(() => (responseMsg.textContent = ""), 5000);
-    }
-  });
+  //     if (response.ok) {
+  //       responseMsg.textContent = "✅ Message sent successfully!";
+  //       responseMsg.style.color = "var(--success-color)";
+  //       DOM.form.reset();
+  //     } else {
+  //       throw new Error("Submission failed");
+  //     }
+  //   } catch (error) {
+  //     responseMsg.textContent = "❌ Failed to send. Please try again.";
+  //     responseMsg.style.color = "var(--error-color)";
+  //     console.error("Form error:", error);
+  //   } finally {
+  //     buttonText.textContent = originalText;
+  //     DOM.formBtn.disabled = false;
+  //     setTimeout(() => (responseMsg.textContent = ""), 5000);
+  //   }
+  // });
 };
 
 // Navigation Handler

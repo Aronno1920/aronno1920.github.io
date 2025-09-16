@@ -6,22 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Selim Ahmed | vCard</title>
 
-    <!--- favicon --->
     <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon"/>
-
-    <!--- custom css link --->
     <link rel="stylesheet" href="./assets/css/style.css" />
-
-    <!--- google font link --->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"/>
   </head>
 
   <body>
-    <!--- #MAIN --->
+    <!-------- #MAIN -------->
     <main>
-      <!--- #SIDEBAR --->
+      <!-------- #SIDEBAR -------->
       <aside class="sidebar" data-sidebar>
         <div class="sidebar-info">
           <figure class="avatar-box">
@@ -120,7 +115,7 @@
 
       <div class="main-content">
 
-        <!--- #NAVBAR --->
+        <!-------- #NAVBAR -------->
         <nav class="navbar">
           <ul class="navbar-list">
             <li class="navbar-item">
@@ -145,7 +140,7 @@
           </ul>
         </nav>
 
-        <!--- #ABOUT --->
+        <!-------- #ABOUT -------->
         <article class="about active" data-page="about">
           <header>
             <h2 class="h2 article-title">About me</h2>
@@ -173,7 +168,7 @@
             </p>
           </section>
 
-          <!--- Technologies -->
+          <!-------- Technologies -->
           <section class="technology">
             <h3 class="h3 technology-title">Technologies</h3>
 
@@ -215,7 +210,7 @@
             </div>
           </section>
 
-          <!--- service --->
+          <!-------- service -------->
           <section class="service">
             <h3 class="h3 service-title">What I'm doing</h3>
 
@@ -271,7 +266,7 @@
             </ul>
           </section>
 
-          <!--- testimonials --->
+          <!-------- testimonials -------->
           <section class="testimonials">
             <h3 class="h3 testimonials-title">Testimonials</h3>
             <div class="testimonials-wrapper">
@@ -398,7 +393,7 @@
             </div>
           </section>
 
-          <!--- testimonials modal --->
+          <!-------- testimonials modal -------->
           <div class="modal-container" data-modal-container>
             <div class="overlay" data-overlay></div>
 
@@ -431,7 +426,7 @@
             </section>
           </div>
 
-          <!--- clients --->
+          <!-------- clients -------->
           <!-- <section class="clients">
             <h3 class="h3 clients-title">Clients</h3>
 
@@ -457,7 +452,7 @@
           </section> -->
         </article>
 
-        <!--- #RESUME --->
+        <!-------- #RESUME -------->
         <article class="resume" data-page="resume">
           <header>
             <h2 class="h2 article-title">Resume</h2>
@@ -679,16 +674,6 @@
 
               <li class="skills-item">
                 <div class="title-wrapper">
-                  <h5 class="h5">Business Development</h5>
-                  <data value="80">80%</data>
-                </div>
-                <div class="skill-progress-bg">
-                  <div class="skill-progress-fill" style="width: 80%"></div>
-                </div>
-              </li>
-
-              <li class="skills-item">
-                <div class="title-wrapper">
                   <h5 class="h5">Android Application Development</h5>
                   <data value="70">70%</data>
                 </div>
@@ -697,11 +682,21 @@
                 </div>
               </li>
 
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Business Analysis</h5>
+                  <data value="80">80%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 80%"></div>
+                </div>
+              </li>
+
             </ul>
           </section>
         </article>
 
-        <!--- #PORTFOLIO --->
+        <!-------- #PROJECTS -------->
         <article class="portfolio" data-page="projects">
           <header>
             <h2 class="h2 article-title">Projects</h2>
@@ -749,7 +744,7 @@
             </div>
 
             <ul class="projects-list">
-              <!--- AI Solutions --->
+              <!-------- AI Solutions -------->
               <li class="project-item active" data-filter-item data-category="ai solutions">
                 <a href="#">
                   <figure class="project-img">
@@ -762,7 +757,7 @@
                   <p class="project-category">AI Solutions</p></a>
               </li>
 
-              <!--- Official Project --->
+              <!-------- Official Project -------->
               <li class="project-item active" data-filter-item data-category="software">
                 <a href="#">
                   <figure class="project-img">
@@ -775,7 +770,7 @@
                   <p class="project-category">Build and evaluate a deep learning model that classifies handwritten digits (0–9) using the MNIST dataset. This project will reinforce core deep learning concepts such as data preprocessing, batch normalization, dropout regularization, and model evaluation through visual metrics.</p></a>
               </li>
 
-              <!--- Personal Project --->
+              <!-------- Personal Project -------->
               <li class="project-item active" data-filter-item data-category="application">
                 <a href="#">
                   <figure class="project-img">
@@ -809,15 +804,11 @@
                 </a>
               </li>
 
-
-
-
-
             </ul>
           </section>
         </article>
 
-        <!--- #BLOG --->
+        <!-------- #BLOG -------->
         <article class="blog" data-page="blog">
           <header>
             <h2 class="h2 article-title">Blog</h2>
@@ -857,72 +848,26 @@
           </section>
         </article>
 
-        <!-- Full Blog Post Template (Hidden by default) -->
-        <div id="full-blog-container" class="full-blog-hidden">
-          <div class="full-blog-content">
-            <button id="close-blog-btn" class="close-blog-btn">
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-            <div id="full-blog-article"></div>
-          </div>
-        </div>
-
-        <!--- #CONTACT --->
+        <!-------- #CONTACT -------->
         <article class="contact" data-page="contact">
           <header>
             <h2 class="h2 article-title">Contact</h2>
           </header>
-        
-          <!-- Interactive Map Container -->
-          <section class="mapbox" data-mapbox>
-            <div id="map-container" style="width: 100%; height: 300px; position: relative;">
-              <div id="map-loading" style="position: absolute; width: 100%; height: 100%; z-index: 1000; background: rgba(255, 255, 255, 0.7); display: flex; justify-content: center; align-items: center;">
-                <div class="spinner"></div>
-              </div>
-            </div>
-            <small>Click to select location</small>
-          </section>
-        
+
           <!-- Contact Form -->
           <section class="contact-form">
             <h3 class="h3 form-title">Contact Form</h3>
         
-            <form action="https://formspree.io/f/xovwyaao" method="POST" class="form" data-form>
+            <form action="mailto:aronno1920@hotmail.com" method="POST" class="form" enctype="text/plain" data-form>
               <div class="input-wrapper">
                 <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input/>
         
                 <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input/>
               </div>
+
+              <input type="text" name="subject" class="form-input" placeholder="Subject" required data-form-input/>
         
-              <!-- Location Field -->
-              <div class="location-input-wrapper">
-                <input
-                  type="text"
-                  name="location"
-                  id="manual-location"
-                  class="form-input"
-                  placeholder="Type address or click map"
-                  required
-                />
-                <button
-                  type="button"
-                  id="detect-location-btn"
-                  class="location-btn"
-                >
-                  <ion-icon name="locate-outline"></ion-icon>
-                </button>
-                <p id="form-response" style="margin-top: 10px;"></p>
-              </div>
-        
-              <input type="hidden" name="coordinates" id="user-coordinates" />
-        
-              <textarea
-                name="message"
-                class="form-input"
-                placeholder="Your Message"
-                required
-                data-form-input
-              ></textarea>
+              <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
         
               <button class="form-btn" type="submit" disabled data-form-btn>
                 <ion-icon name="paper-plane"></ion-icon>
@@ -930,61 +875,15 @@
               </button>
             </form>
           </section>
+        </article>
         
-          <!-- Leaflet CSS -->
-          <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
-        </article>
-      
-        <style>
-          /* Gold text for location instruction */
-          .mapbox small {
-            color: var(--orange-yellow-crayola);
-            font-size: var(--fs-7);
-            display: block;
-            text-align: center;
-            margin-top: 8px;
-          }
-
-          /* Larger map container */
-          #map-container {
-            height: 350px !important; /* Increased from 250px */
-            border-radius: 14px;
-            overflow: hidden;
-            border: 1px solid var(--jet);
-          }
-
-          /* Spinner styling */
-          .spinner {
-            border: 4px solid var(--jet);
-            border-top: 4px solid var(--orange-yellow-crayola);
-            border-radius: 50%;
-            width: 36px;
-            height: 36px;
-            animation: spin 1s linear infinite;
-          }
-
-          @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-          }
-
-          /* Ensure proper spacing for navbar */
-          article[data-page="contact"] { padding-bottom: 100px;}
-        </style>
-      
-      <!-- Scripts -->
-      <script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-      <script defer src="./assets/js/script.js"></script>
-      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-        </article>
       </div>
     </main>
  
-    <!--- custom js link --->
+    <!-------- custom js link -------->
     <script src="./assets/js/script.js"></script>
 
-    <!--- ionicon link --->
+    <!-------- ionicon link -------->
     <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" type="module"></script>
     <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" nomodule></script>
   </body>
