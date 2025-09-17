@@ -1,5 +1,3 @@
-// post-generator.js
-
 function formatDate(iso) {
   if (!iso) return '';
   const d = new Date(iso);
@@ -80,7 +78,7 @@ function renderPosts(posts) {
 }
 
 // Fetch posts.json from the same folder
-fetch('./data/posts.json')
+fetch('data/posts.json')
   .then(res => res.json())
   .then(data => renderPosts(data))
   .catch(err => console.error('Failed to load posts.json:', err));
