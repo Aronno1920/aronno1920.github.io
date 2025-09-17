@@ -1,0 +1,35 @@
+[
+  {
+    "id": "ai-virtual-mouse",
+    "title": "AI Virtual Mouse",
+    "url": "#",
+    "image": {
+      "src": "./assets/images/projects/EFTN.jpg",
+      "alt": "AI Virtual Mouse",
+      "loading": "lazy"
+    },
+    "category": "AI Solutions"
+  },
+  {
+    "id": "ai-virtual-mouse",
+    "title": "AI Virtual Mouse",
+    "url": "#",
+    "image": {
+      "src": "./assets/images/projects/EFTN.jpg",
+      "alt": "AI Virtual Mouse",
+      "loading": "lazy"
+    },
+    "category": "AI Solutions"
+  },
+  {
+    "id": "ai-virtual-mouse",
+    "title": "AI Virtual Mouse",
+    "url": "#",
+    "image": {
+      "src": "./assets/images/projects/EFTN.jpg",
+      "alt": "AI Virtual Mouse",
+      "loading": "lazy"
+    },
+    "category": "Software"
+  }
+]
