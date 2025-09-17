@@ -47,7 +47,6 @@ const sidebarHandler = () => {
 };
 
 // Testimonials Modal Handler
-// Testimonials Modal Handler
 const testimonialsHandler = () => {
   const openModal = () => {
     DOM.modalContainer.classList.add("active");

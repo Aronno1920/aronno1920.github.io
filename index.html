@@ -213,8 +213,9 @@
           <section class="service">
             <h3 class="h3 service-title">What I'm doing</h3>
 
-            <ul class="service-list">
+            <ul id="service-list" class="service-list"></ul>
 
+            <!-- <ul class="service-list">
               <li class="service-item">
                 <div class="service-icon-box">
                   <img src="./assets/images/icon-dev.svg" alt="Software Development" width="40"/>
@@ -262,14 +263,18 @@
                   </p>
                 </div>
               </li>
-            </ul>
+            </ul> -->
           </section>
 
           <!-------- testimonials -------->
           <section class="testimonials">
             <h3 class="h3 testimonials-title">Testimonials</h3>
             <div class="testimonials-wrapper">
-              <ul class="testimonials-list">
+
+              <ul id="testimonials-list" class="testimonials-list">
+              </ul>
+
+              <!-- <ul class="testimonials-list">
 
                 <li class="testimonials-item">
                   <div class="content-card" data-testimonials-item>
@@ -388,7 +393,7 @@
                   </div>
                 </li>
               
-              </ul>
+              </ul> -->
             </div>
           </section>
 
@@ -742,8 +747,10 @@
               </ul>
             </div>
 
-            <ul class="projects-list">
-              <!-------- AI Solutions -------->
+            <ul id="projects-list" class="projects-list"></ul>
+
+
+            <!-- <ul class="projects-list">
               <li class="project-item active" data-filter-item data-category="ai solutions">
                 <a href="#">
                   <figure class="project-img">
@@ -756,7 +763,6 @@
                   <p class="project-category">AI Solutions</p></a>
               </li>
 
-              <!-------- Official Project -------->
               <li class="project-item active" data-filter-item data-category="software">
                 <a href="#">
                   <figure class="project-img">
@@ -769,41 +775,17 @@
                   <p class="project-category">Build and evaluate a deep learning model that classifies handwritten digits (0–9) using the MNIST dataset. This project will reinforce core deep learning concepts such as data preprocessing, batch normalization, dropout regularization, and model evaluation through visual metrics.</p></a>
               </li>
 
-              <!-------- Personal Project -------->
               <li class="project-item active" data-filter-item data-category="application">
                 <a href="#">
                   <figure class="project-img">
                     <div class="project-item-icon-box">
                       <ion-icon name="eye-outline"></ion-icon>
                     </div>
-                    <img src="./assets/images/virtual-mouse.png" alt="AI Virtual Mouse" loading="lazy"/>
                   </figure>
                   <h3 class="project-title">Project 1</h3>
                   <p class="project-category">Prosonal</p></a>
               </li>
-
-              <li class="project-item" data-filter-item data-category="application">
-                <a href="./medisense-accuracy.html" class="blog-post-link" data-blog-id="medisense-accuracy">
-                  <figure class="project-banner-box">
-                    <img src="./assets/images/medisense-architecture-preview.jpg" alt="MediSense Architecture Preview" loading="lazy"/>
-                  </figure>
-        
-                  <div class="blog-content">
-                    <div class="blog-meta">
-                      <p class="blog-category">AI Development</p>
-                      <span class="dot"></span>
-                      <time datetime="2024-06-10">Jun 10, 2024</time>
-                      <span class="dot"></span>
-                      <span class="read-time">12 min read</span>
-                    </div>
-  
-                    <h3 class="h3 project-item-title">Building MediSense: 98.7% Accuracy in Disease Prediction</h3>
-                    <p class="project-text">How we achieved record diagnostic accuracy through innovative machine learning architecture and careful medical data handling.</p>
-                  </div>
-                </a>
-              </li>
-
-            </ul>
+            </ul> -->
           </section>
         </article>
 
@@ -814,36 +796,7 @@
           </header>
         
           <section class="blog-posts">
-            <ul id="blog-list" class="blog-posts-list">
-
-              <!-- Blog Post 1 -->
-              <li class="blog-post-item">
-                <a href="https://techaid24.com/net-core-web-api-security" class="blog-post-link" data-blog-id="medisense-accuracy">
-                  <figure class="blog-banner-box">
-                    <img src="https://techaid24.com/wp-content/uploads/2025/03/Building-ASP.png" alt="MediSense Architecture Preview" loading="lazy"/>
-                  </figure>
-        
-                  <div class="blog-content">
-                    <div class="blog-meta">
-                      <p class="blog-category">AI Development</p>
-                      <span class="dot"></span>
-                      <time datetime="2024-06-10">March 3, 2025</time>
-                      <span class="dot"></span>
-                      <span class="read-time">10 min read</span>
-                    </div>
-        
-                    <h3 class="h3 blog-item-title">Securing Your .NET Core Web API – Best Practices for Ultimate Protection</h3>
-                    <p class="blog-text"> In the ever-evolving world of web development, introducing your .NET Core Web API Security is not just an option—it’s a necessity. Effective API security goes beyond preventing unauthorized access; it involves protecting sensitive data, ensuring application reliability, and maintaining user trust.</p>
-        
-                    <div class="blog-tags">
-                      <span class="blog-tag">API Security </span>
-                      <span class="blog-tag">ASP.NET Core</span>
-                    </div>
-                  </div>
-                </a>
-              </li>
-        
-            </ul>
+            <ul id="blog-list" class="blog-posts-list"></ul>
           </section>
         </article>
 
@@ -883,8 +836,13 @@
     </main>
  
     <!-------- custom js link -------->
+
+    <script src="./assets/js/populate-services.js"></script>
+    <script src="./assets/js/populate-testimonials.js"></script>
+    <script src="./assets/js/populate-posts.js"></script>
+    <script src="./assets/js/populate-projects.js"></script>
     <script src="./assets/js/script.js"></script>
-    <script src="./data/post-generator.js"></script>
+
     <!-------- ionicon link -------->
     <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" type="module"></script>
     <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" nomodule></script>
