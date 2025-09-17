@@ -305,22 +305,18 @@ main {
   min-width: 259px;
 }
 
-
-
-
-
 /*-----------------------------------*\
   #SIDEBAR
 \*-----------------------------------*/
 
 .sidebar {
   margin-bottom: 15px;
-  max-height: 112px;
+  max-height: 160px;
   overflow: hidden;
   transition: var(--transition-2);
 }
 
-.sidebar.active { max-height: 405px; }
+.sidebar.active { max-height: 450px; }
 
 .sidebar-info {
   position: relative;
@@ -1368,11 +1364,11 @@ textarea.form-input::-webkit-resizer { display: none; }
    */
 
   .sidebar {
-    max-height: 180px;
+    max-height: 200px;
     margin-bottom: 30px;
   }
 
-  .sidebar.active { max-height: 584px; }
+  .sidebar.active { max-height: 600px; }
 
   .sidebar-info { gap: 25px; }
 
