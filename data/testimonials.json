@@ -1,0 +1,35 @@
+[
+  {
+    "id": "person1",
+    "name": "Persona 1",
+    "avatar": {
+      "src": "./assets/images/avatar/avatar.png",
+      "alt": "Md. Nasir Uddin",
+      "width": "60"
+    },
+    "position": "Senior SQA Engineer - III @Kona SL",
+    "text": "Selim Ahmed is a very hard-working person who can tackle any business problem. We have worked together on several projects, and I found him a highly skilled and dedicated professional. His expertise in the field of ASP.NET Core has helped our company immensely. But what makes him stand out is his willingness to help others. I am glad to have worked with him. I highly recommend him!"
+  },
+    {
+    "id": "person2",
+    "name": "Persona 2",
+    "avatar": {
+      "src": "./assets/images/avatar/avatar.png",
+      "alt": "Md. Nasir Uddin",
+      "width": "60"
+    },
+    "position": "Senior SQA Engineer - III @Kona SL",
+    "text": "Selim Ahmed is a very hard-working person who can tackle any business problem. We have worked together on several projects, and I found him a highly skilled and dedicated professional. His expertise in the field of ASP.NET Core has helped our company immensely. But what makes him stand out is his willingness to help others. I am glad to have worked with him. I highly recommend him!"
+  },
+    {
+    "id": "person3",
+    "name": "Persona 3",
+    "avatar": {
+      "src": "./assets/images/avatar/avatar.png",
+      "alt": "Md. Nasir Uddin",
+      "width": "60"
+    },
+    "position": "Senior SQA Engineer - III @Kona SL",
+    "text": "Selim Ahmed is a very hard-working person who can tackle any business problem. We have worked together on several projects, and I found him a highly skilled and dedicated professional. His expertise in the field of ASP.NET Core has helped our company immensely. But what makes him stand out is his willingness to help others. I am glad to have worked with him. I highly recommend him!"
+  }
+]
