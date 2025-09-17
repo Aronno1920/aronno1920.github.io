@@ -761,7 +761,6 @@ main {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  gap: 15px;
   margin: 0 -15px;
   padding: 25px;
   padding-bottom: 25px;
@@ -778,15 +777,12 @@ main {
 }
 
 .clients-item img {
-  width: 100%;
+  width: 100px;
   filter: grayscale(1);
   transition: var(--transition-1);
 }
 
 .clients-item img:hover { filter: grayscale(0); }
-
-
-
 
 
 /*-----------------------------------*\
@@ -1506,7 +1502,6 @@ textarea.form-input::-webkit-resizer { display: none; }
   /* clients */
 
   .clients-list {
-    gap: 50px;
     margin: 0 -30px;
     padding: 45px;
     scroll-padding-inline: 45px;
