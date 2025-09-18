@@ -108,12 +108,6 @@ const navigationHandler = () => {
       DOM.pages.forEach((page) => {
         const isActive = targetPage === page.dataset.page;
         page.classList.toggle("active", isActive);
-
-        if (isActive) {
-          window.scrollTo(0, 0);
-          // Lazy load content when page becomes active
-          if (targetPage === "blog") blogHandler.loadBlogPosts();
-        }
       });
 
       DOM.navigationLinks.forEach((navLink) => {
@@ -214,24 +208,5 @@ document.addEventListener("DOMContentLoaded", () => {
   filterHandler();
   formHandler();
   navigationHandler();
-
-  // Lazy load location handler when contact page is visible
-  const contactObserver = new IntersectionObserver(
-    (entries) => {
-      if (entries[0].isIntersecting) {
-        locationHandler.init({
-          mapContainerId: "map-container",
-          locationInputId: "manual-location",
-          coordinatesInputId: "user-coordinates",
-          detectButtonId: "detect-location-btn",
-        });
-        contactObserver.disconnect();
-      }
-    },
-    { threshold: 0.1 }
-  );
-
-  const contactPage = document.querySelector('[data-page="contact"]');
-  if (contactPage) contactObserver.observe(contactPage);
 });
 ///////////////////////////////////////////////

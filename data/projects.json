@@ -2,10 +2,28 @@
   {
     "link": "#",
     "title": "AI Virtual Mouse",
-    "image": "./assets/images/projects/1.jpg",
+    "image": "./assets/images/project/3.jpg",
     "alt": "AI Virtual Mouse",
     "category": "ai solutions",
-    "description": "Build and evaluate a deep learning model that classifies handwritten digits (0–9) using the MNIST dataset. This project will reinforce core deep learning concepts such as data preprocessing, batch normalization, dropout regularization, and model evaluation through visual metrics. Build and evaluate a deep learning model that classifies handwritten digits (0–9) using the MNIST dataset. This project will reinforce core deep learning concepts such as data preprocessing, batch normalization, dropout regularization, and model evaluation through visual metrics.",
+    "description": "Build and evaluate a deep learning model that classifies handwritten digits. ",
+    "tags": ["Personal", "ORION"]
+  },
+  {
+    "link": "#",
+    "title": "AI Virtual Mouse",
+    "image": "./assets/images/project/1.jpg",
+    "alt": "AI Virtual Mouse",
+    "category": "software",
+    "description": "Batch normalization, dropout regularization, and model evaluation through visual metrics. Build and evaluate a deep learning model that classifies handwritten digits (0–9) using the MNIST dataset.",
+    "tags": ["Personal", "ORION"]
+  }  ,
+  {
+    "link": "#",
+    "title": "AI Virtual Mouse",
+    "image": "./assets/images/project/2.jpg",
+    "alt": "AI Virtual Mouse",
+    "category": "application",
+    "description": "This project will reinforce core deep learning concepts such as data preprocessing, batch normalization, dropout regularization, and model evaluation through visual metrics.",
     "tags": ["Personal", "ORION"]
   }
 ]

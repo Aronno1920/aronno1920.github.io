@@ -12,6 +12,7 @@ function createBlogPostItem(post) {
   a.className = 'blog-post-link';
   a.href = post.url || '#';
   a.setAttribute('data-blog-id', post.id || '');
+  a.target = '_blank'
 
   const figure = document.createElement('figure');
   figure.className = 'blog-banner-box';

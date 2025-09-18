@@ -12,11 +12,11 @@ function renderProjects(projects) {
   const container = document.getElementById("projects-list");
   container.innerHTML = "";
 
-    projects.forEach(project => {
+  projects.forEach((project) => {
     const li = document.createElement("li");
     li.className = `project-item active`;
     li.setAttribute("data-filter-item", "");
-    li.setAttribute("data-category", project.category);
+    li.setAttribute("data-category", project.category.toLowerCase());
 
     li.innerHTML = `
       <a href="${project.link}">
@@ -33,25 +33,19 @@ function renderProjects(projects) {
       </a>
     `;
 
-    projectList.appendChild(li);
-    
+    container.appendChild(li); // ✅ FIXED
   });
 }
 
-// ---------------------------
-// FILTER FUNCTIONALITY
-// ---------------------------
 function initFilters() {
   const filterButtons = document.querySelectorAll("[data-filter-btn]");
   const selectItems = document.querySelectorAll("[data-select-item]");
-  const selectValue = document.querySelector("[data-selecct-value]");
+  const selectValue = document.querySelector("[data-select-value]"); // ✅ FIXED
   const projectItems = document.querySelectorAll("[data-filter-item]");
 
-  // Helper to filter items
   const applyFilter = (category) => {
     projectItems.forEach((item) => {
-      const itemCategory = item.getAttribute("data-category");
-
+      const itemCategory = item.getAttribute("data-category").toLowerCase();
       if (category === "all" || category === itemCategory) {
         item.style.display = "block";
       } else {
@@ -60,20 +54,15 @@ function initFilters() {
     });
   };
 
-  // Button filters
   filterButtons.forEach((btn) => {
     btn.addEventListener("click", () => {
       const category = btn.textContent.trim().toLowerCase();
-
-      // remove active from all, add to clicked
       filterButtons.forEach((b) => b.classList.remove("active"));
       btn.classList.add("active");
-
       applyFilter(category);
     });
   });
 
-  // Dropdown filters
   selectItems.forEach((item) => {
     item.addEventListener("click", () => {
       const category = item.textContent.trim().toLowerCase();
