@@ -61,15 +61,24 @@ const testimonialsHandler = () => {
   DOM.testimonialsItems.forEach((item) => {
     item.addEventListener("click", function () {
       const avatar = this.querySelector("[data-testimonials-avatar]");
-      const title = this.querySelector("[data-testimonials-title]");
-      const position = this.querySelector("[data-testimonials-position]");
-      const text = this.querySelector("[data-testimonials-text]");
+      const titleElement = this.querySelector("[data-testimonials-title]");
+      const fullnameElement = this.querySelector("[data-testimonials-fullname]");
+      const positionElement = this.querySelector("[data-testimonials-position]");
+      const textElement = this.querySelector("[data-testimonials-text]");
 
-      DOM.modalImg.src = avatar.src;
-      DOM.modalImg.alt = avatar.alt;
-      DOM.modalTitle.innerHTML = title.innerHTML;
-      DOM.modalPosition.innerHTML = position.innerHTML;
-      DOM.modalText.innerHTML = text.innerHTML;
+      const titleText = titleElement ? titleElement.innerHTML : "";
+      const fullnameText = fullnameElement ? fullnameElement.textContent.trim() : "";
+      const positionText = positionElement ? positionElement.innerHTML : "";
+      const textContent = textElement ? textElement.innerHTML : "";
+      const finalTitle = fullnameText || titleText;
+
+      if (avatar) {
+        DOM.modalImg.src = avatar.src;
+        DOM.modalImg.alt = avatar.alt;
+      }
+      DOM.modalTitle.innerHTML = finalTitle;
+      DOM.modalPosition.innerHTML = positionText;
+      DOM.modalText.innerHTML = textContent;
 
       openModal();
     });
@@ -189,237 +198,278 @@ const navigationHandler = () => {
 };
 
 // Location Handler
-const locationHandler = {
-  init(options) {
-    this.mapContainer = document.getElementById(options.mapContainerId);
-    this.locationInput = document.getElementById(options.locationInputId);
-    this.coordinatesInput = document.getElementById(options.coordinatesInputId);
-    this.detectButton = document.getElementById(options.detectButtonId);
+// const locationHandler = {
+//   init(options) {
+//     this.mapContainer = document.getElementById(options.mapContainerId);
+//     this.locationInput = document.getElementById(options.locationInputId);
+//     this.coordinatesInput = document.getElementById(options.coordinatesInputId);
+//     this.detectButton = document.getElementById(options.detectButtonId);
 
-    this.initMap();
-    this.setupEventListeners();
-  },
+//     this.initMap();
+//     this.setupEventListeners();
+//   },
 
-  async initMap() {
-    try {
-      if (this.map) this.map.remove();
+//   async initMap() {
+//     try {
+//       if (this.map) this.map.remove();
 
-      this.map = L.map(this.mapContainer).setView([31.467, 74.3039], 15);
-      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-        maxZoom: 18,
-        attribution: "&copy; OpenStreetMap contributors",
-      }).addTo(this.map);
+//       this.map = L.map(this.mapContainer).setView([31.467, 74.3039], 15);
+//       L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+//         maxZoom: 18,
+//         attribution: "&copy; OpenStreetMap contributors",
+//       }).addTo(this.map);
 
-      this.marker = L.marker([31.467, 74.3039], { draggable: true })
-        .addTo(this.map)
-        .on("dragend", (e) => {
-          const pos = e.target.getLatLng();
-          this.updateFromMap(pos.lat, pos.lng);
-        });
+//       this.marker = L.marker([31.467, 74.3039], { draggable: true })
+//         .addTo(this.map)
+//         .on("dragend", (e) => {
+//           const pos = e.target.getLatLng();
+//           this.updateFromMap(pos.lat, pos.lng);
+//         });
 
-      this.map.on("click", (e) =>
-        this.updateFromMap(e.latlng.lat, e.latlng.lng)
-      );
-      document.getElementById("map-loading").style.display = "none";
-    } catch (error) {
-      console.error("Map initialization failed:", error);
-      this.mapContainer.innerHTML =
-        '<p class="map-error">Map failed to load</p>';
-    }
-  },
+//       this.map.on("click", (e) =>
+//         this.updateFromMap(e.latlng.lat, e.latlng.lng)
+//       );
+//       document.getElementById("map-loading").style.display = "none";
+//     } catch (error) {
+//       console.error("Map initialization failed:", error);
+//       this.mapContainer.innerHTML =
+//         '<p class="map-error">Map failed to load</p>';
+//     }
+//   },
 
-  setupEventListeners() {
-    this.locationInput.addEventListener(
-      "input",
-      utils.debounce(() => {
-        if (this.locationInput.value.trim()) {
-          this.geocodeAddress(this.locationInput.value);
-        }
-      }, 800)
-    );
+//   setupEventListeners() {
+//     this.locationInput.addEventListener(
+//       "input",
+//       utils.debounce(() => {
+//         if (this.locationInput.value.trim()) {
+//           this.geocodeAddress(this.locationInput.value);
+//         }
+//       }, 800)
+//     );
 
-    this.detectButton.addEventListener("click", () =>
-      this.getCurrentLocation()
-    );
-  },
+//     this.detectButton.addEventListener("click", () =>
+//       this.getCurrentLocation()
+//     );
+//   },
 
-  async geocodeAddress(address) {
-    try {
-      const response = await fetch(
-        `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(
-          address
-        )}`
-      );
-      const data = await response.json();
+//   async geocodeAddress(address) {
+//     try {
+//       const response = await fetch(
+//         `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(
+//           address
+//         )}`
+//       );
+//       const data = await response.json();
 
-      if (data?.[0]) {
-        const { lat, lon } = data[0];
-        this.updateLocation(parseFloat(lat), parseFloat(lon), address);
-      }
-    } catch (error) {
-      console.error("Geocoding error:", error);
-    }
-  },
+//       if (data?.[0]) {
+//         const { lat, lon } = data[0];
+//         this.updateLocation(parseFloat(lat), parseFloat(lon), address);
+//       }
+//     } catch (error) {
+//       console.error("Geocoding error:", error);
+//     }
+//   },
 
-  async getCurrentLocation() {
-    if (!navigator.geolocation) {
-      this.locationInput.placeholder = "Geolocation not supported";
-      return;
-    }
+//   async getCurrentLocation() {
+//     if (!navigator.geolocation) {
+//       this.locationInput.placeholder = "Geolocation not supported";
+//       return;
+//     }
 
-    this.detectButton.innerHTML =
-      '<ion-icon name="compass-outline"></ion-icon>';
+//     this.detectButton.innerHTML =
+//       '<ion-icon name="compass-outline"></ion-icon>';
 
-    try {
-      const position = await new Promise((resolve, reject) => {
-        navigator.geolocation.getCurrentPosition(resolve, reject);
-      });
+//     try {
+//       const position = await new Promise((resolve, reject) => {
+//         navigator.geolocation.getCurrentPosition(resolve, reject);
+//       });
 
-      const { latitude: lat, longitude: lng } = position.coords;
-      await this.updateFromMap(lat, lng);
-      this.detectButton.innerHTML =
-        '<ion-icon name="checkmark-outline"></ion-icon>';
-    } catch (error) {
-      this.locationInput.placeholder = "Location access denied";
-      this.detectButton.innerHTML =
-        '<ion-icon name="close-outline"></ion-icon>';
-      setTimeout(() => {
-        this.detectButton.innerHTML =
-          '<ion-icon name="locate-outline"></ion-icon>';
-      }, 2000);
-    }
-  },
+//       const { latitude: lat, longitude: lng } = position.coords;
+//       await this.updateFromMap(lat, lng);
+//       this.detectButton.innerHTML =
+//         '<ion-icon name="checkmark-outline"></ion-icon>';
+//     } catch (error) {
+//       this.locationInput.placeholder = "Location access denied";
+//       this.detectButton.innerHTML =
+//         '<ion-icon name="close-outline"></ion-icon>';
+//       setTimeout(() => {
+//         this.detectButton.innerHTML =
+//           '<ion-icon name="locate-outline"></ion-icon>';
+//       }, 2000);
+//     }
+//   },
 
-  async updateFromMap(lat, lng) {
-    try {
-      const response = await fetch(
-        `https://nominatim.openstreetmap.org/reverse?format=json&lat=${lat}&lon=${lng}`
-      );
-      const data = await response.json();
-      this.updateLocation(
-        lat,
-        lng,
-        data.display_name || `Location (${lat.toFixed(4)}, ${lng.toFixed(4)})`
-      );
-    } catch (error) {
-      this.updateLocation(
-        lat,
-        lng,
-        `Location (${lat.toFixed(4)}, ${lng.toFixed(4)})`
-      );
-    }
-  },
+//   async updateFromMap(lat, lng) {
+//     try {
+//       const response = await fetch(
+//         `https://nominatim.openstreetmap.org/reverse?format=json&lat=${lat}&lon=${lng}`
+//       );
+//       const data = await response.json();
+//       this.updateLocation(
+//         lat,
+//         lng,
+//         data.display_name || `Location (${lat.toFixed(4)}, ${lng.toFixed(4)})`
+//       );
+//     } catch (error) {
+//       this.updateLocation(
+//         lat,
+//         lng,
+//         `Location (${lat.toFixed(4)}, ${lng.toFixed(4)})`
+//       );
+//     }
+//   },
 
-  updateLocation(lat, lng, address) {
-    this.coordinatesInput.value = `${lat},${lng}`;
-    this.locationInput.value = address;
+//   updateLocation(lat, lng, address) {
+//     this.coordinatesInput.value = `${lat},${lng}`;
+//     this.locationInput.value = address;
 
-    if (this.map) {
-      this.map.setView([lat, lng], 15);
-      this.marker.setLatLng([lat, lng]);
-    }
-  },
-};
+//     if (this.map) {
+//       this.map.setView([lat, lng], 15);
+//       this.marker.setLatLng([lat, lng]);
+//     }
+//   },
+// };
 
 // Blog Handler
-const blogHandler = {
-  posts: [
-    "clean-architecture",
-    "developer-acceleration",
-    "developer-business-dev",
-    "from-python-to-production",
-    "medisense-accuracy",
-    "top-10-se-topics",
-    "automating-testing-pipeline",
-    "ai-integration",
-  ],
+// const blogHandler = {
+//   posts: [
+//     "clean-architecture",
+//     "developer-acceleration",
+//     "developer-business-dev",
+//     "from-python-to-production",
+//     "medisense-accuracy",
+//     "top-10-se-topics",
+//     "automating-testing-pipeline",
+//     "ai-integration",
+//   ],
 
-  async loadBlogPosts() {
-    if (!DOM.blogList || DOM.blogList.children.length > 0) return;
+//   async loadBlogPosts() {
+//     if (!DOM.blogList || DOM.blogList.children.length > 0) return;
 
-    try {
-      const loadingFragments = this.posts.map((post) =>
-        this.loadBlogPostFragment(post)
-      );
+//     try {
+//       const loadingFragments = this.posts.map((post) =>
+//         this.loadBlogPostFragment(post)
+//       );
 
-      const fragments = await Promise.all(loadingFragments);
-      fragments.forEach((fragment) => {
-        if (fragment) DOM.blogList.appendChild(fragment);
-      });
+//       const fragments = await Promise.all(loadingFragments);
+//       fragments.forEach((fragment) => {
+//         if (fragment) DOM.blogList.appendChild(fragment);
+//       });
 
-      this.setupBlogClickHandlers();
-    } catch (error) {
-      console.error("Error loading blog posts:", error);
+//       this.setupBlogClickHandlers();
+//     } catch (error) {
+//       console.error("Error loading blog posts:", error);
+//     }
+//   },
+
+//   async loadBlogPostFragment(postId) {
+//     try {
+//       const response = await fetch(`./assets/blogs/${postId}.html`);
+//       if (!response.ok) throw new Error("Failed to load blog post");
+
+//       const html = await response.text();
+//       const tempDiv = document.createElement("div");
+//       tempDiv.innerHTML = html;
+
+//       const blogContent = tempDiv.querySelector(".blog-content");
+//       const blogBanner = tempDiv.querySelector(".blog-banner-box img");
+
+//       if (!blogContent || !blogBanner) return null;
+
+//       const li = document.createElement("li");
+//       li.className = "blog-post-item";
+//       li.innerHTML = `
+//         <a href="#${postId}" class="blog-post-link" data-blog-id="${postId}">
+//           <figure class="blog-banner-box">
+//             <img src="${blogBanner.src}" alt="${blogBanner.alt}" loading="lazy">
+//           </figure>
+//           ${blogContent.outerHTML}
+//         </a>
+//       `;
+
+//       return li;
+//     } catch (error) {
+//       console.error(`Error loading blog post ${postId}:`, error);
+//       return null;
+//     }
+//   },
+
+//   setupBlogClickHandlers() {
+//     DOM.blogList?.addEventListener("click", async (e) => {
+//       const blogLink = e.target.closest(".blog-post-link");
+//       if (!blogLink) return;
+
+//       e.preventDefault();
+//       const blogId = blogLink.dataset.blogId;
+
+//       try {
+//         const response = await fetch(`./assets/blogs/${blogId}.html`);
+//         if (!response.ok) throw new Error("Failed to load full blog post");
+
+//         const html = await response.text();
+//         DOM.fullBlogArticle.innerHTML = html;
+//         DOM.fullBlogContainer.classList.remove("full-blog-hidden");
+
+//         // Setup close button
+//         const closeBtn = document.getElementById("close-blog-btn");
+//         if (closeBtn) {
+//           closeBtn.onclick = () => {
+//             DOM.fullBlogContainer.classList.add("full-blog-hidden");
+//           };
+//         }
+//       } catch (error) {
+//         console.error("Error loading full blog post:", error);
+//         DOM.fullBlogArticle.innerHTML = `
+//           <div class="error-message">
+//             <p>Failed to load blog post. Please try again later.</p>
+//           </div>
+//         `;
+//         DOM.fullBlogContainer.classList.remove("full-blog-hidden");
+//       }
+//     });
+//   },
+// };
+
+
+// slide testimonials-item side by side
+document.addEventListener("DOMContentLoaded", () => {
+  const aboutPage = document.querySelector('article.about.active[data-page="about"]');
+  if (!aboutPage) return;
+
+  const wrapper = aboutPage.querySelector(".testimonials-wrapper");
+  const list = wrapper.querySelector(".testimonials-list");
+  const items = list.querySelectorAll(".testimonials-item");
+
+  if (!list || items.length === 0) return;
+
+  const itemsPerView = 2;
+  const totalItems = items.length;
+  const step = 1; // MODIFICATION 1: Change step to 1
+  let currentIndex = 0;
+
+  function slideTestimonials() {
+    currentIndex += step;
+
+    // MODIFICATION 2: Change the condition to reset the slider
+    if (currentIndex > totalItems - itemsPerView) {
+      currentIndex = 0;
     }
-  },
 
-  async loadBlogPostFragment(postId) {
-    try {
-      const response = await fetch(`./assets/blogs/${postId}.html`);
-      if (!response.ok) throw new Error("Failed to load blog post");
+    // MODIFICATION 3: Change the offset calculation for one-by-one sliding
+    const singleItemWidth = wrapper.offsetWidth / itemsPerView;
+    const offset = currentIndex * singleItemWidth;
+    
+    list.style.transform = `translateX(-${offset}px)`;
+  }
 
-      const html = await response.text();
-      const tempDiv = document.createElement("div");
-      tempDiv.innerHTML = html;
+  if (totalItems > itemsPerView) {
+    setInterval(slideTestimonials, 3000);
+  }
+});
 
-      const blogContent = tempDiv.querySelector(".blog-content");
-      const blogBanner = tempDiv.querySelector(".blog-banner-box img");
 
-      if (!blogContent || !blogBanner) return null;
 
-      const li = document.createElement("li");
-      li.className = "blog-post-item";
-      li.innerHTML = `
-        <a href="#${postId}" class="blog-post-link" data-blog-id="${postId}">
-          <figure class="blog-banner-box">
-            <img src="${blogBanner.src}" alt="${blogBanner.alt}" loading="lazy">
-          </figure>
-          ${blogContent.outerHTML}
-        </a>
-      `;
 
-      return li;
-    } catch (error) {
-      console.error(`Error loading blog post ${postId}:`, error);
-      return null;
-    }
-  },
-
-  setupBlogClickHandlers() {
-    DOM.blogList?.addEventListener("click", async (e) => {
-      const blogLink = e.target.closest(".blog-post-link");
-      if (!blogLink) return;
-
-      e.preventDefault();
-      const blogId = blogLink.dataset.blogId;
-
-      try {
-        const response = await fetch(`./assets/blogs/${blogId}.html`);
-        if (!response.ok) throw new Error("Failed to load full blog post");
-
-        const html = await response.text();
-        DOM.fullBlogArticle.innerHTML = html;
-        DOM.fullBlogContainer.classList.remove("full-blog-hidden");
-
-        // Setup close button
-        const closeBtn = document.getElementById("close-blog-btn");
-        if (closeBtn) {
-          closeBtn.onclick = () => {
-            DOM.fullBlogContainer.classList.add("full-blog-hidden");
-          };
-        }
-      } catch (error) {
-        console.error("Error loading full blog post:", error);
-        DOM.fullBlogArticle.innerHTML = `
-          <div class="error-message">
-            <p>Failed to load blog post. Please try again later.</p>
-          </div>
-        `;
-        DOM.fullBlogContainer.classList.remove("full-blog-hidden");
-      }
-    });
-  },
-};
 
 // Initialize all handlers
 document.addEventListener("DOMContentLoaded", () => {
@@ -448,37 +498,3 @@ document.addEventListener("DOMContentLoaded", () => {
   const contactPage = document.querySelector('[data-page="contact"]');
   if (contactPage) contactObserver.observe(contactPage);
 });
-
-// slide testimonials-item side by side
-document.addEventListener("DOMContentLoaded", () => {
-  const aboutPage = document.querySelector('article.about.active[data-page="about"]');
-  if (!aboutPage) return;
-
-  const wrapper = aboutPage.querySelector(".testimonials-wrapper");
-  const list = wrapper.querySelector(".testimonials-list");
-  const items = list.querySelectorAll(".testimonials-item");
-
-  if (!list || items.length === 0) return;
-
-  const itemsPerView = 2;
-  const totalItems = items.length;
-  const step = itemsPerView;
-  let currentIndex = 0;
-
-  function slideTestimonials() {
-    currentIndex += step;
-
-    if (currentIndex >= totalItems) {
-      currentIndex = 0;
-    }
-
-    const wrapperWidth = wrapper.offsetWidth;
-    const offset = (currentIndex / itemsPerView) * wrapperWidth;
-    list.style.transform = `translateX(-${offset}px)`;
-  }
-
-  if (totalItems > itemsPerView) {
-    setInterval(slideTestimonials, 3000);
-  }
-});
-
