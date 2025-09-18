@@ -10,30 +10,31 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function renderProjects(projects) {
   const container = document.getElementById("projects-list");
-  container.innerHTML = ""; // clear before rendering
+  container.innerHTML = "";
 
-  projects.forEach((project) => {
+    projects.forEach(project => {
     const li = document.createElement("li");
-    li.className = "project-item active";
+    li.className = `project-item active`;
     li.setAttribute("data-filter-item", "");
-    li.setAttribute("data-category", project.category.toLowerCase());
+    li.setAttribute("data-category", project.category);
 
     li.innerHTML = `
-      <a href="${project.url}">
-        <figure class="project-img">
-          <div class="project-item-icon-box">
-            <ion-icon name="eye-outline"></ion-icon>
-          </div>
-          <img src="${project.image.src}" 
-               alt="${project.image.alt}" 
-               loading="${project.image.loading}" />
+      <a href="${project.link}">
+        <figure class="project-banner-box">
+          <img src="${project.image}" alt="${project.alt}" loading="lazy"/>
         </figure>
-        <h3 class="project-title">${project.title}</h3>
-        <p class="project-category">${project.category}</p>
+        <div class="project-content">
+          <h3 class="h3 project-title">${project.title}</h3>
+          <p class="project-category">${project.description}</p>
+          <div class="project-tags">
+            ${project.tags.map(tag => `<span class="project-tag">${tag}</span>`).join("")}
+          </div>
+        </div>
       </a>
     `;
 
-    container.appendChild(li);
+    projectList.appendChild(li);
+    
   });
 }
 
@@ -81,43 +82,3 @@ function initFilters() {
     });
   });
 }
-
-
-
-
-
-
-// document.addEventListener("DOMContentLoaded", () => {
-//   fetch("data/projects.json")
-//     .then((res) => res.json())
-//     .then((projects) => renderProjects(projects))
-//     .catch((err) => console.error("Failed to load projects:", err));
-// });
-
-// function renderProjects(projects) {
-//   const container = document.getElementById("projects-list");
-
-//   projects.forEach((project) => {
-//     const li = document.createElement("li");
-//     li.className = "project-item active";
-//     li.setAttribute("data-filter-item", "");
-//     li.setAttribute("data-category", project.category.toLowerCase());
-
-//     li.innerHTML = `
-//       <a href="${project.url}">
-//         <figure class="project-img">
-//           <div class="project-item-icon-box">
-//             <ion-icon name="eye-outline"></ion-icon>
-//           </div>
-//           <img src="${project.image.src}" 
-//                alt="${project.image.alt}" 
-//                loading="${project.image.loading}" />
-//         </figure>
-//         <h3 class="project-title">${project.title}</h3>
-//         <p class="project-category">${project.category}</p>
-//       </a>
-//     `;
-
-//     container.appendChild(li);
-//   });
-// }
