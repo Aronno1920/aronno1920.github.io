@@ -438,7 +438,7 @@ main {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 0 10px;
+  padding: 0 5px;
 }
 
 .navbar-link {
@@ -770,13 +770,13 @@ main {
  * education and experience 
  */
 
-.timeline { margin-bottom: 30px; }
+.timeline { margin-bottom: 40px; }
 
 .timeline .title-wrapper {
   display: flex;
   align-items: center;
   gap: 15px;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .timeline-list {
@@ -832,6 +832,10 @@ main {
 /**
  * skills 
  */
+.skill{
+  margin-bottom: 40px;
+}
+
 
 .skills-title { margin-bottom: 20px; }
 
@@ -1338,7 +1342,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .navbar { border-radius: 20px 20px 0 0; }
 
-  .navbar-list { gap: 20px; }
+  .navbar-list { gap: 15px; }
 
   .navbar-link { --fs-8: 14px; }
 
@@ -1638,12 +1642,10 @@ textarea.form-input::-webkit-resizer { display: none; }
   }
 
   .navbar-list {
-    gap: 30px;
-    padding: 0 20px;
+    gap: 15px;
   }
 
   .navbar-link { font-weight: var(--fw-500); }
-
 
 
   /**

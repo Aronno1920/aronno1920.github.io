@@ -1,29 +1,20 @@
 [
-  {
+    {
     "link": "#",
-    "title": "AI Virtual Mouse",
-    "image": "./assets/images/project/3.jpg",
-    "alt": "AI Virtual Mouse",
-    "category": "ai solutions",
-    "description": "Build and evaluate a deep learning model that classifies handwritten digits. ",
-    "tags": ["Personal", "ORION"]
+    "title": "Niloy Hero",
+    "image": "./assets/images/project/niloy_motors.png",
+    "alt": "Niloy Hero",
+    "category": "software",
+    "description": "Upgrading Electronic Fund Transfer on continual manner through automated services which has integration with different type of Core Banking System including different transaction channels like Cheque Processing, iBanking system, Mobile Finance System, Islami Banking, Credit cards, Cloud Based System, Share Dividend, UPay, FirstPay, Rocket and other payment system.",
+    "tags": ["Official", "Nitol Niloy","ASP.NET","MS SQL"]
   },
   {
     "link": "#",
-    "title": "AI Virtual Mouse",
-    "image": "./assets/images/project/1.jpg",
-    "alt": "AI Virtual Mouse",
+    "title": "Flora EFTN",
+    "image": "./assets/images/project/eftn.jpg",
+    "alt": "Flora EFTN",
     "category": "software",
-    "description": "Batch normalization, dropout regularization, and model evaluation through visual metrics. Build and evaluate a deep learning model that classifies handwritten digits (0–9) using the MNIST dataset.",
-    "tags": ["Personal", "ORION"]
-  }  ,
-  {
-    "link": "#",
-    "title": "AI Virtual Mouse",
-    "image": "./assets/images/project/2.jpg",
-    "alt": "AI Virtual Mouse",
-    "category": "application",
-    "description": "This project will reinforce core deep learning concepts such as data preprocessing, batch normalization, dropout regularization, and model evaluation through visual metrics.",
-    "tags": ["Personal", "ORION"]
+    "description": "Upgrading Electronic Fund Transfer on continual manner through automated services which has integration with different type of Core Banking System including different transaction channels like Cheque Processing, iBanking system, Mobile Finance System, Islami Banking, Credit cards, Cloud Based System, Share Dividend, UPay, FirstPay, Rocket and other payment system.",
+    "tags": ["Official", "Flora Systems","ASP.NET","MS SQL"]
   }
 ]
