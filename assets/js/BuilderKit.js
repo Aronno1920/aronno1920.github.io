@@ -226,12 +226,13 @@ function initFilters() {
 ////// BuilderKit -> Certifications Section Generation //////
 document.addEventListener("DOMContentLoaded", async () => {
   try {
-    const response = await fetch("./data/courses.json");
+    const response = await fetch("./data/educations.json");
     if (!response.ok) {
       throw new Error(`HTTP error! Status: ${response.status}`);
     }
 
     const data = await response.json();
+    renderTimelineItems(data.educations, "education-list");
     renderTimelineItems(data.certifications, "certifications-list");
     renderTimelineItems(data.workshops, "workshop-list");
 
@@ -262,17 +263,61 @@ function renderTimelineItems(items, containerId) {
         `
       : `<span class="timeline-item-date">${item.date}</span>`;
 
-
-
     li.innerHTML = `
       <h4 class="h4 timeline-item-title">${item.title}</h4>
       <span class="timeline-item-organization">${item.organization}</span>
       ${credentialHtml}
-      <p class="timeline-text">Skills: ${item.skill}</p>
+      <p class="timeline-text">${item.skill}</p>
     `;
     
     container.appendChild(li);
   });
 }
+/////////////////////////////////////////////////////////////
 
+
+////// BuilderKit -> Experiences Section Generation //////
+document.addEventListener("DOMContentLoaded", async () => {
+  try {
+    const response = await fetch("./data/experiences.json");
+    if (!response.ok) {
+      throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+
+    const data = await response.json();
+    renderExperiences(data);
+  } catch (error) {
+    console.error("Failed to load data:", error);
+  }
+});
+
+function renderExperiences(items) {
+  const container = document.getElementById("experience-list");
+  if (!container) {
+    console.error(`Container with ID "${"experience-list"}" not found.`);
+    return;
+  }
+  
+  container.innerHTML = "";
+
+  items.forEach((item) => {
+    const li = document.createElement("li");
+    li.className = "timeline-item";
+
+    const jobsHtml = `
+      <ul>
+        ${item.jobs.map(job => `<li class="timeline-text">${job}</li>`).join('')}
+      </ul>
+    `;
+
+    li.innerHTML = `
+      <h4 class="h4 timeline-item-title">${item.designation}</h4>
+      <span class="timeline-item-organization">${item.organization}</span>
+      <span class="timeline-item-date">${item.date}</span>
+      ${jobsHtml}
+    `;
+    
+    container.appendChild(li);
+  });
+}
 /////////////////////////////////////////////////////////////

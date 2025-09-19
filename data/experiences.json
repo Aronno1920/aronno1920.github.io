@@ -1,0 +1,84 @@
+[
+    {
+      "designation": "Software Analyst | AI Engineer",
+      "organization": "Orion Group",
+      "date": "November 2023 — Present",
+      "jobs": [
+        "- AI Projects: Developed and deployed solutions for Medicine Sales Prediction, Employee Assessment Tracking, and License Plate Detection using Machine Learning and AI-driven models.",
+        "- Enterprise Software Solutions: Designed and implemented SMS Broadcast System (SMS Boom Cast) and an Employee Requisition & Recruitment Management System to streamline organizational workflows.",
+        "- Software Customization Projects: Employee Appraisal System, Restaurant POS & Online Reporting System, Orion Gym Management System, E-Document Tracking System.",
+        "- Leadership & Technology Stack: Served as Software Team Lead, overseeing end-to-end development, customization, and deployment of solutions using ASP.NET, WPF, SQL Server 2012, Java, and Android Native."
+      ]
+    },
+    {
+      "designation": "Analyst Programmer",
+      "organization": "Logic Software Limited",
+      "date": "August 2022 - October 2023",
+      "jobs": [
+        "- Customized ERP Development: Delivered tailored ERP solutions for Aftab Bohumukhi Ltd, Arif Agro, and Asrotex Group, addressing unique business process requirements.",
+        "- Customer DMS Software: Designed and implemented Document Management System (DMS) solutions for Fokir Appeals Ltd and Asrotex Group, enabling efficient document tracking and customer service management.",
+        "- Leadership & Technology Stack: Served as Software Team Lead, overseeing end-to-end development, customization, and deployment of solutions using ASP.NET, WPF, SQL Server 2012, Java, and Android Native."
+      ]
+    },
+    {
+      "designation": "CTM SAP - MM Module (OHAL & POWER)",
+      "organization": "Orion Group",
+      "date": "December 2021 - July 2022",
+      "jobs": [
+        "- SAP Landscape Management: Oversaw the overall SAP system landscape, ensuring smooth integration across modules.",
+        "- Module Expertise: Specialized in SAP MM submodules and related business processes.",
+        "- Master Data Management: Prepared and maintained Material, Vendor, and Service Master Data to ensure accuracy and consistency.",
+        "- Procurement Lifecycle: Managed vendor selection and enrolment, purchase requisitions, quotations, comparative statements, and purchasing processes (local, asset, subcontracting).",
+        "- Logistics & Quality: Supervised material receipts, incoming quality control, and ensured compliance with organizational standards.",
+        "- Finance & Settlement: Coordinated the settlement of vendor bills, stock accounting, and valuation to align with financial reporting requirements.",
+        "- Inventory Management: Administered inventory control, stock transfers, and material loan processes to maintain supply chain efficiency.",
+        "- Customization & Reporting: Designed and delivered custom SAP forms and reports to meet business and regulatory needs."
+      ]
+    },    
+    {
+      "designation": "Senior Software Engineer",
+      "organization": "Orion Group",
+      "date": "January 2015 - December 2017",
+      "jobs": [
+        "- Mobile Application Development: Orion Scholars (Android + Admin Panel), Orion Portal (iOS), PMH Apps (Android).",
+        "- Enterprise Software Solutions: Orion Online Exam, Vehicle Management System, Orion Gym Management System, Material Management System (MM), Product Management System (PM).",
+        "- Software Customization Projects: Employee Appraisal System, Restaurant POS & Online Reporting System, Orion Gym Management System, E-Document Tracking System.",
+        "- Leadership & Technology Stack: Served as Software Team Lead, overseeing end-to-end development, customization, and deployment of solutions using ASP.NET, WPF, SQL Server 2012, Java, and Android Native."
+      ]
+    },
+    {
+      "designation": "Software Engineer",
+      "organization": "Orion Group",
+      "date": "January 2015 - December 2017",
+      "jobs": [
+        "- Enterprise Solutions: Supply Chain Management System, Employee Appraisal System (Monthly & Yearly), E-Document Tracking System.",
+        "- Business Applications: Restaurant POS & Online Reporting System (Takeaway & Dine-In), Orion Portal (Android App).",
+        "- ERP Implementation: Led ERP rollout for Orion Home Appliances, including system configuration and integration.",
+        "- Technology Stack: Developed projects using ASP.NET, WPF, MVC, SQL Server 2012, Java, and Android Native.",
+        "- Business Analysis & Development: Collected requirements, translated them into technical specifications, and oversaw full software development lifecycle.",
+        "- Research & Innovation: Conducted R&D on emerging technologies and cross-platform frameworks to enhance solution scalability and adaptability."
+      ]
+    },
+    {
+      "designation": "Software Engineer",
+      "organization": "Nitol Niloy Group",
+      "date": "December 2013 - December 2014",
+      "jobs": [
+        "- Automation Project: Niloy Hero Automation – Spare Parts Management and Workshop Operations.",
+        "- Key Projects: Fixed Asset Register, Inventory Management System, and Servicing Center Solution.",
+        "- Technology Stack: Designed and developed applications using ASP.NET and SQL Server 2008 R2.",
+        "- Business Analysis: Gathered requirements, prepared functional specifications, and translated business needs into technical solutions.",
+        "- Innovation & R&D: Researched and evaluated emerging technologies to improve system performance and cross-platform adaptability."
+      ]
+    },
+    {
+      "designation": "Programmer",
+      "organization": "Flora Systems Limited",
+      "date": "March 2012 - December 2013",
+      "jobs": [
+        "- Key Project: Flora EFTN (Electronic Fund Transfer Network).",
+        "- Technology Stack: Developed and implemented solutions using ASP.NET and SQL Server Management.",
+        "- Innovation & Research: Conducted R&D on emerging technologies to enhance system performance and explore cross-platform solutions."
+      ]
+    }
+  ]

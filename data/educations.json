@@ -1,0 +1,49 @@
+{
+
+  "educations": [
+    {
+      "title": "Postgraduate Diploma in Project Management",
+      "organization": "Academy of Business Professionals (ABP) | Dhaka, Bangladesh",
+      "date": "July 2020 - January 2021",
+      "skill": "Project management is the process of leading the work of a team to achieve all project goals within the given constraints. The primary constraints are scope, time, budget. The secondary challenge is to optimize the allocation of necessary inputs and apply them to meet pre-defined objectives."
+    },
+    {
+      "title": "BSC in Computer Science and Engineering (CSE)",
+      "organization": "America Bangladesh University | Dhaka, Bangladesh",
+      "date": "Section: 2008 - 2012",
+      "skill": ""
+    },
+    {
+      "title": "Diploma in Computer Engineering",
+      "organization": "SAIC Institute of Management and Technology (SIMT) | Bangladesh Technical Education Board",
+      "date": "Section: 2004 - 2008",
+      "skill": ""
+    }
+  ],
+
+  "certifications": [
+    {
+      "title": "Artificial Intelligence & Machine Learning Fundamentals",
+      "organization": "Grameenphone Academy",
+      "date": "Issued July 2025",
+      "credentialUrl": "https://google.com",
+      "skill": "Skills: Artificial Intelligence (AI), Machine Learning, Deep Learning, Python (Programming Language)"
+    }
+  ],
+
+  "workshops": [
+    {
+      "title": "Web Development Bootcamp",
+      "organization": "Udemy",
+      "date": "Issued March 2024",
+      "credentialUrl": "https://google.com",
+      "skill": "Skills: Artificial Intelligence (AI), Machine Learning, Deep Learning, Python (Programming Language)"
+    },
+    {
+      "title": "Data Science with Python",
+      "organization": "Coursera",
+      "date": "Issue: March 2024 | Duration: 3 days",
+      "skill": "Skills: Artificial Intelligence (AI), Machine Learning, Deep Learning, Python (Programming Language)"
+    }
+  ]
+}
