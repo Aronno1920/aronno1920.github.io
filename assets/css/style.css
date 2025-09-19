@@ -582,14 +582,6 @@ main {
   max-height: 140px;
   min-width: 100%;
   scroll-snap-align: center;
-
-  /* flex: 0 0 calc(50% - 7.5px);
-  list-style: none;
-  position: relative;
-  box-sizing: border-box;
-  max-height: 140px;
-  min-width: 100%;
-  scroll-snap-align: center; */
 }
 
 .testimonials-avatar-box {
@@ -1423,7 +1415,10 @@ textarea.form-input::-webkit-resizer { display: none; }
     border-radius: 20px;
   }
 
-  .testimonials-avatar-box img { width: 80px; }
+  .testimonials-avatar-box img { 
+    width: 80px;
+    border-radius: 20px;
+  }
 
   .testimonials-item-title {
     margin-bottom: 10px;
@@ -2113,3 +2108,16 @@ textarea.form-input::-webkit-resizer { display: none; }
   background: var(--bg-gradient-yellow-2);
 }
  
+.download-button {
+  color: var(--white-1);
+    background: var(--onyx);
+    font-size: var(--fs-8);
+    font-weight: var(--fw-300);
+    width: max-content;
+    padding: 3px 12px;
+    border-radius: 8px;
+}
+
+.download-button:hover {
+  background-color: #0056b3;
+}
