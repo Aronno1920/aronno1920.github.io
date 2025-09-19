@@ -1,18 +1,80 @@
 [
   {
     "id": "person1",
-    "name": "Persona 1",
+    "name": "Md. Nurul Hoque",
+    "fullName": "Md. Nurul Hoque, PMP®",
     "avatar": {
       "src": "./assets/images/avatar/avatar.png",
-      "alt": "Md. Nasir Uddin",
+      "alt": "Md. Nurul Hoque",
       "width": "60"
     },
-    "position": "Senior SQA Engineer - III @Kona SL",
-    "text": "Selim Ahmed is a very hard-working person who can tackle any business problem. We have worked together on several projects, and I found him a highly skilled and dedicated professional. His expertise in the field of ASP.NET Core has helped our company immensely. But what makes him stand out is his willingness to help others. I am glad to have worked with him. I highly recommend him!"
+    "position": "Head of IT | SAP ERP | AWS Cloud | Project Management",
+    "text": "Selim Ahmed is a hard working and very sincere team player. He is creative, energetic, solutions oriented and highly motivated with exceptional skills and he is a great net-worker and as a team member."
   },
-    {
+  {
     "id": "person2",
-    "name": "Persona 2",
+    "name": "Md. Mahi Salman",
+    "fullName": "Md. Mahi Salman",
+    "avatar": {
+      "src": "https://media.licdn.com/dms/image/v2/D5603AQGl9jnY9WsLsg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1694184313147?e=1761177600&v=beta&t=jcwJurRNCjNijC_4SYH4SWGjw8kqnA7x28LIvvgq-Y8",
+      "alt": "Md. Mahi Salman",
+      "width": "60"
+    },
+    "position": "Senior Project Coordinator | AI Engineer | SAP FI/CO",
+    "text": "Mr. Selim Ahmed is a great colleague who is willing to collaborate with others and work towards common goals with the best communication skill. He is very talented at developing and maintaining both the front-end and back-end of web applications using .NET technologies. He is open to feedback, shares ideas, and listens to others' input. He is able to maintain a positive attitude and energy and can create a pleasant work environment for everyone. He is respectful, maintains a positive work ethic, and exhibits strong problem-solving skills."
+  },
+  {
+    "id": "person3",
+    "name": "Ahsan Al Rupom",
+    "fullName": "Ahsan Al Rupom",
+    "avatar": {
+      "src": "./assets/images/avatar/avatar.png",
+      "alt": "Ahsan Al Rupom",
+      "width": "60"
+    },
+    "position": "Senior Software Engineer | Agile Master | PSM I",
+    "text": "I had the pleasure of working with Selim for a few years during our early stage of our career, collaborating on several projects. Selim’s biggest strength is his ability to deal with conflicting priorities in high-pressure situations. He never loses his cool which is one of the reasons he stands out as an passionate Software Engineer. I highly recommend Selim if you need to get the job done!"
+  },
+  {
+    "id": "person4",
+    "name": "Debbrath Debnath",
+    "fullName": "Debbrath Debnath",
+    "avatar": {
+      "src": "./assets/images/avatar/avatar.png",
+      "alt": "Debbrath Debnath",
+      "width": "60"
+    },
+    "position": "ERP and Technical Lead | Project Management",
+    "text": "Mr. Selim is a technologically sound person. He adapts to new technology in a short time. And he is also a solution provider."
+  },
+  {
+    "id": "person5",
+    "name": "Md. Sazib Hosen",
+    "fullName": "Md. Sazib Hosen",
+    "avatar": {
+      "src": "./assets/images/avatar/avatar.png",
+      "alt": "Md. Sazib Hosen",
+      "width": "60"
+    },
+    "position": "Programmer at Ministry of Environment, Forest and Climate Change, Bangladesh",
+    "text": "I wholeheartedly recommend Selim Ahmed for any software engineering role. His technical expertise, problem-solving abilities, and dedication to excellence make him an invaluable asset to any team."
+  },
+  {
+    "id": "person6",
+    "name": "Mazharul Haque",
+    "fullName": "Mazharul Haque SSYB™, PRC™, SFPC™",
+    "avatar": {
+      "src": "./assets/images/avatar/avatar.png",
+      "alt": "Mazharul Haque",
+      "width": "60"
+    },
+    "position": "Google Certified PMP® | Deputy Project Manager @Pakiza Software Ltd.",
+    "text": "Selim Ahmed was a fantastic person to work with, and is not only a multi-skilled and insightful colleague, but also an inspiring strategist. Very good person. Great employee with a very strong problem-solving skills."
+  },
+  {
+    "id": "person7",
+    "name": "Md. Nasir Uddin",
+    "fullName": "Md. Nasir Uddin",
     "avatar": {
       "src": "./assets/images/avatar/avatar.png",
       "alt": "Md. Nasir Uddin",
@@ -21,15 +83,28 @@
     "position": "Senior SQA Engineer - III @Kona SL",
     "text": "Selim Ahmed is a very hard-working person who can tackle any business problem. We have worked together on several projects, and I found him a highly skilled and dedicated professional. His expertise in the field of ASP.NET Core has helped our company immensely. But what makes him stand out is his willingness to help others. I am glad to have worked with him. I highly recommend him!"
   },
-    {
-    "id": "person3",
-    "name": "Persona 3",
+  {
+    "id": "person8",
+    "name": "Istiaq Haider",
+    "fullName": "Istiaq Haider",
     "avatar": {
       "src": "./assets/images/avatar/avatar.png",
-      "alt": "Md. Nasir Uddin",
+      "alt": "Istiaq Haider",
       "width": "60"
     },
-    "position": "Senior SQA Engineer - III @Kona SL",
-    "text": "Selim Ahmed is a very hard-working person who can tackle any business problem. We have worked together on several projects, and I found him a highly skilled and dedicated professional. His expertise in the field of ASP.NET Core has helped our company immensely. But what makes him stand out is his willingness to help others. I am glad to have worked with him. I highly recommend him!"
+    "position": "SAP SuccessFactors Certified Consultant | Employee Central(EC)",
+    "text": "Selim Ahmed Sir was a great professional to work with. We worked together at Orion Group and he helped me a lot to get started and also to understand internal processes. His work ethic is immaculate and so easy to work together with. He goes out of his way when you ask for some help and guidance."
+  },
+  {
+    "id": "person9",
+    "name": "Ishraq Sowad",
+    "fullName": "Ishraq Sowad",
+    "avatar": {
+      "src": "./assets/images/avatar/avatar.png",
+      "alt": "Ishraq Sowad",
+      "width": "60"
+    },
+    "position": "Private Security Contractor | Business Development",
+    "text": "Mr. Selim is an excellent individual, who always gives his best to understand exact user needs and deliver service accordingly."
   }
 ]
