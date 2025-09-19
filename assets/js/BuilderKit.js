@@ -1,9 +1,17 @@
 ////// BuilderKit -> Service Section Generation //////
-document.addEventListener("DOMContentLoaded", () => {
-  fetch("./data/services.json")
-    .then((res) => res.json())
-    .then((services) => renderServices(services))
-    .catch((err) => console.error("Failed to load services:", err));
+document.addEventListener("DOMContentLoaded", async () => {
+  try {
+    const response = await fetch("./data/services.json");
+
+    if (!response.ok) {
+      throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+
+    const services = await response.json();
+    renderServices(services);
+  } catch (error) {
+    console.error("Failed to load services:", error);
+  }
 });
 
 function renderServices(services) {
@@ -35,11 +43,19 @@ function renderServices(services) {
 
 
 ////// BuilderKit -> Blog Post Section Generation //////
-document.addEventListener("DOMContentLoaded", () => {
-    fetch('./data/posts.json')
-    .then(res => res.json())
-    .then(data => renderPosts(data))
-    .catch(err => console.error('Failed to load posts.json:', err));
+document.addEventListener("DOMContentLoaded", async () => {
+  try {
+    const response = await fetch("./data/posts.json");
+
+    if (!response.ok) {
+      throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+
+    const posts = await response.json();
+    renderPosts(posts);
+  } catch (error) {
+    console.error("Failed to load services:", error);
+  }
 });
 
 function formatDate(iso) {
@@ -125,14 +141,20 @@ function renderPosts(posts) {
 
 
 ////// BuilderKit -> Project Section Generation //////
-document.addEventListener("DOMContentLoaded", () => {
-  fetch("./data/projects.json")
-    .then((res) => res.json())
-    .then((projects) => {
-      renderProjects(projects);
-      initFilters();
-    })
-    .catch((err) => console.error("Failed to load projects:", err));
+document.addEventListener("DOMContentLoaded", async () => {
+  try {
+    const response = await fetch("./data/projects.json");
+
+    if (!response.ok) {
+      throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+
+    const projects = await response.json();
+    renderProjects(projects);
+    initFilters();
+  } catch (error) {
+    console.error("Failed to load services:", error);
+  }
 });
 
 function renderProjects(projects) {
@@ -199,3 +221,58 @@ function initFilters() {
   });
 }
 //////////////////////////////////////////////////////
+
+
+////// BuilderKit -> Certifications Section Generation //////
+document.addEventListener("DOMContentLoaded", async () => {
+  try {
+    const response = await fetch("./data/courses.json");
+    if (!response.ok) {
+      throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+
+    const data = await response.json();
+    renderTimelineItems(data.certifications, "certifications-list");
+    renderTimelineItems(data.workshops, "workshop-list");
+
+  } catch (error) {
+    console.error("Failed to load data:", error);
+  }
+});
+
+function renderTimelineItems(items, containerId) {
+  const container = document.getElementById(containerId);
+  if (!container) {
+    console.error(`Container with ID "${containerId}" not found.`);
+    return;
+  }
+  
+  container.innerHTML = "";
+
+  items.forEach((item) => {
+    const li = document.createElement("li");
+    li.className = "timeline-item";
+
+    const credentialHtml = item.credentialUrl
+      ? `
+        <div class="timeline-credential">
+          <span class="timeline-item-date">${item.date}</span>
+          <a href="${item.credentialUrl}" target="_blank" class="timeline-credential-url">Show credential</a>
+        </div>
+        `
+      : `<span class="timeline-item-date">${item.date}</span>`;
+
+
+
+    li.innerHTML = `
+      <h4 class="h4 timeline-item-title">${item.title}</h4>
+      <span class="timeline-item-organization">${item.organization}</span>
+      ${credentialHtml}
+      <p class="timeline-text">Skills: ${item.skill}</p>
+    `;
+    
+    container.appendChild(li);
+  });
+}
+
+/////////////////////////////////////////////////////////////
