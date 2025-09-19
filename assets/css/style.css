@@ -2107,17 +2107,3 @@ textarea.form-input::-webkit-resizer { display: none; }
 .btn-back:hover::before {
   background: var(--bg-gradient-yellow-2);
 }
- 
-.download-button {
-  color: var(--white-1);
-    background: var(--onyx);
-    font-size: var(--fs-8);
-    font-weight: var(--fw-300);
-    width: max-content;
-    padding: 3px 12px;
-    border-radius: 8px;
-}
-
-.download-button:hover {
-  background-color: #0056b3;
-}
