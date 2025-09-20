@@ -4,7 +4,7 @@
     "name": "Md. Nurul Hoque",
     "fullName": "Md. Nurul Hoque, PMP®",
     "avatar": {
-      "src": "https://media.licdn.com/dms/image/v2/D5603AQEDGMSLX_sGGQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1719206694950?e=1761177600&v=beta&t=nKeaCm997-dQG7DcT_yAfb2JWQM_ce-mq4dYnvVRNnA",
+      "src": "./assets/images/testimonial/person1.jpg",
       "alt": "Md. Nurul Hoque",
       "width": "60"
     },
@@ -16,7 +16,7 @@
     "name": "Md. Mahi Salman",
     "fullName": "Md. Mahi Salman",
     "avatar": {
-      "src": "https://media.licdn.com/dms/image/v2/D5603AQGl9jnY9WsLsg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1694184313147?e=1761177600&v=beta&t=jcwJurRNCjNijC_4SYH4SWGjw8kqnA7x28LIvvgq-Y8",
+      "src": "./assets/images/testimonial/person2.jpg",
       "alt": "Md. Mahi Salman",
       "width": "60"
     },
@@ -28,7 +28,7 @@
     "name": "Ahsan Al Rupom",
     "fullName": "Ahsan Al Rupom",
     "avatar": {
-      "src": "https://media.licdn.com/dms/image/v2/D4E03AQEjl7plqhUFKg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1718179034089?e=1761177600&v=beta&t=3wni0g5cVMq5XzutV4De6dH0v5QWi7XLCTALHxyCRt4",
+      "src": "./assets/images/testimonial/person3.jpg",
       "alt": "Ahsan Al Rupom",
       "width": "60"
     },
@@ -40,7 +40,7 @@
     "name": "Debbrath Debnath",
     "fullName": "Debbrath Debnath",
     "avatar": {
-      "src": "https://media.licdn.com/dms/image/v2/D5603AQGCj40isR9OUQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1690040667476?e=1761177600&v=beta&t=wVacpsxoqZEzOVU5a6eb01j1Kx4nDqpQ-BXRvGKgx8s",
+      "src": "./assets/images/testimonial/person4.jpg",
       "alt": "Debbrath Debnath",
       "width": "60"
     },
@@ -52,7 +52,7 @@
     "name": "Md. Sazib Hosen",
     "fullName": "Md. Sazib Hosen",
     "avatar": {
-      "src": "https://media.licdn.com/dms/image/v2/D4D35AQF1ZRnIUmbA7Q/profile-framedphoto-shrink_200_200/profile-framedphoto-shrink_200_200/0/1737306407171?e=1758920400&v=beta&t=RkCxeHofsQ_cY6tJM5RdlZQcqcySGjRGbKwBC4tS1i0",
+      "src": "./assets/images/testimonial/person5.jpg",
       "alt": "Md. Sazib Hosen",
       "width": "60"
     },
@@ -64,7 +64,7 @@
     "name": "Mazharul Haque",
     "fullName": "Mazharul Haque SSYB™, PRC™, SFPC™",
     "avatar": {
-      "src": "https://media.licdn.com/dms/image/v2/D5603AQEzzOgO9ycOiw/profile-displayphoto-shrink_200_200/B56ZQiHbDWG4AY-/0/1735739160628?e=1761177600&v=beta&t=9YN_hTaJs3kKDafFipspOWX2ZPL4TYF-Yl8mIP56iYU",
+      "src": "./assets/images/testimonial/person6.jpg",
       "alt": "Mazharul Haque",
       "width": "60"
     },
@@ -76,7 +76,7 @@
     "name": "Md. Nasir Uddin",
     "fullName": "Md. Nasir Uddin",
     "avatar": {
-      "src": "https://media.licdn.com/dms/image/v2/C5603AQGnHUpQEf8s-w/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1644290183077?e=1761177600&v=beta&t=LiTaluBBRXxeR2Pkl963nbNzokkiRDFS-G1GNuTKhSc",
+      "src": "./assets/images/testimonial/person7.jpg",
       "alt": "Md. Nasir Uddin",
       "width": "60"
     },
@@ -88,7 +88,7 @@
     "name": "Istiaq Haider",
     "fullName": "Istiaq Haider",
     "avatar": {
-      "src": "https://media.licdn.com/dms/image/v2/C5603AQGFR7x6ufVCWg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1630726089928?e=1761177600&v=beta&t=GIOORPK0fN21jP3YERKvmxxKEYM5ZmolhENpbKdcSFs",
+      "src": "./assets/images/testimonial/person8.jpg",
       "alt": "Istiaq Haider",
       "width": "60"
     },
@@ -100,7 +100,7 @@
     "name": "Ishraq Sowad",
     "fullName": "Ishraq Sowad",
     "avatar": {
-      "src": "https://media.licdn.com/dms/image/v2/D4E03AQHJF2KjiO3BTg/profile-displayphoto-shrink_200_200/B4EZUCvKN_HcAc-/0/1739507673579?e=1761177600&v=beta&t=ctiFmz7uU_oSIhAfDbLGy5Dz3PZpoamJ3mwv4YNHJtE",
+      "src": "./assets/images/testimonial/person9.jpg",
       "alt": "Ishraq Sowad",
       "width": "60"
     },
