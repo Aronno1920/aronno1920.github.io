@@ -23,11 +23,74 @@
 
   "certifications": [
     {
+      "title": "AI Engineering Bootcamp for Programmers",
+      "organization": "Ostad | Dhaka, Bangladesh",
+      "date": "Continue 2025",
+      "credentialUrl": "",
+      "skill": "Skills: Math for Machine Learning, Development Tools, Regression & Classification Models and Evaluation, Unsupervised Learning and Dimensionality Reduction, Deep Learning, Computer Vision, CNN, Model Finetuning, Transformers, NLP, Hugging Face Models, Prompt Engineering, N8N, LangChain, Multi-Agent System and Workflow Automation, RAG, Vector Databases"
+    },
+    {
       "title": "Artificial Intelligence & Machine Learning Fundamental",
       "organization": "Grameenphone Academy",
       "date": "Issued July 2025",
       "credentialUrl": "./assets/pdf/course/GP_Academy_AI_&_ML_Fundamentals.pdf",
       "skill": "Skills: Artificial Intelligence (AI), Machine Learning, Deep Learning, Python (Programming Language)"
+    },
+    {
+      "title": "API Authentication",
+      "organization": "APIsec University",
+      "date": "Issued November 2024",
+      "credentialUrl": "https://www.credly.com/badges/383ee378-468b-43a5-89e7-79af7181fc4f",
+      "skill": "This course provides a comprehensive understanding of various authentication mechanisms and protocols used to secure APIs. You will learn about the principles of API security, explore different authentication strategies, and understand how to implement them effectively in real-world scenarios."
+    },
+    {
+      "title": "API Security Fundamentals",
+      "organization": "APIsec University",
+      "date": "Issued November 2024",
+      "credentialUrl": "https://www.credly.com/badges/1cefb57b-61a1-4d75-84fd-adf5e43770b6",
+      "skill": "The API Security Fundamentals course covers the core threats to APIs and challenges to prevent breach. The course includes modules on real-world API breaches, the OWASP API Security Top 10, the 3 Pillars of API Security (governance, testing and monitoring), and the application security technology landscape. The course provides strategic advice for developing secure API programs, and includes specific best practices for security and development teams."
+    },
+    {
+      "title": "TypeScript for Beginners: Mastering TypeScript Fundamentals",
+      "organization": "Udemy",
+      "date": "Issued November 2024",
+      "credentialUrl": "https://www.udemy.com/certificate/UC-417f1837-38b9-4879-b1c4-f82e64ea2fa8",
+      "skill": ""
+    },
+    {
+      "title": "Backend Development for .Net Full Stack",
+      "organization": "Board Infinity | Coursera",
+      "date": "Issued December 2023",
+      "credentialUrl": "https://www.coursera.org/account/accomplishments/verify/DZVBRUWZEPXD",
+      "skill": "Skills: Extensible Markup Language (XML), Model View Controller, Web Services, Web Applications, Authentications, Software Architecture, Back-End Web Development, Application Security, Authorization (Computing)"
+    },
+    {
+      "title": "Frontend Development using Angular",
+      "organization": "Board Infinity | Coursera",
+      "date": "Issued November 2023",
+      "credentialUrl": "https://www.coursera.org/account/accomplishments/verify/VQGYH5T2PMMH",
+      "skill": "Skills: Angular, Cascading Style Sheets (CSS), Web Development, UI Components, Front-End Web Development, Responsive Web Design, JavaScript Frameworks, Web Applications, Software Design Patterns, HTML and CSS, Scalability, JavaScript"
+    },
+    {
+      "title": "Real Lift Project For IOS & Android - Flutter",
+      "organization": "PencilBox Training Institute | Dhaka, Bangladesh",
+      "date": "Issued March 2022",
+      "credentialUrl": "./assets/pdf/course/PencilBox_Flutter.jpg",
+      "skill": "Dart, Flutter, Cros Platform, Android, iOS, Application Development, Application Publish, Playstore"
+    },
+    {
+      "title": "Android - Java Native",
+      "organization": "BITM | Dhaka, Bangladesh",
+      "date": "Issued Jun 2016",
+      "credentialUrl": "",
+      "skill": "Android, Java, Application Development, Application Publish, Playstore"
+    },
+    {
+      "title": "Object Oriented Programming (OOP) - C# and ASP.Net Track",
+      "organization": "BASIS | Dhaka, Bangladesh",
+      "date": "Issued May 2012",
+      "credentialUrl": "",
+      "skill": ""
     }
   ],
 
@@ -35,15 +98,15 @@
     {
       "title": "Time and Stress Management for Resilience",
       "organization": "ORION",
-      "date": "Issued May 2025",
+      "date": "Issued May 2025 | Duration: 3 days",
       "credentialUrl": "./assets/pdf/course/orion_time_magament.png",
-      "skill": "Skills: Time Management, Stress Management, Work-life Balance"
+      "skill": "Through the 'Time and Stress Management for Resilience' workshop, I've honed my skills in strategic prioritization and proactive stress reduction. This training has empowered me to enhance productivity while maintaining a healthy work-life balance. I am now better equipped to handle pressure and approach challenges with a focused, resilient mindset."
     },
     {
       "title": "ESET PROTECT On-Prem",
       "organization": "ORION",
       "date": "Issue: March 2023 | Duration: 3 days",
-      "skill": "Skills: Progess & Protect with ESET, Security & Policy Management, Threat Detection & Protection"
+      "skill": "Proficient in cybersecurity with expertise in Security & Policy Management and advanced Threat Detection & Protection using ESET solutions. I am skilled at implementing robust security protocols to safeguard critical assets, ensuring a resilient defense against emerging cyber threats and enabling organizational progress."
     }
   ]
 }
