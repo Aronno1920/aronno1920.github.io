@@ -10,9 +10,7 @@
     },
     "category": "Career",
     "date_published": "May 1, 2025",
-    "read_time": "8 min read",
-    "excerpt": "Remote work has evolved from a fringe benefit into a mainstream standard—one that tech professionals across the globe are embracing. Whether you’re a developer, designer, project manager, or content strategist, the opportunities to work remotely are vast and growing.",
-    "tags": ["Career", "Remote Job", "Future"]
+    "read_time": "8 min read"
   },
   {
     "id": "post2",
@@ -25,9 +23,7 @@
     },
     "category": "API Security",
     "date_published": "February 21, 2024",
-    "read_time": "9 min read",
-    "excerpt": "Dan brings over 20 years of cybersecurity experience with executive roles at APIsec, Qualys, Anomali, ArcSight, and others. Dan co-founded APIsec University with Corey Ball in 2022 to help develop a new army of API security defenders.",
-    "tags": ["API Security", "Software Development"]
+    "read_time": "9 min read"
   },
   {
     "id": "post3",
@@ -40,9 +36,7 @@
     },
     "category": "Microservice Architecture",
     "date_published": "June 26, 2024",
-    "read_time": "8 min read",
-    "excerpt": "In today’s rapidly evolving tech landscape, it’s essential to understand the different architectural styles used in designing and building distributed applications. Two popular approaches to building these applications are Web Services and Microservices.",
-    "tags": ["ASP.NET", "Microservice Architecture"]
+    "read_time": "8 min read"
   },
   {
     "id": "post4",
@@ -55,8 +49,6 @@
     },
     "category": "AI Engineering",
     "date_published": "April 17, 2025",
-    "read_time": "8 min read",
-    "excerpt": "মেশিন লার্নিং (Machine Learning) আধুনিক প্রযুক্তির এক অবিচ্ছেদ্য অংশ, যা আমাদের দৈনন্দিন জীবন থেকে শুরু করে জটিল বৈজ্ঞানিক গবেষণা পর্যন্ত বিস্তৃত।",
-    "tags": ["ASP.NET", "Microservice Architecture"]
+    "read_time": "8 min read"
   }
 ]

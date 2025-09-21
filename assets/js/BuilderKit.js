@@ -58,10 +58,10 @@ document.addEventListener("DOMContentLoaded", async () => {
   }
 });
 
-function formatDate(iso) {
-  if (!iso) return '';
-  const d = new Date(iso);
-  return new Intl.DateTimeFormat('en-US', { month: 'long', day: 'numeric', year: 'numeric' }).format(d);
+function renderPosts(posts) {
+  const root = document.getElementById('blog-list');
+  root.innerHTML = '';
+  posts.forEach(post => root.appendChild(createBlogPostItem(post)));
 }
 
 function createBlogPostItem(post) {
@@ -97,7 +97,7 @@ function createBlogPostItem(post) {
 
   const timeEl = document.createElement('time');
   timeEl.dateTime = post.date_published || '';
-  timeEl.textContent = formatDate(post.date_published);
+  timeEl.textContent = post.date_published;
 
   const dot2 = document.createElement('span');
   dot2.className = 'dot';
@@ -112,30 +112,11 @@ function createBlogPostItem(post) {
   h3.className = 'h3 blog-item-title';
   h3.textContent = post.title || '';
 
-  const excerpt = document.createElement('p');
-  excerpt.className = 'blog-text';
-  excerpt.textContent = post.excerpt || '';
-
-  const tagsWrap = document.createElement('div');
-  tagsWrap.className = 'blog-tags';
-  (post.tags || []).forEach(tag => {
-    const span = document.createElement('span');
-    span.className = 'blog-tag';
-    span.textContent = tag;
-    tagsWrap.appendChild(span);
-  });
-
-  content.append(meta, h3, excerpt, tagsWrap);
+  content.append(meta, h3);
   a.append(figure, content);
   li.appendChild(a);
 
   return li;
-}
-
-function renderPosts(posts) {
-  const root = document.getElementById('blog-list');
-  root.innerHTML = '';
-  posts.forEach(post => root.appendChild(createBlogPostItem(post)));
 }
 ////////////////////////////////////////////////////////
 
