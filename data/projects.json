@@ -1,5 +1,14 @@
 [
-    {
+  {
+    "link": "#",
+    "title": "ORION POS",
+    "image": "./assets/images/project/orion_pos.jpg",
+    "alt": "ORION POS",
+    "category": "software",
+    "description": "Desktop based Point of Sales for Restaurant, Data Syncronizer & Online Reporting System (Takeaway / Restaurant)",
+    "tags": ["Official", "ORION","POS","ASP.NET","MS SQL"]
+  },
+  {
     "link": "#",
     "title": "Niloy Hero",
     "image": "./assets/images/project/niloy_motors.png",
