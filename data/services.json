@@ -2,7 +2,7 @@
   {
     "id": "software-dev",
     "icon": {
-      "src": "./assets/images/service/icon-dev.svg",
+      "src": "./assets/images/logo/icon-dev.svg",
       "alt": "Software Development",
       "width": "40"
     },
@@ -12,7 +12,7 @@
   {
     "id": "ai-solutions",
     "icon": {
-      "src": "./assets/images/service/icon-ai.svg",
+      "src": "./assets/images/logo/icon-ai.svg",
       "alt": "AI Solutions",
       "width": "40"
     },
@@ -22,7 +22,7 @@
   {
     "id": "mobile-apps",
     "icon": {
-      "src": "./assets/images/service/icon-app.svg",
+      "src": "./assets/images/logo/icon-app.svg",
       "alt": "Mobile Applications",
       "width": "40"
     },
@@ -32,7 +32,7 @@
   {
     "id": "busniess-dev",
     "icon": {
-      "src": "./assets/images/service/icon-BusinessDev.svg",
+      "src": "./assets/images/logo/icon-BusinessDev.svg",
       "alt": "Communication icon",
       "width": 40
     },
