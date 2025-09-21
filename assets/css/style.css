@@ -474,7 +474,7 @@ main {
 
 
 /*** #technology */
-.technology { margin-bottom: 35px; }
+.technology { margin-bottom: 35px; margin-top: 35px; }
 
 .technology-title { margin-bottom: 20px; }
 
@@ -865,7 +865,7 @@ main {
  * skills 
  */
 .skill{
-  margin-bottom: 40px;
+  margin-bottom: 35px;
 }
 
 
@@ -1275,6 +1275,26 @@ textarea.form-input::-webkit-resizer { display: none; }
   transition: var(--transition-1);
 }
 
+/*-----------------------------------*\
+  #RESPONSIVE: larger than 450px screen
+\*-----------------------------------*/
+@media (min-width: 300px) {
+    .testimonials-list {
+        margin: 0 -30px;
+        padding: 30px;
+    }
+
+    .testimonials-avatar-box {
+        transform: translate(30px, -30px);
+        border-radius: 20px;
+        margin-bottom: 10px;
+    }
+
+    .testimonials-avatar-box img { 
+      width: 70px;
+      border-radius: 20px;
+    }
+}
 
 
 /*-----------------------------------*\
@@ -1286,24 +1306,22 @@ textarea.form-input::-webkit-resizer { display: none; }
         margin: 0 -30px;
         padding: 30px;
         padding-bottom: 35px;
-    }
+  }
 
   .clients-item { min-width: calc(35% - 80px); }
 
   .testimonials-avatar-box {
         transform: translate(30px, -30px);
         border-radius: 20px;
-    }
+  }
 
   .testimonials-avatar-box img { 
-    width: 80px;
+    width: 70px;
     border-radius: 20px;
   }
 
   .blog-banner-box,
   .contact-banner-box { height: auto; }
-
-
 }
 
 /*-----------------------------------*\
@@ -1537,6 +1555,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   }
 
   .subject-input-wrapper{
+    display: grid;
     margin-bottom: 30px !important;
   }
 
@@ -1641,7 +1660,7 @@ textarea.form-input::-webkit-resizer { display: none; }
    * CONTACT
    */
 
-  .input-wrapper { grid-template-columns: 1fr 1fr; }
+  .subject-input-wrapper, .input-wrapper { grid-template-columns: 1fr 1fr; }
 
   .form-btn {
     width: max-content;
