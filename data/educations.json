@@ -23,27 +23,27 @@
 
   "certifications": [
     {
-      "title": "Artificial Intelligence & Machine Learning Fundamentals",
+      "title": "Artificial Intelligence & Machine Learning Fundamental",
       "organization": "Grameenphone Academy",
       "date": "Issued July 2025",
-      "credentialUrl": "https://google.com",
+      "credentialUrl": "./assets/pdf/course/GP_Academy_AI_&_ML_Fundamentals.pdf",
       "skill": "Skills: Artificial Intelligence (AI), Machine Learning, Deep Learning, Python (Programming Language)"
     }
   ],
 
   "workshops": [
     {
-      "title": "Web Development Bootcamp",
-      "organization": "Udemy",
-      "date": "Issued March 2024",
-      "credentialUrl": "https://google.com",
-      "skill": "Skills: Artificial Intelligence (AI), Machine Learning, Deep Learning, Python (Programming Language)"
+      "title": "Time and Stress Management for Resilience",
+      "organization": "ORION",
+      "date": "Issued May 2025",
+      "credentialUrl": "./assets/pdf/course/orion_time_magament.png",
+      "skill": "Skills: Time Management, Stress Management, Work-life Balance"
     },
     {
-      "title": "Data Science with Python",
-      "organization": "Coursera",
-      "date": "Issue: March 2024 | Duration: 3 days",
-      "skill": "Skills: Artificial Intelligence (AI), Machine Learning, Deep Learning, Python (Programming Language)"
+      "title": "ESET PROTECT On-Prem",
+      "organization": "ORION",
+      "date": "Issue: March 2023 | Duration: 3 days",
+      "skill": "Skills: Progess & Protect with ESET, Security & Policy Management, Threat Detection & Protection"
     }
   ]
 }
