@@ -1,17 +1,62 @@
 [
   {
-    "id": "medisense-accuracy",
-    "title": "Securing Your .NET Core Web API – Best Practices for Ultimate Protection",
-    "url": "https://techaid24.com/net-core-web-api-security",
+    "id": "post1",
+    "title": "The Future is Remote: Why, How, and Where to Begin Your Remote Work Journey",
+    "url": "https://techaid24.com/future-is-remote-work/",
     "image": {
-      "src": "https://techaid24.com/wp-content/uploads/2025/08/AIML-CheatSheet.png",
-      "alt": "MediSense Architecture Preview",
+      "src": "./assets/images/post/post1.png",
+      "alt": "The Future is Remote: Why, How, and Where to Begin Your Remote Work Journey",
       "loading": "lazy"
     },
-    "category": "AI Development",
-    "date_published": "2025-03-03",
-    "read_time": "10 min read",
-    "excerpt": "In the ever-evolving world of web development, introducing your .NET Core Web API Security is not just an option—it’s a necessity. Effective API security goes beyond preventing unauthorized access; it involves protecting sensitive data, ensuring application reliability, and maintaining user trust.",
-    "tags": ["API Security", "ASP.NET Core"]
+    "category": "Career",
+    "date_published": "May 1, 2025",
+    "read_time": "8 min read",
+    "excerpt": "Remote work has evolved from a fringe benefit into a mainstream standard—one that tech professionals across the globe are embracing. Whether you’re a developer, designer, project manager, or content strategist, the opportunities to work remotely are vast and growing.",
+    "tags": ["Career", "Remote Job", "Future"]
+  },
+  {
+    "id": "post2",
+    "title": "Learn the OWASP API Security Top 10: Essential Guide to API Security Fundamentals",
+    "url": "https://techaid24.com/owasp-api-security-top-10/",
+    "image": {
+      "src": "./assets/images/post/post2.jpg",
+      "alt": "Learn the OWASP API Security Top 10: Essential Guide to API Security Fundamentals",
+      "loading": "lazy"
+    },
+    "category": "API Security",
+    "date_published": "February 21, 2024",
+    "read_time": "9 min read",
+    "excerpt": "Dan brings over 20 years of cybersecurity experience with executive roles at APIsec, Qualys, Anomali, ArcSight, and others. Dan co-founded APIsec University with Corey Ball in 2022 to help develop a new army of API security defenders.",
+    "tags": ["API Security", "Software Development"]
+  },
+  {
+    "id": "post3",
+    "title": "The Key Differences Between Web Services and Microservices Explained",
+    "url": "https://techaid24.com/owasp-api-security-top-10/",
+    "image": {
+      "src": "./assets/images/post/post3.png",
+      "alt": "The Key Differences Between Web Services and Microservices Explained",
+      "loading": "lazy"
+    },
+    "category": "Microservice Architecture",
+    "date_published": "June 26, 2024",
+    "read_time": "8 min read",
+    "excerpt": "In today’s rapidly evolving tech landscape, it’s essential to understand the different architectural styles used in designing and building distributed applications. Two popular approaches to building these applications are Web Services and Microservices.",
+    "tags": ["ASP.NET", "Microservice Architecture"]
+  },
+  {
+    "id": "post4",
+    "title": "সুপারভাইজড বনাম আনসুপারভাইজড বনাম রিইনফোর্সমেন্ট লার্নিং : মেশিন লার্নিংয়ের ৩টি স্তম্ভ",
+    "url": "https://techaid24.com/supervised-unsupervised-reinforcement/",
+    "image": {
+      "src": "./assets/images/post/post4.png",
+      "alt": "সুপারভাইজড বনাম আনসুপারভাইজড বনাম রিইনফোর্সমেন্ট লার্নিং : মেশিন লার্নিংয়ের ৩টি স্তম্ভ",
+      "loading": "lazy"
+    },
+    "category": "AI Engineering",
+    "date_published": "April 17, 2025",
+    "read_time": "8 min read",
+    "excerpt": "মেশিন লার্নিং (Machine Learning) আধুনিক প্রযুক্তির এক অবিচ্ছেদ্য অংশ, যা আমাদের দৈনন্দিন জীবন থেকে শুরু করে জটিল বৈজ্ঞানিক গবেষণা পর্যন্ত বিস্তৃত।",
+    "tags": ["ASP.NET", "Microservice Architecture"]
   }
 ]
