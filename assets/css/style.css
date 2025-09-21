@@ -1754,22 +1754,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   /* clients */
   .clients-item { min-width: calc(25% - 130px); }
 
-
-
-  /**
-   * PROJECTS
-   */
-
   .project-list { grid-template-columns: repeat(3, 1fr); }
-
-
-
-  /**
-   * BLOG
-   */
-
-  .blog-banner-box { height: 230px; }
-
 }
 
 
