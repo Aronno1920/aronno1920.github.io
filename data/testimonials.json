@@ -14,7 +14,7 @@
   {
     "id": "person2",
     "name": "Md. Mahi Salman",
-    "fullName": "Md. Mahi Salman",
+    "fullName": "",
     "avatar": {
       "src": "./assets/images/testimonial/person2.jpg",
       "alt": "Md. Mahi Salman",
@@ -26,7 +26,7 @@
   {
     "id": "person3",
     "name": "Ahsan Al Rupom",
-    "fullName": "Ahsan Al Rupom",
+    "fullName": "",
     "avatar": {
       "src": "./assets/images/testimonial/person3.jpg",
       "alt": "Ahsan Al Rupom",
@@ -38,7 +38,7 @@
   {
     "id": "person4",
     "name": "Debbrath Debnath",
-    "fullName": "Debbrath Debnath",
+    "fullName": "",
     "avatar": {
       "src": "./assets/images/testimonial/person4.jpg",
       "alt": "Debbrath Debnath",
@@ -48,9 +48,21 @@
     "text": "Mr. Selim is a technologically sound person. He adapts to new technology in a short time. And he is also a solution provider."
   },
   {
+    "id": "person10",
+    "name": "Md. Sazzad Hossain",
+    "fullName": "",
+    "avatar": {
+      "src": "./assets/images/testimonial/person10.jpg",
+      "alt": "Md. Sazzad Hossain",
+      "width": "60"
+    },
+    "position": "Software Engineer | Avalanche Technologies LTD",
+    "text": "I’ve worked with Selim Ahmed and have always admired his technical expertise and adaptability. Starting from strong .NET development skills, he has quickly grown into AI, delivering impactful solutions with creativity and dedication. A true team player and problem solver."
+  },
+  {
     "id": "person5",
     "name": "Md. Sazib Hosen",
-    "fullName": "Md. Sazib Hosen",
+    "fullName": "",
     "avatar": {
       "src": "./assets/images/testimonial/person5.jpg",
       "alt": "Md. Sazib Hosen",
@@ -74,7 +86,7 @@
   {
     "id": "person7",
     "name": "Md. Nasir Uddin",
-    "fullName": "Md. Nasir Uddin",
+    "fullName": "",
     "avatar": {
       "src": "./assets/images/testimonial/person7.jpg",
       "alt": "Md. Nasir Uddin",
@@ -86,7 +98,7 @@
   {
     "id": "person8",
     "name": "Istiaq Haider",
-    "fullName": "Istiaq Haider",
+    "fullName": "",
     "avatar": {
       "src": "./assets/images/testimonial/person8.jpg",
       "alt": "Istiaq Haider",
@@ -98,7 +110,7 @@
   {
     "id": "person9",
     "name": "Ishraq Sowad",
-    "fullName": "Ishraq Sowad",
+    "fullName": "",
     "avatar": {
       "src": "./assets/images/testimonial/person9.jpg",
       "alt": "Ishraq Sowad",
