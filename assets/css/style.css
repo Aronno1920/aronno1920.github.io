@@ -90,7 +90,6 @@
 
   --transition-1: 0.25s ease;
   --transition-2: 0.5s ease-in-out;
-
 }
 
 /*-----------------------------------*\
@@ -1041,35 +1040,26 @@ main {
   font-weight: var(--fw-300);
 }
 
-
-.project-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-top: 15px;
-}
-
-.project-tag {
-  display: inline-block;
-  padding: 4px 10px;
-  background: var(--onyx);
-  color: var(--orange-yellow-crayola);
-  font-size: var(--fs-8);
-  border-radius: 8px;
-  transition: var(--transition-1);
-}
-
-.project-tag:hover {
-    background: var(--orange-yellow-crayola);
-    color: hsl(0deg 0% 100%);
-}
-
 .project:hover {
   background: var(--orange-yellow-crayola);
   color: var(--smoky-black);
 }
 
+.project-meta {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 7px;
+  margin-bottom: 5px;
+}
 
+.project-meta .dot {
+  color: red;
+  /* color: var(--vegas-gold); */
+  width: 4px;
+  height: 4px;
+  border-radius: 4px;
+}
 
 /*-----------------------------------*\
   #BLOG
@@ -1129,7 +1119,7 @@ main {
 
 .blog-meta :is(.blog-category, time) {
   color: var(--light-gray-70);
-  font-size: var(--fs-6);
+  font-size: var(--fs-8);
   font-weight: var(--fw-300);
 }
 
@@ -1526,7 +1516,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .blog-posts-list { gap: 30px; }
 
-  .blog-content { padding: 25px; }
+  .blog-content { padding: 15px; }
 
 
 
@@ -1916,7 +1906,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 }
 
 .blog-content {
-  padding: 20px;
+  padding: 15px;
 }
 
 .blog-meta {
@@ -1925,7 +1915,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   flex-wrap: wrap;
   gap: 8px;
   margin-bottom: 12px;
-  font-size: var(--fs-7);
+  font-size: var(--fs-8);
   color: var(--light-gray-70);
 }
 
@@ -2082,4 +2072,28 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 .btn-back:hover::before {
   background: var(--bg-gradient-yellow-2);
+}
+
+
+.project-meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-bottom: 12px;
+  font-size: var(--fs-7);
+  color: var(--vegas-gold);
+}
+
+.project-meta .dot {
+  width: 4px;
+  height: 4px;
+  /* color: var(--vegas-gold); */
+  color: red;
+  border-radius: 50%;
+}
+
+.project-category {
+  color: var(--vegas-gold);
+  font-weight: var(--fs-8);
 }

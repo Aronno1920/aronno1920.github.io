@@ -155,10 +155,17 @@ function renderProjects(projects) {
         </figure>
         <div class="project-content">
           <h3 class="h3 project-title">${project.title}</h3>
-          <p class="project-category">${project.description}</p>
-          <div class="project-tags">
-            ${project.tags.map(tag => `<span class="project-tag">${tag}</span>`).join("")}
+          <div class="project-meta">
+            <span class="project-category">Official</span>
+            <span class="dot"></span>
+            <span class="read-time">Nitol Niloy</span>
+            <span class="dot"></span>
+            <span class="read-time">ASP.NET</span>
+            <span class="dot"></span>
+            <span class="read-time">MS SQL</span>
           </div>
+
+          <p class="project-category">${project.description}</p>
         </div>
       </a>
     `;
