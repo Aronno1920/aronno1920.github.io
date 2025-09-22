@@ -156,16 +156,13 @@ function renderProjects(projects) {
         <div class="project-content">
           <h3 class="h3 project-title">${project.title}</h3>
           <div class="project-meta">
-            <span class="project-category">Official</span>
+            <span>Official</span>
             <span class="dot"></span>
-            <span class="read-time">Nitol Niloy</span>
+            <span>Nitol Niloy</span>
             <span class="dot"></span>
-            <span class="read-time">ASP.NET</span>
-            <span class="dot"></span>
-            <span class="read-time">MS SQL</span>
+            <span>ASP.NET</span>
           </div>
-
-          <p class="project-category">${project.description}</p>
+          <p class="project-description">${project.description}</p>
         </div>
       </a>
     `;

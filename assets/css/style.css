@@ -1009,7 +1009,6 @@ main {
 
 .project-item > a { 
     position: relative;
-    background: var(--border-gradient-onyx);
     height: 100%;
     box-shadow: var(--shadow-4);
     border-radius: 16px;
@@ -1029,13 +1028,13 @@ main {
   color: var(--white-2);
   font-size: var(--fs-4);
   font-weight: var(--fw-500);
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   line-height: 1.4;
   transition: var(--transition-1);
 }
 
-.project-category {
-  color: var(--light-gray-70);
+.project-description {
+  color: var(--light-gray);
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
 }
@@ -1049,13 +1048,12 @@ main {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  gap: 7px;
+  gap: 5px;
   margin-bottom: 5px;
 }
 
 .project-meta .dot {
-  color: red;
-  /* color: var(--vegas-gold); */
+  background: var(--light-gray-70);
   width: 4px;
   height: 4px;
   border-radius: 4px;
@@ -1114,13 +1112,13 @@ main {
   justify-content: flex-start;
   align-items: center;
   gap: 7px;
-  margin-bottom: 10px;
+  margin-bottom: 7px;
 }
 
 .blog-meta :is(.blog-category, time) {
-  color: var(--light-gray-70);
-  font-size: var(--fs-8);
-  font-weight: var(--fw-300);
+  color: var(--vegas-gold);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-400);
 }
 
 .blog-meta .dot {
@@ -1402,7 +1400,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     justify-content: flex-start;
     align-items: flex-start;
     gap: 18px;
-    padding: 30px;
+    padding: 20px;
   }
 
   .service-icon-box {
@@ -1914,9 +1912,9 @@ textarea.form-input::-webkit-resizer { display: none; }
   align-items: center;
   flex-wrap: wrap;
   gap: 8px;
-  margin-bottom: 12px;
-  font-size: var(--fs-8);
-  color: var(--light-gray-70);
+  margin-bottom: 7px;
+  font-size: var(--fs-6);
+  color: var(--vegas-gold);
 }
 
 .blog-meta .dot {
@@ -2088,12 +2086,6 @@ textarea.form-input::-webkit-resizer { display: none; }
 .project-meta .dot {
   width: 4px;
   height: 4px;
-  /* color: var(--vegas-gold); */
-  color: red;
+  background: var(--light-gray-70);
   border-radius: 50%;
-}
-
-.project-category {
-  color: var(--vegas-gold);
-  font-weight: var(--fs-8);
 }
