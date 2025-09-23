@@ -146,18 +146,12 @@ function renderProjects(projects) {
     const li = document.createElement("li");
     li.className = `project-item active`;
     li.setAttribute("data-filter-item", "");
-    li.setAttribute("data-category", project.category.toLowerCase());
+    // Join the array into a single string for the data attribute
+    li.setAttribute("data-categories", project.categories.join(","));
 
-    // Group tags into chunks of 2
-    const groupedTags = [];
-    for (let i = 0; i < project.tags.length; i += 2) {
-      groupedTags.push(project.tags.slice(i, i + 2));
-    }
-
-    // Build HTML with dots only between groups
     const tagsHTML = project.tags
-                      .map(tag => `<span>${tag}</span>`)
-                      .join('<span class="dot"></span>');
+        .map(tag => `<span>${tag}</span>`)
+        .join('<span class="dot"></span>');
 
     li.innerHTML = `
       <a href="${project.link}" target="_blank">
@@ -174,24 +168,22 @@ function renderProjects(projects) {
       </a>
     `;
 
-    container.appendChild(li); // ✅ FIXED
+    container.appendChild(li);
   });
 }
 
 function initFilters() {
   const filterButtons = document.querySelectorAll("[data-filter-btn]");
   const selectItems = document.querySelectorAll("[data-select-item]");
-  const selectValue = document.querySelector("[data-select-value]"); // ✅ FIXED
+  const selectValue = document.querySelector("[data-select-value]");
   const projectItems = document.querySelectorAll("[data-filter-item]");
 
   const applyFilter = (category) => {
     projectItems.forEach((item) => {
-      const itemCategory = item.getAttribute("data-category").toLowerCase();
-      if (category === "all" || category === itemCategory) {
-        item.style.display = "block";
-      } else {
-        item.style.display = "none";
-      }
+      // Get the categories string from the data attribute and split it back into an array
+      const itemCategories = item.getAttribute("data-categories").split(',');
+      const shouldShow = category === "all" || itemCategories.includes(category);
+      item.style.display = shouldShow ? "block" : "none";
     });
   };
 
