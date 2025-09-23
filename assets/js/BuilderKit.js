@@ -148,19 +148,26 @@ function renderProjects(projects) {
     li.setAttribute("data-filter-item", "");
     li.setAttribute("data-category", project.category.toLowerCase());
 
+    // Group tags into chunks of 2
+    const groupedTags = [];
+    for (let i = 0; i < project.tags.length; i += 2) {
+      groupedTags.push(project.tags.slice(i, i + 2));
+    }
+
+    // Build HTML with dots only between groups
+    const tagsHTML = project.tags
+                      .map(tag => `<span>${tag}</span>`)
+                      .join('<span class="dot"></span>');
+
     li.innerHTML = `
-      <a href="${project.link}">
+      <a href="${project.link}" target="_blank">
         <figure class="project-banner-box">
           <img src="${project.image}" alt="${project.alt}" loading="lazy"/>
         </figure>
         <div class="project-content">
           <h3 class="h3 project-title">${project.title}</h3>
           <div class="project-meta">
-            <span>Official</span>
-            <span class="dot"></span>
-            <span>Nitol Niloy</span>
-            <span class="dot"></span>
-            <span>ASP.NET</span>
+            ${tagsHTML}
           </div>
           <p class="project-description">${project.description}</p>
         </div>
