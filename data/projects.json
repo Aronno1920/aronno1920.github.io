@@ -1,9 +1,17 @@
 [
   {
+    "link": "https://github.com/Aronno1920/Microservices_Ecommerce",
+    "title": "eCommerce using Microservice Architecture",
+    "image": "./assets/images/project/personal_microservice.png",
+    "alt": "eCommerce using Microservice Architecture",
+    "categories": ["software", "personal"],
+    "description": "Based on eCommerce application, Microservices practice with .Net Core 7, RabbitMQ, MongoDB, Redis, PostgreSQL, SQL Server, Repository Pattern, Clean Code architecture.",
+    "tags": ["Personal", ".NET CORE", "Microservice","gRPC", "MongoDB", "Radis", "PostgreSQL"]
+  },{
     "link": "https://github.com/Aronno1920/ElasticPracticeSolution",
-    "title": "Elasticsearch",
+    "title": "Elasticsearch using .Net Core",
     "image": "./assets/images/project/personal_elasticsearch.png",
-    "alt": "Elasticsearch with .Net",
+    "alt": "Elasticsearch using .Net",
     "categories": ["software", "personal"],
     "description": "Integrating Elasticsearch with .NET Core involves utilizing the official .NET client library provided by Elastic, often referred to as NEST or the new Elasticsearch.Net client.",
     "tags": ["Personal", ".NET CORE", "Elasticsearch", "Docker"]
