@@ -461,8 +461,29 @@
             </div>
 
             <!-------- Projects List -------->
-            <ul class="project-list" id="projects-list"></ul>
+            <ul id="projects-list" class="project-list"></ul>
           </section>
+
+          <!-------- Project Modal -------->
+          <div class="project-modal-container" project-modal-container>
+              <div class="project-overlay" project-overlay></div>
+
+              <section class="projects-modal">
+                <button class="modal-close-btn" project-modal-close-btn>
+                  <ion-icon name="close-outline"></ion-icon>
+                </button>
+
+                <div class="project-modal-content">
+                  <h3 class="h3 modal-title" project-modal-title></h3>
+                  <div class="project-modal-link-wrapper">
+                    <a class="project-modal-link" href="#" target="_blank" project-modal-link>Visit Project Site</a>
+                  </div>
+                  <div class="modal-text" project-modal-text></div>
+                  <div class="project-modal-tags" project-modal-tags></div>
+                </div>
+              </section>
+          </div>
+
         </article>
 
         <!-------- PAGE: BLOG -------->

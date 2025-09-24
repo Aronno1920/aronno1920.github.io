@@ -1,5 +1,6 @@
 [
   {
+    "id": "project1",
     "link": "https://github.com/Aronno1920/Microservices_Ecommerce",
     "title": "eCommerce using Microservice Architecture",
     "image": "./assets/images/project/personal_microservice.png",
@@ -7,7 +8,9 @@
     "categories": ["software", "personal"],
     "description": "Based on eCommerce application, Microservices practice with .Net Core 7, RabbitMQ, MongoDB, Redis, PostgreSQL, SQL Server, Repository Pattern, Clean Code architecture.",
     "tags": ["Personal", ".NET CORE", "Microservice","gRPC", "MongoDB", "Radis", "PostgreSQL"]
-  },{
+  },
+  {
+    "id": "project2",
     "link": "https://github.com/Aronno1920/ElasticPracticeSolution",
     "title": "Elasticsearch using .Net Core",
     "image": "./assets/images/project/personal_elasticsearch.png",
@@ -17,6 +20,7 @@
     "tags": ["Personal", ".NET CORE", "Elasticsearch", "Docker"]
   },
   {
+    "id": "project3",
     "link": "#",
     "title": "ORION POS",
     "image": "./assets/images/project/orion_pos.jpg",
@@ -26,6 +30,7 @@
     "tags": ["Official", "ORION","POS","ASP.NET","MS SQL"]
   },
   {
+    "id": "project4",
     "link": "#",
     "title": "Niloy Hero",
     "image": "./assets/images/project/niloy_motors.png",
@@ -35,6 +40,7 @@
     "tags": ["Official", "Nitol Niloy","ASP.NET","MS SQL"]
   },
   {
+    "id": "project15",
     "link": "#",
     "title": "Flora EFTN",
     "image": "./assets/images/project/flora_eftn.jpg",
