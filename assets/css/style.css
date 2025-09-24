@@ -1015,7 +1015,8 @@ main {
 .project-banner-box img {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 200px;
+  max-height: 200px;
   object-fit: cover;
   overflow: hidden;
   transition: var(--transition-1);
@@ -1051,6 +1052,10 @@ main {
   color: var(--light-gray);
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
 }
 
 .project:hover {
@@ -1062,7 +1067,7 @@ main {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  gap: 5px;
+  gap: 8px;
   margin-bottom: 5px;
 }
 
@@ -1087,14 +1092,14 @@ main {
   justify-content: center;
   align-items: center;
   z-index: 20;
-  opacity: 0;
   visibility: hidden;
-  /* transition: var(--transition-2); */
 }
 
+.project-modal-container::-webkit-scrollbar { display: none; }
+
 .project-modal-container.active {
-  opacity: 1;
   visibility: visible;
+  pointer-events: all;
 }
 
 .project-overlay {
@@ -1118,113 +1123,113 @@ main {
 }
 
 .projects-modal {
-  position: relative;
   background: var(--eerie-black-2);
-  border: 1px solid var(--jet);
-  border-radius: 20px;
-  box-shadow: var(--shadow-1);
+  position: relative;
   padding: 20px;
-  max-width: 500px;
-  transform: scale(0.9);
-  /* transition: var(--transition-2); */
-  z-index: 20; /* Ensure it is on top of the overlay */
+  margin: 15px 12px;
+  border: 1px solid var(--jet);
+  border-radius: 14px;
+  box-shadow: var(--shadow-5);
+  transform: scale(1.2);
+  max-width: 1080px;
+  opacity: 0;
+  transition: var(--transition-1);
+  z-index: 20;
 }
 
 .project-modal-container.active .projects-modal {
   transform: scale(1);
+  opacity: 1;
+}
+
+/*------------------------------*/
+
+.project-modal-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* First Row Styles */
+.project-modal-row {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 200px;
+  max-height: 200px;
+}
+
+.project-modal-image-col {
+  width: 100%;
+}
+
+.project-modal-details-col {
+  width: 100%;
+}
+
+/* Styles for the project image */
+.project-modal-image-col .project-banner-box {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: var(--shadow-2);
+  width: 100%;
+  height: 200px;
+  max-height: 200px;
+}
+
+.project-modal-image-col .project-banner-box img {
+  width: 100%;
+  height: 200px;
+  max-height: 200px;
+  object-fit: cover;
+}
+
+/* Reused styles for the text content */
+.project-modal-tags {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+  font-size: var(--fs-9);
+  color: var(--light-gray-60);
+}
+
+.project-modal-tags .dot {
+  width: 4px;
+  height: 4px;
+  background: var(--light-gray-60);
+  border-radius: 50%;
 }
 
 .project-modal-link-wrapper {
-  margin: 15px 0;
+  margin-top: 15px;
 }
 
 .project-modal-link {
   display: inline-block;
-  padding: 8px 16px;
+  padding: 5px 15px;
   background-color: var(--orange-yellow-crayola);
   color: var(--eerie-black-2);
-  border-radius: 8px;
+  border-radius: 5px;
   text-decoration: none;
   font-weight: 500;
   transition: background-color 0.3s;
 }
 
 .project-modal-link:hover {
-  background-color: var(--yellow-crayola);
+  background: var(--orange-yellow-crayola);
+  color: hsl(0deg 0% 100%);
 }
 
-.project-modal-tags {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 10px;
-  margin-top: 15px;
+.modal-text {
+  color: var(--light-gray-60);
+  font-size: var(--fs-9);
+  font-weight: var(--fw-300);
+  line-height: 1.6;
 }
 
 
-/* .project-modal-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow-y: auto;
-  overscroll-behavior: contain;
-  background: var(--smoky-black);
-  z-index: 20;
-  visibility: hidden;
-  pointer-events: none;
-  transition: var(--transition-2);
-}
-
-.project-modal-container::-webkit-scrollbar { display: none; }
-
-.project-modal-container.active {
-  pointer-events: all;
-  visibility: visible;
-}
-
-.project-modal-content {
-  background: var(--eerie-black-2);
-  position: relative;
-  padding: 15px;
-  margin: 15px 12px;
-  border: 1px solid var(--jet);
-  border-radius: 14px;
-  box-shadow: var(--shadow-5);
-  transform: scale(1.2);
-  opacity: 0;
-  transition: var(--transition-1);
-  z-index: 2;
-}
-
-.project-modal-container.active .project-modal-content {
-  transform: scale(1);
-  opacity: 1;
-}
-
-project-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  background: hsl(0, 0%, 5%);
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-  z-index: 1;
-  transition: var(--transition-1);
-}
-
-project-overlay.active {
-  opacity: 0.8;
-  visibility: visible;
-  pointer-events: all;
-}  */
 
 /*-----------------------------------*\
   #BLOG
@@ -1701,6 +1706,25 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .form-btn ion-icon { font-size: 18px; }
 
+
+    /* --- Media Queries for Two-Column Layout --- */
+    .project-modal-row {
+        flex-direction: row;
+        gap: 20px;
+      }
+
+      .project-modal-image-col {
+        flex-basis: 40%;
+        width: auto;
+      }
+
+      .project-modal-details-col {
+        flex-basis: 60%;
+        width: auto;
+        margin-right: 30px;
+        padding: 5px 0px;
+      }
+
 }
 
 
@@ -1759,7 +1783,25 @@ textarea.form-input::-webkit-resizer { display: none; }
     width: max-content;
     margin-left: auto;
   }
-  
+
+  /* --- Media Queries for Two-Column Layout --- */
+.project-modal-row {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .project-modal-image-col {
+    flex-basis: 40%;
+    width: auto;
+  }
+
+  .project-modal-details-col {
+    flex-basis: 60%;
+    width: auto;
+    margin-right: 30px;
+    padding: 5px 0px;
+  }
+
 }
 
 /**
@@ -2149,12 +2191,11 @@ textarea.form-input::-webkit-resizer { display: none; }
   background: var(--bg-gradient-yellow-2);
 }
 
-
 .project-meta {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 5px;
+  gap: 8px;
   margin-bottom: 12px;
   font-size: var(--fs-7);
   color: var(--vegas-gold);

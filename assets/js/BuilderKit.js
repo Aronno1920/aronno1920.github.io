@@ -206,20 +206,13 @@ function renderProjects(projects) {
     li.setAttribute("data-categories", project.categories.join(","));
     li.setAttribute("id", project.id);
 
-    const tagsHTML = project.tags
-        .map(tag => `<span>${tag}</span>`)
-        .join('<span class="dot"></span>');
-
     li.innerHTML = `
       <a href="#">
         <figure class="project-banner-box">
-          <img src="${project.image}" alt="${project.alt}" loading="lazy"/>
+          <img src="${project.image}" alt="${project.alt}" loading="lazy" project-image/>
         </figure>
         <div class="project-content">
           <h3 class="h3 project-title">${project.title}</h3>
-          <div class="project-meta">
-            ${tagsHTML}
-          </div>
           <p class="project-description">${project.description}</p>
         </div>
       </a>
@@ -279,24 +272,27 @@ function initializeProjectModal(projects, container) {
     const item = event.target.closest("[id]");
     if (!item) return;
 
-
     const projectId = item.getAttribute("id");
     const project = projects.find(p => p.id === projectId);
 
     if (project) {
+      const modalImg = modal.querySelector("[project-modal-imgage]");
       const modalTitle = modal.querySelector('[project-modal-title]');
       const modalLink = modal.querySelector('[project-modal-link]');
       const modalText = modal.querySelector('[project-modal-text]');
-      const modalTags = modal.querySelector('[project-modal-tags]');
-      
-      modalTitle.textContent = project.title;
-      modalLink.innerHTML = `<a href="${project.link}" target="_blank">Visit Project Site</a>`;
-      modalText.textContent = project.description;
-      
+      const modalTags = modal.querySelector('[project-modal-meta]');
+
       // Generate and populate tags
       const tagsHtml = project.tags
         .map(tag => `<span>${tag}</span>`)
         .join('<span class="dot"></span>');
+
+
+      modalImg.src = project.image;
+      modalImg.alt = project.alt;
+      modalTitle.textContent = project.title;
+      modalLink.innerHTML = `<a href="${project.link}" target="_blank">Visit Project Site</a>`;
+      modalText.textContent = project.description;
       modalTags.innerHTML = tagsHtml;
 
       modal.classList.add("active");
