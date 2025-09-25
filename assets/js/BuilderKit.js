@@ -24,9 +24,7 @@ function renderServices(services) {
 
     li.innerHTML = `
       <div class="service-icon-box">
-        <img src="${service.icon.src}" 
-             alt="${service.icon.alt}" 
-             width="${service.icon.width}" />
+        <img src="${service.icon}" alt="${service.title}" width="40px" />
       </div>
       <div class="service-content-box">
         <h4 class="h4 service-item-title">${service.title}</h4>
@@ -71,12 +69,7 @@ function renderTestimonials(testimonials, container) {
       <li class="testimonials-item">
         <div class="content-card" data-testimonial-id="${testimonial.id}">
           <figure class="testimonials-avatar-box">
-            <img 
-              src="${testimonial.avatar.src}" 
-              alt="${testimonial.avatar.alt}" 
-              width="${testimonial.avatar.width}" 
-              data-testimonials-avatar
-            />
+            <img src="${testimonial.avatar}" alt="${testimonial.name}" width="60px" data-testimonials-avatar/>
           </figure>
           <h4 class="h4 testimonials-item-title" data-testimonials-title>${testimonial.name}</h4>
           <p hidden data-testimonials-fullname>${testimonial.fullName}</p>
@@ -150,7 +143,7 @@ function initializeModal(container) {
 
     if (modalImg && avatar) {
       modalImg.src = avatar.src;
-      modalImg.alt = avatar.alt;
+      modalImg.alt = avatar.modalTitle;
     }
     if (modalTitle && fullname) {
       modalTitle.textContent = fullname.textContent;
@@ -209,7 +202,7 @@ function renderProjects(projects) {
     li.innerHTML = `
       <a href="#">
         <figure class="project-banner-box">
-          <img src="${project.image}" alt="${project.alt}" loading="lazy" project-image/>
+          <img src="${project.image}" alt="${project.title}" loading="lazy" project-image/>
         </figure>
         <div class="project-content">
           <h3 class="h3 project-title">${project.title}</h3>
@@ -289,7 +282,7 @@ function initializeProjectModal(projects, container) {
 
 
       modalImg.src = project.image;
-      modalImg.alt = project.alt;
+      modalImg.alt = project.title;
       modalTitle.textContent = project.title;
       modalLink.innerHTML = `<a href="${project.link}" target="_blank">Visit Project Site</a>`;
       modalText.textContent = project.description;

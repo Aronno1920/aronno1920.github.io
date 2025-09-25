@@ -1,41 +1,25 @@
 [
   {
     "id": "software-dev",
-    "icon": {
-      "src": "./assets/images/logo/icon-dev.svg",
-      "alt": "Software Development",
-      "width": "40"
-    },
+    "icon": "./assets/images/logo/icon-dev.svg",
     "title": "Software Development",
     "description": "Developing scalable and secure full-stack web applications with clean architecture and modern frameworks."
   },
   {
     "id": "ai-solutions",
-    "icon": {
-      "src": "./assets/images/logo/icon-ai.svg",
-      "alt": "AI Solutions",
-      "width": "40"
-    },
+    "icon": "./assets/images/logo/icon-ai.svg",
     "title": "AI Solutions",
     "description": "Building custom AI models and intelligent systems to automate workflows and enhance decision-making."
   },
   {
     "id": "mobile-apps",
-    "icon": {
-      "src": "./assets/images/logo/icon-app.svg",
-      "alt": "Mobile Applications",
-      "width": "40"
-    },
+    "icon": "./assets/images/logo/icon-app.svg",
     "title": "Mobile Applications",
     "description": "Designing and developing cross-platform mobile application for enterprise software with intuitive user experiences."
   },
   {
     "id": "busniess-dev",
-    "icon": {
-      "src": "./assets/images/logo/icon-BusinessDev.svg",
-      "alt": "Communication icon",
-      "width": 40
-    },
+    "icon": "./assets/images/logo/icon-BusinessDev.svg",
     "title": "Business Development",
     "description": "Identifying growth opportunities, building client relationships, and aligning technical solutions with business goals to drive sustainable success."
   }

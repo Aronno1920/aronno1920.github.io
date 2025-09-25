@@ -4,49 +4,44 @@
     "link": "https://github.com/Aronno1920/Microservices_Ecommerce",
     "title": "eCommerce using Microservice Architecture",
     "image": "./assets/images/project/personal_microservice.png",
-    "alt": "eCommerce using Microservice Architecture",
     "categories": ["software", "personal"],
-    "description": "Based on eCommerce application, Microservices practice with .Net Core 7, RabbitMQ, MongoDB, Redis, PostgreSQL, SQL Server, Repository Pattern, Clean Code architecture.",
-    "tags": ["Personal", ".NET CORE", "Microservice","gRPC", "MongoDB", "Radis", "PostgreSQL"]
+    "tags": ["Personal", ".NET CORE", "Microservice","gRPC", "MongoDB", "Radis", "PostgreSQL"],
+    "description": "Based on eCommerce application, Microservices practice with .Net Core 7, RabbitMQ, MongoDB, Redis, PostgreSQL, SQL Server, Repository Pattern, Clean Code architecture."
   },
   {
     "id": "project2",
     "link": "https://github.com/Aronno1920/ElasticPracticeSolution",
     "title": "Elasticsearch using .Net Core",
     "image": "./assets/images/project/personal_elasticsearch.png",
-    "alt": "Elasticsearch using .Net",
     "categories": ["software", "personal"],
-    "description": "Integrating Elasticsearch with .NET Core involves utilizing the official .NET client library provided by Elastic, often referred to as NEST or the new Elasticsearch.Net client.",
-    "tags": ["Personal", ".NET CORE", "Elasticsearch", "Docker"]
+    "tags": ["Personal", ".NET CORE", "Elasticsearch", "Docker"],
+    "description": "Integrating Elasticsearch with .NET Core involves utilizing the official .NET client library provided by Elastic, often referred to as NEST or the new Elasticsearch.Net client."
   },
   {
     "id": "project3",
     "link": "#",
     "title": "ORION POS",
     "image": "./assets/images/project/orion_pos.jpg",
-    "alt": "ORION POS",
     "categories": ["software"],
-    "description": "Desktop based Point of Sales for Restaurant, Data Syncronizer & Online Reporting System (Takeaway / Restaurant)",
-    "tags": ["Official", "ORION","POS","ASP.NET","MS SQL"]
+    "tags": ["Official", "ORION","POS","ASP.NET","MS SQL"],
+    "description": "Desktop based Point of Sales for Restaurant, Data Syncronizer & Online Reporting System (Takeaway / Restaurant)"
   },
   {
     "id": "project4",
     "link": "#",
     "title": "Niloy Hero",
     "image": "./assets/images/project/niloy_motors.png",
-    "alt": "Niloy Hero",
     "categories": ["software"],
-    "description": "Commimg soon...",
-    "tags": ["Official", "Nitol Niloy","ASP.NET","MS SQL"]
+    "tags": ["Official", "Nitol Niloy","ASP.NET","MS SQL"],
+    "description": "Commimg soon..."
   },
   {
     "id": "project15",
     "link": "#",
     "title": "Flora EFTN",
     "image": "./assets/images/project/flora_eftn.jpg",
-    "alt": "Flora EFTN",
     "categories": ["software"],
-    "description": "Upgrading Electronic Fund Transfer on continual manner through automated services which has integration with different type of Core Banking System including different transaction channels like Cheque Processing, iBanking system, Mobile Finance System, Islami Banking, Credit cards, Cloud Based System, Share Dividend, UPay, FirstPay, Rocket and other payment system.",
-    "tags": ["Official", "Flora Systems","ASP.NET","MS SQL"]
+    "tags": ["Official", "Flora Systems","ASP.NET","MS SQL"],
+    "description": "Upgrading Electronic Fund Transfer on continual manner through automated services which has integration with different type of Core Banking System including different transaction channels like Cheque Processing, iBanking system, Mobile Finance System, Islami Banking, Credit cards, Cloud Based System, Share Dividend, UPay, FirstPay, Rocket and other payment system."
   }
 ]
