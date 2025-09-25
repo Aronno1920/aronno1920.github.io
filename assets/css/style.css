@@ -1478,6 +1478,11 @@ textarea.form-input::-webkit-resizer { display: none; }
     border-radius: 20px;
   }
 
+  .projects-modal {
+    max-width: 600px;
+    padding: 25px;
+  }
+
   .blog-banner-box,
   .contact-banner-box { height: auto; }
 }
@@ -1708,22 +1713,22 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 
     /* --- Media Queries for Two-Column Layout --- */
-    .project-modal-row {
-        flex-direction: row;
-        gap: 20px;
-      }
+  .project-modal-row {
+    flex-direction: row;
+    gap: 20px;
+  }
 
-      .project-modal-image-col {
-        flex-basis: 40%;
-        width: auto;
-      }
+  .project-modal-image-col {
+    flex-basis: 40%;
+    width: auto;
+  }
 
-      .project-modal-details-col {
-        flex-basis: 60%;
-        width: auto;
-        margin-right: 30px;
-        padding: 5px 0px;
-      }
+  .project-modal-details-col {
+    flex-basis: 60%;
+    width: auto;
+    margin-right: 30px;
+    padding: 5px 0px;
+  }
 
 }
 
@@ -1746,7 +1751,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   .navbar-link { --fs-8: 15px; }
 
   .testimonials-modal {
-    gap: 35px;
+    gap: 30px;
     max-width: 680px;
   }
 
@@ -1787,7 +1792,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   /* --- Media Queries for Two-Column Layout --- */
 .project-modal-row {
     flex-direction: row;
-    gap: 20px;
+    gap: 25px;
   }
 
   .project-modal-image-col {
@@ -1853,10 +1858,6 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .project-list { grid-template-columns: repeat(2, 1fr); gap: 20px; }
 }
-
-
-
-
 
 /**
  * responsive larger than 1250px screen
