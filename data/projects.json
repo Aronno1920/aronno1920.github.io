@@ -1,5 +1,14 @@
 [
   {
+    "id": "project6",
+    "link": "https://github.com/Aronno1920/Microservices_Ecommerce",
+    "title": "AI Agent for LinkedIn Post Generator",
+    "image": "./assets/images/project/project6.png",
+    "categories": ["ai-solutions", "personal"],
+    "tags": ["Personal", "AI Agent", "Post Generator","LangChain", "GitHub Models", "Streamlit"],
+    "description": "Generate professional, engaging LinkedIn posts in multiple languages with the power of LangChain + GitHub Models. This project provides a simple Streamlit UI where you enter a topic and language, and get a ready-to-use LinkedIn-style post with options to copy or download instantly."
+  },
+  {
     "id": "project1",
     "link": "https://github.com/Aronno1920/Microservices_Ecommerce",
     "title": "eCommerce using Microservice Architecture",
