@@ -1856,7 +1856,9 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .clients-item { min-width: calc(25% - 130px); }
 
-  .project-list { grid-template-columns: repeat(2, 1fr); gap: 20px; }
+  .blog-posts-list { grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  
+  .project-list { grid-template-columns: repeat(3, 1fr); gap: 20px; }
 }
 
 /**
