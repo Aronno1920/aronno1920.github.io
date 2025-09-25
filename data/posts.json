@@ -3,52 +3,32 @@
     "id": "post1",
     "title": "The Future is Remote: Why, How, and Where to Begin Your Remote Work Journey",
     "url": "https://techaid24.com/future-is-remote-work/",
-    "image": {
-      "src": "./assets/images/post/post1.png",
-      "alt": "The Future is Remote: Why, How, and Where to Begin Your Remote Work Journey",
-      "loading": "lazy"
-    },
+    "image": "./assets/images/post/post1.png",
     "category": "Career",
-    "date_published": "May 1, 2025",
-    "read_time": "8 min read"
+    "date_published": "May 1, 2025"
   },
   {
     "id": "post2",
     "title": "Learn the OWASP API Security Top 10: Essential Guide to API Security Fundamentals",
     "url": "https://techaid24.com/owasp-api-security-top-10/",
-    "image": {
-      "src": "./assets/images/post/post2.jpg",
-      "alt": "Learn the OWASP API Security Top 10: Essential Guide to API Security Fundamentals",
-      "loading": "lazy"
-    },
+    "image": "./assets/images/post/post2.jpg",
     "category": "API Security",
-    "date_published": "February 21, 2024",
-    "read_time": "9 min read"
+    "date_published": "February 21, 2024"
   },
   {
     "id": "post3",
     "title": "The Key Differences Between Web Services and Microservices Explained",
     "url": "https://techaid24.com/owasp-api-security-top-10/",
-    "image": {
-      "src": "./assets/images/post/post3.png",
-      "alt": "The Key Differences Between Web Services and Microservices Explained",
-      "loading": "lazy"
-    },
+    "image": "./assets/images/post/post3.png",
     "category": "Microservice Architecture",
-    "date_published": "June 26, 2024",
-    "read_time": "8 min read"
+    "date_published": "June 26, 2024"
   },
   {
     "id": "post4",
     "title": "সুপারভাইজড বনাম আনসুপারভাইজড বনাম রিইনফোর্সমেন্ট লার্নিং : মেশিন লার্নিংয়ের ৩টি স্তম্ভ",
     "url": "https://techaid24.com/supervised-unsupervised-reinforcement/",
-    "image": {
-      "src": "./assets/images/post/post4.png",
-      "alt": "সুপারভাইজড বনাম আনসুপারভাইজড বনাম রিইনফোর্সমেন্ট লার্নিং : মেশিন লার্নিংয়ের ৩টি স্তম্ভ",
-      "loading": "lazy"
-    },
+    "image": "./assets/images/post/post4.png",
     "category": "AI Engineering",
-    "date_published": "April 17, 2025",
-    "read_time": "8 min read"
+    "date_published": "April 17, 2025"
   }
 ]

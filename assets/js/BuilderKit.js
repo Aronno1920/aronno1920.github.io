@@ -339,9 +339,8 @@ function createBlogPostItem(post) {
   const figure = document.createElement('figure');
   figure.className = 'blog-banner-box';
   const img = document.createElement('img');
-  img.src = post.image?.src || '';
-  img.alt = post.image?.alt || '';
-  if (post.image?.loading) img.loading = post.image.loading;
+  img.src = post.image || '';
+  img.alt = post.category || '';
   figure.appendChild(img);
 
   const content = document.createElement('div');
@@ -361,14 +360,7 @@ function createBlogPostItem(post) {
   timeEl.dateTime = post.date_published || '';
   timeEl.textContent = post.date_published;
 
-  const dot2 = document.createElement('span');
-  dot2.className = 'dot';
-
-  const readTime = document.createElement('span');
-  readTime.className = 'read-time';
-  readTime.textContent = post.read_time || '';
-
-  meta.append(category, dot1, timeEl, dot2, readTime);
+  meta.append(category, dot1, timeEl);
 
   const h3 = document.createElement('h3');
   h3.className = 'h3 blog-item-title';
