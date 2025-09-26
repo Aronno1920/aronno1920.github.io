@@ -1,56 +1,39 @@
 [
   {
     "id": "project6",
-    "link": "https://github.com/Aronno1920/Microservices_Ecommerce",
-    "title": "AI Agent for LinkedIn Post Generator",
-    "image": "./assets/images/project/project6.png",
     "categories": ["ai-solutions", "personal"],
+    "image": "./assets/images/project/project6.png",
+    "title": "AI Agent for LinkedIn Post Generator",
+    "excerpt":"Generate professional, engaging LinkedIn posts in multiple languages with the power of LangChain + GitHub Models.",
     "tags": ["Personal", "AI Agent", "Post Generator","LangChain", "GitHub Models", "Streamlit"],
-    "description": "Generate professional, engaging LinkedIn posts in multiple languages with the power of LangChain + GitHub Models. This project provides a simple Streamlit UI where you enter a topic and language, and get a ready-to-use LinkedIn-style post with options to copy or download instantly."
-  },
-  {
-    "id": "project1",
-    "link": "https://github.com/Aronno1920/Microservices_Ecommerce",
-    "title": "eCommerce using Microservice Architecture",
-    "image": "./assets/images/project/personal_microservice.png",
-    "categories": ["software", "personal"],
-    "tags": ["Personal", ".NET CORE", "Microservice","gRPC", "MongoDB", "Radis", "PostgreSQL"],
-    "description": "Based on eCommerce application, Microservices practice with .Net Core 7, RabbitMQ, MongoDB, Redis, PostgreSQL, SQL Server, Repository Pattern, Clean Code architecture."
+    "description": [
+      "LinkedIn Post Generator (LangChain + GitHub Models + Streamlit)",
+      "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
+      "fix: resolve production frontend API configuration - localhost:4000 to /api proxy"
+    ],
+    "features": [
+      "LinkedIn Post Generator (LangChain + GitHub Models + Streamlit)",
+      "asdfa sdfasdf ",
+      "asdfa sdfas dfasdf "
+
+    ],
+    "link": "https://github.com/Aronno1920/PostGenerator-AIAgent-LangChain"
   },
   {
     "id": "project2",
-    "link": "https://github.com/Aronno1920/ElasticPracticeSolution",
-    "title": "Elasticsearch using .Net Core",
-    "image": "./assets/images/project/personal_elasticsearch.png",
     "categories": ["software", "personal"],
+    "image": "./assets/images/project/personal_elasticsearch.png",
+    "title": "Elasticsearch using .Net Core",
+    "excerpt":"Integrating Elasticsearch into a .NET Core 9 WebAPI project involves several key steps, including installing the required packages, configuring the client, indexing data, and querying Elasticsearch.",
     "tags": ["Personal", ".NET CORE", "Elasticsearch", "Docker"],
-    "description": "Integrating Elasticsearch with .NET Core involves utilizing the official .NET client library provided by Elastic, often referred to as NEST or the new Elasticsearch.Net client."
-  },
-  {
-    "id": "project3",
-    "link": "#",
-    "title": "ORION POS",
-    "image": "./assets/images/project/orion_pos.jpg",
-    "categories": ["software"],
-    "tags": ["Official", "ORION","POS","ASP.NET","MS SQL"],
-    "description": "Desktop based Point of Sales for Restaurant, Data Syncronizer & Online Reporting System (Takeaway / Restaurant)"
-  },
-  {
-    "id": "project4",
-    "link": "#",
-    "title": "Niloy Hero",
-    "image": "./assets/images/project/niloy_motors.png",
-    "categories": ["software"],
-    "tags": ["Official", "Nitol Niloy","ASP.NET","MS SQL"],
-    "description": "Commimg soon..."
-  },
-  {
-    "id": "project15",
-    "link": "#",
-    "title": "Flora EFTN",
-    "image": "./assets/images/project/flora_eftn.jpg",
-    "categories": ["software"],
-    "tags": ["Official", "Flora Systems","ASP.NET","MS SQL"],
-    "description": "Upgrading Electronic Fund Transfer on continual manner through automated services which has integration with different type of Core Banking System including different transaction channels like Cheque Processing, iBanking system, Mobile Finance System, Islami Banking, Credit cards, Cloud Based System, Share Dividend, UPay, FirstPay, Rocket and other payment system."
+    "description": [
+      "LinkedIn Post Generator (LangChain + GitHub Models + Streamlit)",
+      ""
+    ],
+    "features": [
+      "LinkedIn Post Generator (LangChain + GitHub Models + Streamlit)"
+    ],
+    "link": "https://github.com/Aronno1920/Microservices_Ecommerce"
   }
+  
 ]

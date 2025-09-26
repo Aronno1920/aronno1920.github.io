@@ -206,7 +206,7 @@ function renderProjects(projects) {
         </figure>
         <div class="project-content">
           <h3 class="h3 project-title">${project.title}</h3>
-          <p class="project-description">${project.description}</p>
+          <p class="project-description">${project.excerpt}</p>
         </div>
       </a>
     `;
@@ -271,23 +271,26 @@ function initializeProjectModal(projects, container) {
     if (project) {
       const modalImg = modal.querySelector("[project-modal-imgage]");
       const modalTitle = modal.querySelector('[project-modal-title]');
-      const modalLink = modal.querySelector('[project-modal-link]');
-      const modalText = modal.querySelector('[project-modal-text]');
       const modalTags = modal.querySelector('[project-modal-meta]');
 
-      // Generate and populate tags
-      const tagsHtml = project.tags
-        .map(tag => `<span>${tag}</span>`)
-        .join('<span class="dot"></span>');
+      const modalDescription = modal.querySelector('[project-modal-desciption]');
+      const modalFeatures = modal.querySelector('[project-modal-features]');
+      const modalLink = modal.querySelector('[project-modal-link]');
 
+      // --- START: Formatting text ---
+      const projTags = project.tags.map(tag => `<span>${tag}</span>`).join('<span class="dot"></span>');
+      const proDescription = project.description.map(description => `<p>${description}</p>`).join('');
+      const proFeature = project.features.map(feature => `<span>- ${feature}</span>`).join('');
+      // --- End: Formatting text ---
 
       modalImg.src = project.image;
       modalImg.alt = project.title;
       modalTitle.textContent = project.title;
+      modalTags.innerHTML = projTags;
+      modalDescription.innerHTML = proDescription;
+      modalFeatures.innerHTML = proFeature;
       modalLink.innerHTML = `<a href="${project.link}" target="_blank">Visit Project Site</a>`;
-      modalText.textContent = project.description;
-      modalTags.innerHTML = tagsHtml;
-
+      
       modal.classList.add("active");
       overlay.classList.add("active");
     }

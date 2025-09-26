@@ -1006,17 +1006,17 @@ main {
   100% { transform: scale(1); }
 }
 
-.project-banner-box {
+.project-item .project-banner-box {
   position: relative;
   overflow: hidden;
   border-radius: 14px 14px 0 0;
 }
 
-.project-banner-box img {
+.project-item .project-banner-box img {
   position: relative;
   width: 100%;
-  height: 200px;
-  max-height: 200px;
+  height: 170px;
+  max-height: 170px;
   object-fit: cover;
   overflow: hidden;
   transition: var(--transition-1);
@@ -1061,21 +1061,6 @@ main {
 .project:hover {
   background: var(--orange-yellow-crayola);
   color: var(--smoky-black);
-}
-
-.project-meta {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 8px;
-  margin-bottom: 5px;
-}
-
-.project-meta .dot {
-  background: var(--light-gray-70);
-  width: 4px;
-  height: 4px;
-  border-radius: 4px;
 }
 
 /*-----------------------------------*\
@@ -1131,7 +1116,7 @@ main {
   border-radius: 14px;
   box-shadow: var(--shadow-5);
   transform: scale(1.2);
-  max-width: 1080px;
+  max-width: 800px;
   opacity: 0;
   transition: var(--transition-1);
   z-index: 20;
@@ -1147,60 +1132,66 @@ main {
 .project-modal-content {
   display: flex;
   flex-direction: column;
-  gap: 20px;
 }
 
-/* First Row Styles */
-.project-modal-row {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  height: 200px;
-  max-height: 200px;
-}
-
-.project-modal-image-col {
-  width: 100%;
-}
-
-.project-modal-details-col {
-  width: 100%;
-}
-
-/* Styles for the project image */
-.project-modal-image-col .project-banner-box {
+.project-modal-image-box {
   border-radius: 12px;
   overflow: hidden;
   box-shadow: var(--shadow-2);
   width: 100%;
-  height: 200px;
-  max-height: 200px;
+  height: 300px;
+  max-height: 300px;
 }
 
-.project-modal-image-col .project-banner-box img {
+.project-modal-image-box img {
   width: 100%;
-  height: 200px;
-  max-height: 200px;
+  height: 300px;
+  max-height: 300px;
   object-fit: cover;
 }
 
-/* Reused styles for the text content */
-.project-modal-tags {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 10px;
-  margin: 10px 0;
-  font-size: var(--fs-9);
-  color: var(--light-gray-60);
+.project-modal-header {
+  width: auto;
+  margin-top: 10px;
+  margin-bottom: 15px;
 }
 
-.project-modal-tags .dot {
+.project-modal-header .project-modal-title {
+  color: var(--white-2);
+  font-size: var(--fs-4);
+  font-weight: var(--fw-500);
+  line-height: 1.4;
+  transition: var(--transition-1);
+}
+
+.project-modal-header .project-modal-meta {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    /* gap: 8px;
+    margin-bottom: 3px; */
+    font-size: var(--fs-6);
+    color: var(--vegas-gold);
+}
+
+.project-modal-header .project-modal-meta .dot {
   width: 4px;
   height: 4px;
-  background: var(--light-gray-60);
+  background: var(--light-gray-70);
   border-radius: 50%;
+  margin: 0px 8px;
 }
+
+.project-modal-details {
+  color: var(--light-gray);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-300);
+}
+
+.project-modal-details p {
+    margin-bottom: 7px;
+}
+
 
 .project-modal-link-wrapper {
   margin-top: 15px;
@@ -1220,15 +1211,6 @@ main {
   background: var(--orange-yellow-crayola);
   color: hsl(0, 0%, 100%);
 }
-
-.modal-text {
-  color: var(--light-gray-60);
-  font-size: var(--fs-9);
-  font-weight: var(--fw-300);
-  line-height: 1.6;
-}
-
-
 
 /*-----------------------------------*\
   #BLOG
@@ -1677,8 +1659,6 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .blog-content { padding: 15px; }
 
-
-
   /**
    * #CONTACT
    */
@@ -1711,23 +1691,6 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 
     /* --- Media Queries for Two-Column Layout --- */
-  .project-modal-row {
-    flex-direction: row;
-    gap: 20px;
-  }
-
-  .project-modal-image-col {
-    flex-basis: 40%;
-    width: auto;
-  }
-
-  .project-modal-details-col {
-    flex-basis: 60%;
-    width: auto;
-    margin-right: 30px;
-    padding: 5px 0px;
-  }
-
 }
 
 
@@ -1785,24 +1748,6 @@ textarea.form-input::-webkit-resizer { display: none; }
   .form-btn {
     width: max-content;
     margin-left: auto;
-  }
-
-  /* --- Media Queries for Two-Column Layout --- */
-.project-modal-row {
-    flex-direction: row;
-    gap: 25px;
-  }
-
-  .project-modal-image-col {
-    flex-basis: 40%;
-    width: auto;
-  }
-
-  .project-modal-details-col {
-    flex-basis: 60%;
-    width: auto;
-    margin-right: 30px;
-    padding: 5px 0px;
   }
 
 }
