@@ -321,56 +321,34 @@ document.addEventListener("DOMContentLoaded", async () => {
 });
 
 function renderPosts(posts) {
-  const root = document.getElementById('blog-list');
-  root.innerHTML = '';
-  posts.forEach(post => root.appendChild(createBlogPostItem(post)));
-}
+  const container = document.getElementById("blog-list");
+  container.innerHTML = "";
 
-function createBlogPostItem(post) {
-  const li = document.createElement('li');
-  li.className = 'blog-post-item';
+  posts.forEach((post) => {
+    const li = document.createElement("li");
+    li.className = `blog-post-item`;
+    li.setAttribute("data-blog-id", post.id);
 
-  const a = document.createElement('a');
-  a.className = 'blog-post-link';
-  a.href = post.url || '#';
-  a.setAttribute('data-blog-id', post.id || '');
-  a.target = '_blank'
+    li.innerHTML = `
+      <a href="${post.url || '#'}" target="_blank">
+        <figure class="blog-banner-box">
+          <img src="${post.image}" alt="${post.title}" loading="lazy"/>
+        </figure>
 
-  const figure = document.createElement('figure');
-  figure.className = 'blog-banner-box';
-  const img = document.createElement('img');
-  img.src = post.image || '';
-  img.alt = post.category || '';
-  figure.appendChild(img);
+        <div class="blog-content">
+          <div class="blog-meta">
+            <p class="blog-category">${post.category}</p>
+            <span class="dot"></span>
+            <time datetime="${post.date_published}">${post.date_published}</time>
+          </div>
+          <h3 class="h3 blog-item-title">${post.title}</h3>
+          <p class="blog-text">${post.description || ''}</p> 
+        </div>
+      </a>
+    `;
 
-  const content = document.createElement('div');
-  content.className = 'blog-content';
-
-  const meta = document.createElement('div');
-  meta.className = 'blog-meta';
-
-  const category = document.createElement('p');
-  category.className = 'blog-category';
-  category.textContent = post.category || '';
-
-  const dot1 = document.createElement('span');
-  dot1.className = 'dot';
-
-  const timeEl = document.createElement('time');
-  timeEl.dateTime = post.date_published || '';
-  timeEl.textContent = post.date_published;
-
-  meta.append(category, dot1, timeEl);
-
-  const h3 = document.createElement('h3');
-  h3.className = 'h3 blog-item-title';
-  h3.textContent = post.title || '';
-
-  content.append(meta, h3);
-  a.append(figure, content);
-  li.appendChild(a);
-
-  return li;
+    container.appendChild(li);
+  });
 }
 ////////////////////////////////////////////////////////
 
