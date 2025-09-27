@@ -182,9 +182,8 @@ document.addEventListener("DOMContentLoaded", async () => {
     const projects = await projectsResponse.json();
     renderProjects(projects);
     initFilters();
-    //initializeProjectModal(projects);
   } catch (error) {
-    console.error("Failed to load services:", error);
+    console.error("Failed to load projects:", error);
   }
 });
 
@@ -222,34 +221,113 @@ function initFilters() {
   const filterButtons = document.querySelectorAll("[data-filter-btn]");
   const selectItems = document.querySelectorAll("[data-select-item]");
   const selectValue = document.querySelector("[data-select-value]");
-  const projectItems = document.querySelectorAll("[data-filter-item]");
+  const select = document.querySelector("[data-select]");
+
+  // helper to get current project items (fresh NodeList each time)
+  const getProjectItems = () => Array.from(document.querySelectorAll("[data-filter-item]"));
+
+  // Normalize helper: trims and returns slug-like (ai-solutions)
+  const normalize = (str) =>
+    String(str || "").trim().toLowerCase().replace(/\s+/g, "-");
 
   const applyFilter = (category) => {
-    projectItems.forEach((item) => {
-      // Get the categories string from the data attribute and split it back into an array
-      const itemCategories = item.getAttribute("data-categories").split(',');
+    const items = getProjectItems();
+    console.log("Applying filter:", category, "-> items:", items.length);
+
+    items.forEach((item) => {
+      const raw = item.getAttribute("data-categories") || "";
+      // split, trim and normalize each category
+      const itemCategories = raw.split(",").map(s => s.trim()).filter(Boolean);
       const shouldShow = category === "all" || itemCategories.includes(category);
-      item.style.display = shouldShow ? "block" : "none";
+
+      // show/hide (both style and class to match different CSS approaches)
+      item.style.display = shouldShow ? "" : "none";
+      item.classList.toggle("active", shouldShow);
     });
   };
 
+  // Buttons click -> read data-value if provided; otherwise fall back to normalized text
   filterButtons.forEach((btn) => {
     btn.addEventListener("click", () => {
-      const category = btn.textContent.trim().toLowerCase();
+      const category = btn.dataset.value ? btn.dataset.value.trim() : normalize(btn.textContent);
+      console.log("Button clicked, category:", category);
+
+      // UI sync
       filterButtons.forEach((b) => b.classList.remove("active"));
       btn.classList.add("active");
+      if (selectValue) selectValue.textContent = btn.textContent.trim();
+
+      // close select if open
+      if (select) {
+        select.classList.remove("open");
+        select.setAttribute("aria-expanded", "false");
+      }
+
       applyFilter(category);
     });
   });
 
+  // Dropdown items click -> same logic, and also sync button active state
   selectItems.forEach((item) => {
     item.addEventListener("click", () => {
-      const category = item.textContent.trim().toLowerCase();
-      selectValue.textContent = item.textContent;
+      const category = item.dataset.value ? item.dataset.value.trim() : normalize(item.textContent);
+      console.log("Select item clicked, category:", category);
+
+      if (selectValue) selectValue.textContent = item.textContent.trim();
+
+      // update buttons active state to match selected category
+      filterButtons.forEach((b) => {
+        const bval = b.dataset.value ? b.dataset.value.trim() : normalize(b.textContent);
+        b.classList.toggle("active", bval === category);
+      });
+
+      // close select
+      if (select) {
+        select.classList.remove("open");
+        select.setAttribute("aria-expanded", "false");
+      }
+
       applyFilter(category);
     });
   });
+
+  // initial render: show all
+  applyFilter("all");
 }
+
+
+// function initFilters() {
+//   const filterButtons = document.querySelectorAll("[data-filter-btn]");
+//   const selectItems = document.querySelectorAll("[data-select-item]");
+//   const selectValue = document.querySelector("[data-select-value]");
+//   const projectItems = document.querySelectorAll("[data-filter-item]");
+
+//   const applyFilter = (category) => {
+//     projectItems.forEach((item) => {
+//       // Get the categories string from the data attribute and split it back into an array
+//       const itemCategories = item.getAttribute("data-categories").split(',');
+//       const shouldShow = category === "all" || itemCategories.includes(category);
+//       item.style.display = shouldShow ? "block" : "none";
+//     });
+//   };
+
+//   filterButtons.forEach((btn) => {
+//     btn.addEventListener("click", () => {
+//       const category = btn.textContent.trim().toLowerCase();
+//       filterButtons.forEach((b) => b.classList.remove("active"));
+//       btn.classList.add("active");
+//       applyFilter(category);
+//     });
+//   });
+
+//   selectItems.forEach((item) => {
+//     item.addEventListener("click", () => {
+//       const category = item.textContent.trim().toLowerCase();
+//       selectValue.textContent = item.textContent;
+//       applyFilter(category);
+//     });
+//   });
+// }
 
 function initializeProjectModal(projects, container) {
   const modal = document.querySelector('.project-modal-container');

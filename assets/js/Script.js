@@ -54,30 +54,47 @@ const sidebarHandler = () => {
 
 /////////// Filter Handler ///////////
 const filterHandler = () => {
+
+  const DOM = {
+    filterItems: document.querySelectorAll("[data-filter-item]"),
+    filterBtns: document.querySelectorAll("[data-filter-btn]"),
+    select: document.querySelector("[data-select]"),
+    selectValue: document.querySelector("[data-select-value]"),
+    selectItems: document.querySelectorAll("[data-select-item]")
+  };
+
   const filterFunc = (selectedValue) => {
     DOM.filterItems.forEach((item) => {
-      item.classList.toggle(
-        "active",
-        selectedValue === "all" || selectedValue === item.dataset.category
-      );
+      const categories = item.dataset.categories.split(","); // convert back to array
+      const match = selectedValue === "all" || categories.includes(selectedValue);
+      item.classList.toggle("active", match);
     });
   };
 
-  DOM.select.addEventListener("click", () => utils.toggleElement(DOM.select));
+  // Dropdown toggle
+  DOM.select.addEventListener("click", () => {
+    utils.toggleElement(DOM.select);
+    DOM.select.setAttribute("aria-expanded", DOM.select.classList.contains("open"));
+  });
 
+  // Dropdown items
   DOM.selectItems.forEach((item) => {
     item.addEventListener("click", function () {
-      const selectedValue = this.innerText.toLowerCase();
+      const selectedValue = this.dataset.value;
       DOM.selectValue.innerText = this.innerText;
       utils.toggleElement(DOM.select);
       filterFunc(selectedValue);
     });
   });
 
+  // Buttons
   let lastClickedBtn = DOM.filterBtns[0];
   DOM.filterBtns.forEach((btn) => {
     btn.addEventListener("click", function () {
-      const selectedValue = this.innerText.toLowerCase();
+      const selectedValue = this.dataset.value;
+      console.log("selectedValue:", selectedValue);
+      console.log("this.innerText:", this.innerText);
+
       DOM.selectValue.innerText = this.innerText;
       filterFunc(selectedValue);
 
@@ -87,6 +104,44 @@ const filterHandler = () => {
     });
   });
 };
+
+
+
+// const filterHandler = () => {
+//   const filterFunc = (selectedValue) => {
+//     DOM.filterItems.forEach((item) => {
+//       item.classList.toggle(
+//         "active",
+//         selectedValue === "all" || selectedValue === item.dataset.category
+//       );
+//     });
+//   };
+
+//   DOM.select.addEventListener("click", () => utils.toggleElement(DOM.select));
+
+//   DOM.selectItems.forEach((item) => {
+//     item.addEventListener("click", function () {
+//       const selectedValue = this.innerText.toLowerCase();
+//       DOM.selectValue.innerText = this.innerText;
+//       utils.toggleElement(DOM.select);
+//       filterFunc(selectedValue);
+//     });
+//   });
+
+//   let lastClickedBtn = DOM.filterBtns[0];
+//   DOM.filterBtns.forEach((btn) => {
+//     btn.addEventListener("click", function () {
+//       const selectedValue = this.innerText.toLowerCase().trim().replace(/ /g, '-');
+//       DOM.selectValue.innerText = this.innerText;
+//       alert(selectedValue);
+//       filterFunc(selectedValue);
+
+//       lastClickedBtn.classList.remove("active");
+//       this.classList.add("active");
+//       lastClickedBtn = this;
+//     });
+//   });
+// };
 //////////////////////////////////////
 
 
