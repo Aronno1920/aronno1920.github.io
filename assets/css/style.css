@@ -198,7 +198,6 @@ article.active {
 .h4,
 .h5 {
   color: var(--white-2);
-  text-transform: capitalize;
 }
 
 .h2 { font-size: var(--fs-1); }
@@ -392,6 +391,7 @@ main {
 }
 
 .social-item .social-link:hover { color: var(--light-gray); }
+
 
 
 /*-----------------------------------*\
@@ -1141,6 +1141,7 @@ main {
   font-weight: var(--fw-500);
   line-height: 1.4;
   transition: var(--transition-1);
+  margin-bottom: 5px;
 }
 
 .project-modal-header .project-modal-meta {
@@ -1178,17 +1179,18 @@ main {
 
 .project-modal-link {
   display: inline-block;
-  padding: 5px 15px;
+  padding: 2px 5px;
+  color: var(--orange-yellow-crayola);
   background-color: var(--onyx);
-  color: var(--eerie-black-2);
   border-radius: 5px;
   text-decoration: none;
   transition: background-color 0.3s;
 }
 
 .project-modal-link:hover {
-  background: var(--orange-yellow-crayola);
+  padding: 2px 5px;
   color: hsl(0, 0%, 100%);
+  background: var(--orange-yellow-crayola);
 }
 
 /*-----------------------------------*\

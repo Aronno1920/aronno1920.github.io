@@ -180,7 +180,9 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
 
     const projects = await projectsResponse.json();
-    renderProjects(projects);
+    const sortedProjects = projects.sort((a, b) => a.id - b.id);
+
+    renderProjects(sortedProjects);
     initFilters();
   } catch (error) {
     console.error("Failed to load projects:", error);
@@ -295,40 +297,6 @@ function initFilters() {
   applyFilter("all");
 }
 
-
-// function initFilters() {
-//   const filterButtons = document.querySelectorAll("[data-filter-btn]");
-//   const selectItems = document.querySelectorAll("[data-select-item]");
-//   const selectValue = document.querySelector("[data-select-value]");
-//   const projectItems = document.querySelectorAll("[data-filter-item]");
-
-//   const applyFilter = (category) => {
-//     projectItems.forEach((item) => {
-//       // Get the categories string from the data attribute and split it back into an array
-//       const itemCategories = item.getAttribute("data-categories").split(',');
-//       const shouldShow = category === "all" || itemCategories.includes(category);
-//       item.style.display = shouldShow ? "block" : "none";
-//     });
-//   };
-
-//   filterButtons.forEach((btn) => {
-//     btn.addEventListener("click", () => {
-//       const category = btn.textContent.trim().toLowerCase();
-//       filterButtons.forEach((b) => b.classList.remove("active"));
-//       btn.classList.add("active");
-//       applyFilter(category);
-//     });
-//   });
-
-//   selectItems.forEach((item) => {
-//     item.addEventListener("click", () => {
-//       const category = item.textContent.trim().toLowerCase();
-//       selectValue.textContent = item.textContent;
-//       applyFilter(category);
-//     });
-//   });
-// }
-
 function initializeProjectModal(projects, container) {
   const modal = document.querySelector('.project-modal-container');
   const overlay = document.querySelector('.project-overlay');
@@ -367,7 +335,7 @@ function initializeProjectModal(projects, container) {
       modalTags.innerHTML = projTags;
       modalDescription.innerHTML = proDescription;
       modalFeatures.innerHTML = proFeature;
-      modalLink.innerHTML = `<a href="${project.link}" target="_blank">Visit Project Site</a>`;
+      modalLink.innerHTML = `<a href="${project.link}" target="_blank" class="project-modal-link">View more details</a>`;
       
       modal.classList.add("active");
       overlay.classList.add("active");

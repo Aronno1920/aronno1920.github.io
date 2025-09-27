@@ -104,44 +104,6 @@ const filterHandler = () => {
     });
   });
 };
-
-
-
-// const filterHandler = () => {
-//   const filterFunc = (selectedValue) => {
-//     DOM.filterItems.forEach((item) => {
-//       item.classList.toggle(
-//         "active",
-//         selectedValue === "all" || selectedValue === item.dataset.category
-//       );
-//     });
-//   };
-
-//   DOM.select.addEventListener("click", () => utils.toggleElement(DOM.select));
-
-//   DOM.selectItems.forEach((item) => {
-//     item.addEventListener("click", function () {
-//       const selectedValue = this.innerText.toLowerCase();
-//       DOM.selectValue.innerText = this.innerText;
-//       utils.toggleElement(DOM.select);
-//       filterFunc(selectedValue);
-//     });
-//   });
-
-//   let lastClickedBtn = DOM.filterBtns[0];
-//   DOM.filterBtns.forEach((btn) => {
-//     btn.addEventListener("click", function () {
-//       const selectedValue = this.innerText.toLowerCase().trim().replace(/ /g, '-');
-//       DOM.selectValue.innerText = this.innerText;
-//       alert(selectedValue);
-//       filterFunc(selectedValue);
-
-//       lastClickedBtn.classList.remove("active");
-//       this.classList.add("active");
-//       lastClickedBtn = this;
-//     });
-//   });
-// };
 //////////////////////////////////////
 
 
@@ -175,7 +137,6 @@ const navigationHandler = () => {
 
 
 /////////// Testimonials & Modal Handler ///////////
-// Slide testimonials-item side by side
 document.addEventListener("DOMContentLoaded", () => {
   const aboutPage = document.querySelector('article.about.active[data-page="about"]');
   if (!aboutPage) return;
