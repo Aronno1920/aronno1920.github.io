@@ -1101,8 +1101,8 @@ main {
   box-shadow: var(--shadow-5);
   transform: scale(1.2);
   max-width: 800px;
-  max-height: 80vh;
-  overflow-y: auto;
+  /* max-height: 80vh;
+  overflow-y: auto; */
   opacity: 0;
   transition: var(--transition-1);
   z-index: 20;
@@ -1119,6 +1119,8 @@ main {
 .project-modal-content {
   display: flex;
   flex-direction: column;
+  max-height: 80vh;
+  overflow-y: auto;
 }
 
 .project-modal-image-box {
@@ -2138,4 +2140,22 @@ textarea.form-input::-webkit-resizer { display: none; }
   height: 4px;
   background: var(--light-gray-70);
   border-radius: 50%;
+}
+
+/* --- Loading Message Styling --- */
+.loading-message {
+    display: none; /* Starts hidden, JavaScript will make it visible */
+    text-align: center;
+    padding: 30px;
+    font-size: var(--fs-5);
+    color: var(--orange-yellow-crayola); /* Use your theme color */
+    background: var(--bg-gradient-jet); /* Use a subtle background */
+    border-radius: 12px;
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+/* Ensure the projects container has enough space */
+.projects-wrapper {
+    min-height: 100px; /* Reserves some space to prevent layout shift */
 }
