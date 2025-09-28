@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   } catch (error) {
     console.error("Failed to load services:", error);
     if (serviceLoadingMessage) {
-        serviceLoadingMessage.textContent = 'Error loading projects.';
+        serviceLoadingMessage.textContent = 'Error loading services.';
         serviceLoadingMessage.style.color = 'red';
     }
   }
@@ -55,25 +55,43 @@ function renderServices(services) {
 
 ////// BuilderKit -> Testimonials Section Generation //////
 document.addEventListener("DOMContentLoaded", async () => {
-  const response = await fetch("./data/testimonials.json");
-    if (!response.ok) {
-      throw new Error(`HTTP error! Status: ${response.status}`);
-    }
+  const testingMessage = document.getElementById("testimonial-loading-message");
+  if (testingMessage) {testingMessage.style.display = 'block';}
 
-  const testimonials = await response.json();;
-  if (!testimonials) return;
+  try{
+        const response = await fetch("./data/testimonials.json");
+          if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`);
+          }
 
-  const aboutPage = document.querySelector('article.about.active[data-page="about"]');
-  if (!aboutPage) return;
+        const testimonials = await response.json();;
+        if (!testimonials) return;
 
-  const list = aboutPage.querySelector(".testimonials-list");
-  if (!list) return;
+        const aboutPage = document.querySelector('article.about.active[data-page="about"]');
+        if (!aboutPage) return;
 
-  renderTestimonials(testimonials, list);
+        const list = aboutPage.querySelector(".testimonials-list");
+        if (!list) return;
 
-  // Initialize scrolling and modal functionality
-  initializeSlider(aboutPage, list);
-  initializeModal(list);
+        renderTestimonials(testimonials, list);
+
+        // Initialize scrolling and modal functionality
+        initializeSlider(aboutPage, list);
+        initializeModal(list);
+      }
+      catch (error) {
+        console.error("Failed to load services:", error);
+        if (testingMessage) {
+            testingMessage.textContent = 'Error loading testimonials.';
+            testingMessage.style.color = 'red';
+        }
+      }
+      finally {
+        if (testingMessage) {
+            testingMessage.style.display = 'none';
+        }
+      }
+
 });
 
 function renderTestimonials(testimonials, container) {
@@ -187,7 +205,7 @@ function initializeModal(container) {
 
 ////// BuilderKit -> Project Section Generation //////
 document.addEventListener("DOMContentLoaded", async () => {
-    const projectsLoadingMessage = document.getElementById("projects-loading-message");
+    const projectsLoadingMessage = document.getElementById("project-loading-message");
     if (projectsLoadingMessage) {projectsLoadingMessage.style.display = 'block';}
 
   try {
@@ -306,7 +324,6 @@ function initFilters() {
     });
   });
 
-  // initial render: show all
   applyFilter("all");
 }
 
@@ -370,6 +387,9 @@ function initializeProjectModal(projects, container) {
 
 ////// BuilderKit -> Blog Post Section Generation //////
 document.addEventListener("DOMContentLoaded", async () => {
+  const blogLoadingMessage = document.getElementById("blog-loading-message");
+  if (blogLoadingMessage) {blogLoadingMessage.style.display = 'block';}
+
   try {
     const response = await fetch("./data/posts.json");
 
@@ -381,6 +401,14 @@ document.addEventListener("DOMContentLoaded", async () => {
     renderPosts(posts);
   } catch (error) {
     console.error("Failed to load services:", error);
+    if (blogLoadingMessage) {
+        blogLoadingMessage.textContent = 'Error loading projects.';
+        blogLoadingMessage.style.color = 'red';
+    } 
+  } finally {
+    if (blogLoadingMessage) {
+        blogLoadingMessage.style.display = 'none';
+    }
   }
 });
 
@@ -419,6 +447,9 @@ function renderPosts(posts) {
 
 ////// BuilderKit -> Certifications Section Generation //////
 document.addEventListener("DOMContentLoaded", async () => {
+  const courseLoadingMessage = document.getElementById("course-loading-message");
+  if (courseLoadingMessage) {courseLoadingMessage.style.display = 'block';}
+
   try {
     const response = await fetch("./data/educations.json");
     if (!response.ok) {
@@ -432,6 +463,14 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   } catch (error) {
     console.error("Failed to load data:", error);
+    if (courseLoadingMessage) {
+        courseLoadingMessage.textContent = 'Error loading projects.';
+        courseLoadingMessage.style.color = 'red';
+    }
+  } finally {
+    if (courseLoadingMessage) {
+        courseLoadingMessage.style.display = 'none';
+    }
   }
 });
 
@@ -472,6 +511,9 @@ function renderTimelineItems(items, containerId) {
 
 ////// BuilderKit -> Experiences Section Generation //////
 document.addEventListener("DOMContentLoaded", async () => {
+  const experienceLoadingMessage = document.getElementById("experience-loading-message");
+  if (experienceLoadingMessage) {experienceLoadingMessage.style.display = 'block';}
+
   try {
     const response = await fetch("./data/experiences.json");
     if (!response.ok) {
@@ -482,6 +524,14 @@ document.addEventListener("DOMContentLoaded", async () => {
     renderExperiences(data);
   } catch (error) {
     console.error("Failed to load data:", error);
+    if (experienceLoadingMessage) {
+        experienceLoadingMessage.textContent = 'Error loading projects.';
+        experienceLoadingMessage.style.color = 'red';
+    }
+  } finally {
+    if (experienceLoadingMessage) {
+        experienceLoadingMessage.style.display = 'none';
+    }
   }
 });
 

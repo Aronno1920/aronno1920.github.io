@@ -227,8 +227,13 @@
           <!-------- Testimonials -------->
           <section class="testimonials">
             <h3 class="h3 testimonials-title">Testimonials</h3>
-            <div class="testimonials-wrapper">
-              <ul id="testimonials-list" class="testimonials-list"></ul>
+            <div class="loading-wrapper">
+              <div id="testimonial-loading-message" class="loading-message">
+                    Loading... Please wait...
+              </div>
+              <div class="testimonials-wrapper">
+                <ul id="testimonials-list" class="testimonials-list"></ul>
+              </div>
             </div>
           </section>
 
@@ -306,7 +311,13 @@
               </div>
               <h3 class="h3">Experience</h3>
             </div>
-            <ol id="experience-list" class="timeline-list"></ol>
+
+            <div class="loading-wrapper">
+              <div id="experience-loading-message" class="loading-message">
+                    Loading... Please wait...
+              </div>
+              <ol id="experience-list" class="timeline-list"></ol>
+            </div>
           </section>
 
           <!-------- Skills -------->
@@ -392,11 +403,15 @@
               </div>
               <h3 class="h3">Courses</h3>
             </div>
-            <ol id="certifications-list" class="timeline-list">
-            </ol>
+            <div class="loading-wrapper">
+              <div id="course-loading-message" class="loading-message">
+                    Loading... Please wait...
+              </div>
+              <ol id="certifications-list" class="timeline-list"></ol>
+            </div>
           </section>
 
-          <!-------- Courses -------->
+          <!-------- Workshops -------->
           <section class="timeline">
             <div class="title-wrapper">
               <div class="icon-box">
@@ -471,14 +486,12 @@
 
             <!-------- Projects List -------->
             <div class="loading-wrapper">
-                <div id="projects-loading-message" class="loading-message">
+                <div id="project-loading-message" class="loading-message">
                     Loading... Please wait...
                 </div>
-
                 <ul id="projects-list" class="project-list"></ul>
             </div>
 
-            
           </section>
 
           <!-------- Project Modal -------->
@@ -521,7 +534,12 @@
             <h2 class="h2 article-title">Blog</h2>
           </header>
           <section class="blog-posts">
-            <ul id="blog-list" class="blog-posts-list"></ul>
+            <div class="loading-wrapper">
+              <div id="blog-loading-message" class="loading-message">
+                    Loading... Please wait...
+              </div>
+              <ul id="blog-list" class="blog-posts-list"></ul>
+            </div>
           </section>
         </article>
 
