@@ -1,5 +1,8 @@
 ////// BuilderKit -> Service Section Generation //////
 document.addEventListener("DOMContentLoaded", async () => {
+  const serviceLoadingMessage = document.getElementById("service-loading-message");
+  if (serviceLoadingMessage) {serviceLoadingMessage.style.display = 'block';}
+
   try {
     const response = await fetch("./data/services.json");
 
@@ -11,7 +14,17 @@ document.addEventListener("DOMContentLoaded", async () => {
     renderServices(services);
   } catch (error) {
     console.error("Failed to load services:", error);
+    if (serviceLoadingMessage) {
+        serviceLoadingMessage.textContent = 'Error loading projects.';
+        serviceLoadingMessage.style.color = 'red';
+    }
   }
+  finally {
+    if (serviceLoadingMessage) {
+        serviceLoadingMessage.style.display = 'none';
+    }
+  }
+
 });
 
 function renderServices(services) {
