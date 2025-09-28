@@ -137,7 +137,7 @@
   {
     "id": "8",
     "categories": ["application", "official"],
-    "image": "./assets/images/project/19.png",
+    "image": "./assets/images/project/8.png",
     "title": "Orion Portal",
     "excerpt":"Key functions include Smart Attendance Tracking, simplified Leave Application & Approval, and Out-Station Adjustment submission.",
     "tags": ["ORION","Android","Java",".Net Core API","HR & Employee Self-Service (ESS)","Smart Attendance Tracking","Mobile Leave Management","Payslip/Performance App"],
@@ -170,6 +170,84 @@
       "Seamless Collaboration with Share documents, add comments, and work together in real time.",
       "Workflow Automation for routing, reminders, and escalation tracking.",
       "Version Control & Audit Trail with Track revisions, maintain history, and ensure compliance."
+    ],
+    "link": "https://www.linkedin.com/in/aronno1920/"
+  },
+  {
+    "id": "10",
+    "categories": ["software", "official"],
+    "image": "./assets/images/project/10.png",
+    "title": "Vehicle Management System",
+    "excerpt":"Comprehensive digital platform designed to simplify and automate from requisition to maintenance, it ensures efficient fleet management, cost control, and compliance.",
+    "tags": ["ORION","ASP.Net","MSSQL Server","VMS","Vehicle Management System","Fleet Management Software","Fuel Tracking","Maintenance Tracking","Compliance Automation"
+  ],
+    "description": [
+      "This is a comprehensive Vehicle Management System (VMS) designed to simplify and automate all aspects of organizational vehicle operations. It provides a digital platform to ensure efficient fleet management, strict cost control, and full compliance with government regulations.",
+      "Core functions include a streamlined Vehicle Requisition & Assignment workflow, detailed Fuel Requisition & Bill Adjustment tracking, and proactive reminders for required documents like registration and insurance. The system also records maintenance activities and provides analytics for data-driven fleet optimization."
+    ],
+    "features": [
+      "Streamlined Requisition and transparent vehicle assignment workflow.",
+      "Fuel Management (Requisition, Consumption Log, and Bill Adjustment).",
+      "Automated Compliance Alerts for registration, tax token, and insurance.",
+      "Structured Maintenance Records for tracking costs and scheduling preventive care.",
+      "Data-driven insights for efficient fleet management and cost savings, Streamlined vehicle requisition and assignment process."
+    ],
+    "link": "https://www.linkedin.com/in/aronno1920/"
+  },
+  {
+    "id": "11",
+    "categories": ["application", "official"],
+    "image": "./assets/images/project/11.png",
+    "title": "Prescription Mind to Heart",
+    "excerpt":"Prescription Mind to Heart (PMH) is powerful mobile solution designed to empower medical representatives, sales teams, informed, and connected while on the move.",
+    "tags": ["ORION","Android","Java",".Net Core API","Field Force Mobile Application","Medical Sales","Pharma Tech","Digital Brochure Sharing","Knowledge Hub","Real-Time Notifications"],
+    "description": [
+      "This is a Field Force Android Application, a powerful mobile solution designed to empower medical representatives and sales teams. It streamlines daily activities, supports knowledge sharing, and enhances communication to ensure field staff stay productive, informed, and connected while on the move.",
+      "The core functionality centers on digital resource management, allowing users to access and instantly share medical product promotions and digital brochures ('Brushier Share'). The app also serves as a continuous learning platform, providing a Knowledge Hub of medical articles and delivering real-time notifications for campaigns and policy updates."
+    ],
+    "features": [
+      "Medical Promotion & Campaign material access and sharing.",
+      "Digital Brochure Sharing ('Brushier Share') with tracking features.",
+      "Real-Time Notifications for urgent updates and policy changes.",
+      "Knowledge Hub for continuous learning via medical articles and research."
+    ],
+    "link": "https://www.linkedin.com/in/aronno1920/"
+  },
+  {
+    "id": "12",
+    "categories": ["application", "official"],
+    "image": "./assets/images/project/12.png",
+    "title": "Orion Scholars",
+    "excerpt":"Orion’s CSR (Corporate Social Responsibility) initiative. It streamlines the scholarship management process, ensuring transparency, efficiency, and accessibility for both administrators and students.",
+    "tags": ["ORION","Android","Java",".Net Core API","CSR Scholarship Management","Mobile","Admin Panel","Financial Disbursement","Tracking","Student Database","Cheque Reconciliation"],
+    "description": [
+      "Orion Scholars is a secure Android application with an integrated Admin Panel dedicated to managing Orion's CSR scholarship initiative. The platform ensures efficiency, accessibility, and absolute transparency for administrators and student recipients throughout the scholarship process.",
+      "The system handles the full workflow, from student management and month-wise scholarship setup to automated bank cheque update and reconciliation. It features real-time notifications, detailed budget management for CSR accountability, and a user-friendly student portal for viewing and digitally confirming receipt of funds."
+    ],
+    "features": [
+      "CSR Scholarship Management via integrated Admin Panel and Android App.",
+      "Month-Wise Scholarship Setup and Bank Cheque Disbursement tracking.",
+      "Budget Management with detailed cost tracking for accountability.",
+      "Digital Confirmation and Real-Time Notifications for students."
+    ],
+    "link": "https://www.linkedin.com/in/aronno1920/"
+  },
+  {
+    "id": "13",
+    "categories": ["software", "official"],
+    "image": "./assets/images/project/13.png",
+    "title": "SAP | MM Module | OHAL | POWER",
+    "excerpt":"SAP Material Management (MM) module, focusing on the entire Procurement to Pay (P2P) cycle within the broader SAP landscape.",
+    "tags": ["ORION","SAP","MM Module","OHAL","POWER","Data Preparation","User Training","Implementation","SAP Material Management (MM)","Procurement to Pay","Master Data Preparation","Inventory Control","Stock Accounting"],
+    "description": [
+      "This comprehensive program provides an in-depth exploration of the SAP Material Management (MM) module, focusing on the entire Procurement to Pay (P2P) cycle within the broader SAP landscape. It covers core MM Business Concepts and the essential preparation of Master Data (Material, Vendor, Service).",
+      "The curriculum details all major transactional processes, including Purchase Requisition, Quotation, and various Purchasing scenarios (Local, Asset, Subcontracting). It then covers post-procurement activities like Goods Receipt, Incoming Quality Control, Inventory Control, Vendor Bill Settlement, and specialized processes like Material Loan and Stock Valuation."
+    ],
+    "features": [
+      "End-to-End P2P Cycle managed within the SAP MM module.",
+      "Focus on Master Data Preparation (Material, Vendor, Service) and Business Concepts.",
+      "Covers all core transactions: Requisition, Purchasing, Goods Receipt, and Bill Settlement.",
+      "Includes advanced topics like Inventory Control, Stock Accounting, and Material Loan Process."
     ],
     "link": "https://www.linkedin.com/in/aronno1920/"
   }
