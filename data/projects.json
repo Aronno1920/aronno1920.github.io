@@ -1,8 +1,293 @@
 [
   {
     "id": "1",
-    "categories": ["ai-solutions", "personal"],
+    "categories": ["official","software"],
     "image": "./assets/images/project/1.png",
+    "title": "Flora EFTN",
+    "excerpt":"Implement a continuous and automated upgrade of Electronic Fund Transfer (EFT) services, featuring extensive integration with diverse Core Banking Systems",
+    "tags": ["ASP.NET","oAuth","JWT","MSSQL Server","Electronic Fund Transfer (EFT)","Banking System","Banking System Integration","BEFTN Outward Automation"],
+    "description": [
+      "This project aims to implement a continuous and automated upgrade of Electronic Fund Transfer (EFT) services, featuring extensive integration with diverse Core Banking Systems and multiple transaction channels. The goal is to modernize the fund transfer infrastructure and expand service accessibility.",
+      "Currently, BEFTN Outward functionality is restricted to specific branches for corporate customers only, requiring manual permission via letter. The project includes preparing the infrastructure for a future rollout where all branches will be permitted to conduct BEFTN Outward transactions."
+    ],
+    "features": [
+      "Automated EFT Upgrade with comprehensive Core Banking System integration.",
+      "Support for diverse payment channels (Cheque, iBanking, MFS, Credit Cards).",
+      "Robust Security Stack: Ping Federate, JWT, oAuth token-based authentication.",
+      "Technologies include ASP.NET, MS SQL, RESTful API, WCF, and SFTP."
+    ],
+    "link": "https://github.com/Aronno1920"
+  },
+  {
+    "id": "2",
+    "categories": ["official","software"],
+    "image": "./assets/images/project/2.png",
+    "title": "Niloy Hero",
+    "excerpt":"Web-based Enterprise Resource Planning (ERP) System for vehicle operations, built on the ASP.NET framework and Microsoft SQL Server.",
+    "tags": ["Vehicle Operations ERP","ASP.NET","SQL Server","Procurement to Pay (P2P)","Workshop","Inventory Management"],
+    "description": [
+      "This is a comprehensive, web-based Enterprise Resource Planning (ERP) System for vehicle operations, built on the ASP.NET framework and Microsoft SQL Server. It centralizes and streamlines all core processes, from procurement and inventory management to complex workshop operations and financial accounting.",
+      "The system features an end-to-end Procurement to Pay (P2P) cycle with automated PO generation and material inspection. It also includes robust Job Card Management for repair services and seamless General Ledger integration for real-time financial accuracy and strategic decision-making."
+    ],
+    "features": [
+      "End-to-End P2P Cycle: From requisition approval to material receipt and vendor payment.",
+      "Advanced Inventory Management: Real-time tracking, Bin Management, and automated low-stock alerts.",
+      "Integrated Workshop Module: Manages Job Card Creation and automated material consumption tracking.",
+      "Financial Automation: Automatic Bill Generation and seamless General Ledger posting."
+    ],
+    "link": "https://github.com/Aronno1920"
+  },
+  {
+    "id": "3",
+    "categories": ["official","software"],
+    "image": "./assets/images/project/3.png",
+    "title": "Orion POS for Resturant",
+    "excerpt":"POS software solution primarily designed for the 'Fish & Co.' and 'Krispy Kreme'.",
+    "tags": ["Personal","ASP.NET Core",".NET 9","Elasticsearch","Full-Text Search","Data Seeding","Performance Tracking","Entity Framework Core","SQL Server"],
+    "description": [
+      "OrionPOS is a Point of Sale (POS) software solution primarily designed for the hospitality industry, such as restaurants, cafes, bars, and similar businesses.",
+      "It's known for being highly customizable, open-source (in its earlier versions), and offering a robust set of features to manage daily restaurant operations of 'Fish & Co.' and 'Krispy Kreme'."
+    ],
+    "features": [
+      "Core Operations: Manages all essential restaurant tasks, including order taking, table management, bill printing, inventory tracking, and KDS integration.",
+      "Customization: Highly flexible and modular design allows users to customize operational rules, automation commands, and screen layouts.",
+      "Versions & Support: Has evolved through several versions (V3-V5); newer versions are commercial and offer professional support.",
+      "Database: Typically relies on Microsoft SQL Server for reliable data storage."
+    ],
+    "link": "https://github.com/Aronno1920"
+  },
+  {
+    "id": "4",
+    "categories": ["software", "personal"],
+    "image": "./assets/images/project/4.png",
+    "title": " ElasticSearch Solutions in .NET CORE",
+    "excerpt":"Integrating Elasticsearch into a .NET Core 9 WebAPI project involves several key steps, including installing the required packages, configuring the client, indexing data, and querying Elasticsearch. ",
+    "tags": ["Personal","ASP.NET Core",".NET 9","Elasticsearch","Full-Text Search","Data Seeding","Performance Tracking","Entity Framework Core","SQL Server"],
+    "description": [
+      "This project develops a .NET 9 Web API for comprehensive product management, showcasing advanced data integration and search capabilities. It implements standard CRUD operations for products, utilizing Entity Framework Core with SQL Server as the primary data store.",
+      "The application uniquely integrates Elasticsearch (via NEST) to provide robust, full-text search functionality, dramatically enhancing query performance over large datasets. The system includes automatic seeding of over 200,000 fake products and features response time middleware for performance tracking and Swagger/OpenAPI documentation."
+    ],
+    "features": [
+      ".NET 9 Web API with comprehensive CRUD endpoints.",
+      "Dual Search Functionality using SQL Server and Elasticsearch.",
+      "Automatic Data Seeding (200,000+ products via Bogus).",
+      "Performance Tracking middleware and Swagger documentation."
+    ],
+    "link": "https://github.com/Aronno1920/ElasticPracticeSolution"
+  },
+  {
+    "id": "5",
+    "categories": ["software", "personal"],
+    "image": "./assets/images/project/5.png",
+    "title": "eCommerce Application using Microservice Architecture",
+    "excerpt":"The application includes microservices for Product, Basket, Discount and Ordering modules, which are essential for building e-commerce applications.",
+    "tags": ["Personal",".NET",".NET Core","Clean Architecture","MongoDB","Redis","PostgreSQL","Ocelot","RabbitMQ","gRPC","Microservices Architecture"],
+    "description": [
+      "This project outlines a microservice application built on the Clean Architecture principle, emphasizing separation of concerns and maintainability. It integrates diverse data storage technologies: MongoDB (NoSQL) and Redis (caching) for unstructured data, and PostgreSQL and Sql Server (relational) for structured data.",
+      "Communication relies on RabbitMQ for event-driven coordination, while all external traffic is managed by the Ocelot API Gateway. Key development services include Catalog.API (MongoDB), Basket.API (Redis), and Discount.API (PostgreSQL/Dapper), with a dedicated Discount.Grpc service for high-performance communication."
+    ],
+    "features": [
+      "Multi-Database Architecture (NoSQL, Relational, Caching).",
+      "RabbitMQ for Asynchronous Communication and Ocelot API Gateway.",
+      "gRPC (Google Remote Procedure Call) for high-performance service calls.",
+      "Clean Architecture principle implemented with C#/.NET."
+    ],
+    "link": "https://github.com/Aronno1920/Microservices_Ecommerce"
+  },
+  {
+    "id": "6",
+    "categories": ["ai-solutions", "personal"],
+    "image": "./assets/images/project/6.png",
+    "title": "Diabetes Detection System",
+    "excerpt":"Build and evaluate a machine learning model that detect diabetes using a given medical features dataset for binary classification.",
+    "tags": ["Personal","Binary Classification","Diabetes Prediction","Logistic Regression","KNN","Decision Tree","Random Forest","Stochastic Gradient Descent","Gradient Boosting","AdaBoost","Extra Trees","Support Vector Machine","Naive Bayes","ROC AUC","Feature Scaling","Machine Learning"],
+    "description": [
+      "This project involves developing a Diabetes Detection System using a given medical features dataset for binary classification. The objective is to build a robust predictive model that can accurately classify the Outcome (presence or absence of diabetes) from features like Glucose, BMI, and Age.",
+      "The system requires implementing and comparing at least three distinct classifiers, such as Logistic Regression, KNN, and Decision Trees. Performance will be rigorously evaluated using a Confusion Matrix, Precision/Recall/F1-score, and visualization of the ROC Curve & AUC."
+    ],
+    "features": [
+      "Binary Classification for Diabetes Detection from medical features.",
+      "Comparative evaluation of Logistic Regression, KNN, and Decision Trees.",
+      "Essential preprocessing includes feature scaling (where applicable).",
+      "Performance metrics: Confusion Matrix, F1-score, and ROC AUC."
+    ],
+    "link": "https://colab.research.google.com/drive/1grLlQDlWzbQRq1Mnhkl9YH1rZk6LhiLF#scrollTo=rVqAjWQg19ip"
+  },
+  {
+    "id": "7",
+    "categories": ["ai-solutions", "personal"],
+    "image": "./assets/images/project/7.png",
+    "title": "Clustering Assignment using Iris Dataset",
+    "excerpt":"Build and evaluate a deep learning model that classifies handwritten digits (0–9) using the MNIST dataset. This project will reinforce core deep learning concepts such as data preprocessing.",
+    "tags": ["Personal","Clustering Algorithms","K-Means","DBSCAN","Hierarchical","Iris Dataset","StandardScaler","Unsupervised Learning"],
+    "description": [
+      "This assignment focuses on applying and comparing three distinct clustering algorithms—K-Means, Hierarchical Clustering, and DBSCAN—to the famous Iris dataset. The objective is to group the flowers based solely on their four continuous features (sepal and petal dimensions), excluding the target species column.",
+      "The process includes StandardScaler preprocessing, an EDA of feature distributions, and the systematic application of each algorithm, including using the Elbow Method for K-Means and the k-distance graph for DBSCAN. Finally, the clusters will be visualized and optionally evaluated against the true species labels."
+    ],
+    "features": [
+      "Comparative Clustering of K-Means, Hierarchical, and DBSCAN.",
+      "Applied to the Iris Dataset after StandardScaler preprocessing.",
+      "Uses Elbow Method and Dendrogram for optimal parameter selection.",
+      "Includes EDA and Visualization of resulting clusters."
+    ],
+    "link": "https://colab.research.google.com/drive/1mAW9mE-_2IIrZXnF16ybmFjss-2oJW_X?usp=sharing"
+  },
+  {
+    "id": "8",
+    "categories": ["ai-solutions", "personal"],
+    "image": "./assets/images/project/8.png",
+    "title": "Digit Classifier (MNIST)",
+    "excerpt":"Build and evaluate a deep learning model that classifies handwritten digits (0–9) using the MNIST dataset. This project will reinforce core deep learning concepts such as data preprocessing.",
+    "tags": ["Personal","MNIST Classifier","Batch Normalization","Dropout Regularization","Keras","Deep Learning","Deep Learning Architecture"],
+    "description": [
+      "This project focuses on building and evaluating a Deep Neural Network to classify handwritten digits using the iconic MNIST dataset. The primary objective is to reinforce essential deep learning techniques like data preparation and regularization.",
+      "The model architecture must include Batch Normalization for faster convergence and Dropout layers to mitigate overfitting. The final step involves training the model, reporting the test accuracy, and visually comparing training and validation metrics over multiple epochs."
+    ],
+    "features": [
+      "Deep Neural Network for Handwritten Digit Classification (MNIST).",
+      "Mandatory use of Batch Normalization and Dropout layers.",
+      "Data Preprocessing (Normalization and Flattening).",
+      "Visual reporting of Training vs. Validation Accuracy history."
+    ],
+    "link": "https://github.com/Aronno1920/Digit-Classifier-MNIST"
+  },
+  {
+    "id": "9",
+    "categories": ["ai-solutions", "personal"],
+    "image": "./assets/images/project/9.png",
+    "title": "Image Classification with NN vs CNN",
+    "excerpt":"Full-stack web application that allows users to upload an image of a fashion item (e.g., shirt, sneaker, bag) and classifies it using a NN and CNN",
+    "tags": ["Personal","Image Classification","NN","CNN","NN vs. CNN","Fashion MNIST","TensorFlow","Flask","FastAPI","Deep Learning","Deep Learning Architecture"],
+    "description": [
+      "This project conducts a comparative performance analysis between a standard Neural Network (NN) and a Convolutional Neural Network (CNN) on the Fashion MNIST image classification dataset. The objective is to highlight the architectural advantage of CNNs in visual tasks.",
+      "We will prepare the 28x28 grayscale data, building and training both a fully-connected NN and a CNN (using Conv2D and MaxPooling). Final test accuracy, sample predictions, and clear performance metrics will be displayed to quantify the superiority of the CNN architecture."
+    ],
+    "features": [
+      "Comparative Analysis of NN vs. CNN performance.",
+      "Classification on the Fashion MNIST dataset (10 categories).",
+      "Data preprocessing includes normalization and reshaping for both models.",
+      "Output includes test accuracy and visualized sample predictions for each model."
+    ],
+    "link": "https://github.com/Aronno1920/Fashion-Classifier-MNIST"
+  },
+  {
+    "id": "10",
+    "categories": ["ai-solutions", "personal"],
+    "image": "./assets/images/project/10.png",
+    "title": "Object Tracking & Heatmap Visualization",
+    "excerpt":"Using Object Tracking & Heatmap Visualization, Build a system that counts how many people enter or exit a defined area based on movement across two lines.",
+    "tags": ["Personal","People Flow Detection","Object Tracking (ByteTrack/SORT)","ByteTrack","SORT","YOLO Detection","Heatmap Visualization","Counting"],
+    "description": [
+      "This project builds a People Flow Detection system by integrating object tracking with motion counting and heatmap visualization. The system uses a pre-trained YOLO model for person detection and a high-performance tracker (e.g., ByteTrack) to maintain unique identities across frames of the provided video.",
+      "The core logic involves defining two horizontal lines to monitor directional movement: counting as IN when a person crosses the upper line moving down, and OUT when crossing the lower line moving up. A final heatmap is generated to visualize areas of highest person presence or motion intensity."
+    ],
+    "features": [
+      "Object Detection and Tracking (YOLO and ByteTrack/DeepSORT).",
+      "Directional Flow Counting (IN/OUT logic across two lines).",
+      "Heatmap Visualization of people presence/motion intensity.",
+      "Output includes live counters and bounding boxes with unique IDs."
+    ],
+    "link": "https://colab.research.google.com/drive/1LrghvQSfU4WAIVVYd-zd7vl_-4t-06CF?usp=sharing"
+  },
+  {
+    "id": "11",
+    "categories": ["ai-solutions", "personal"],
+    "image": "./assets/images/project/11.png",
+    "title": "Model & APIs Deployment on Render",
+    "excerpt":"Serves predictions from a machine learning classifier trained on the Heart Disease Dataset, Dockerize it, and deploy to Render.",
+    "tags": ["Personal","FastAPI Deployment","Docker","Machine Learning API","Render Cloud Host","Model","Deployement"],
+    "description": [
+      "This project involves deploying a machine learning model trained on the Heart Disease Dataset via a FastAPI web service. The focus is on the complete deployment pipeline, from training a simple classifier (e.g., Logistic Regression) to serving predictions via API endpoints.",
+      "The application is then Dockerized using a Dockerfile and docker-compose.yml for containerization and local testing. The final step is cloud deployment to a host like Render, demonstrating a robust, production-ready ML prediction service."
+    ],
+    "features": [
+      "FastAPI serving predictions from a Heart Disease Classifier.",
+      "Pydantic schema validation for all input features.",
+      "Dockerization for consistent, reproducible environments.",
+      "Cloud Deployment (e.g., Render) of the containerized application."
+    ],
+    "link": "https://github.com/Aronno1920/Predict-Heart-Disease"
+  },
+  {
+    "id": "12",
+    "categories": ["ai-solutions", "personal"],
+    "image": "./assets/images/project/12.png",
+    "title": "Sentiment Analysis using IMDB Dataset",
+    "excerpt":"Sentiment analysis using the IMDB movie reviews dataset, which can classify whether a given review expresses a positive or negative opinion.",
+    "tags": ["Personal","Sentiment Analysis","Text Vectorization","IMDB","TF–IDF","Word2Vec","BERT","NLP Classification"],
+    "description": [
+      "This project focuses on sentiment analysis using the IMDB movie reviews dataset, which is balanced between positive and negative opinions. The core objective is to build binary classification models and critically compare how different text representation methods impact performance.",
+      "We will implement, train, and evaluate classifiers using three key vectorization techniques: TF–IDF, Word2Vec embeddings, and BERT embeddings. The final deliverable includes a comparison of model accuracy, training trade-offs, and an analysis of why certain approaches yielded superior results."
+    ],
+    "features": [
+      "Sentiment Analysis on the IMDB Reviews Dataset.",
+      "Comparative study of TF–IDF, Word2Vec, and BERT embeddings.",
+      "Evaluation using Accuracy, Precision, Recall, and F1 Score.",
+      "Focus on Text Representation impact on classification performance."
+    ],
+    "link": "https://github.com/Aronno1920/Sentiment-Analysis"
+  },
+  {
+    "id": "13",
+    "categories": ["ai-solutions", "personal"],
+    "image": "./assets/images/project/13.png",
+    "title": "Fine Tuning Transformers for Question Answer",
+    "excerpt":"Question Answering differs from classification tasks by fine-tuning a pre-trained BERT-based model on the SQuAD v1.1 dataset using Hugging Face. The model is then evaluated and tested on real-world questions.",
+    "tags": ["Personal","Transformer Fine-Tuning","Question Answering (QA)","Hugging Face","SQuAD","BERT","Exact Match (EM)"],
+    "description": [
+      "This assignment focuses on fine-tuning a BERT-based Transformer model for the Question Answering (QA) task using the SQuAD v1.1 dataset. The primary goal is to understand the technical difference between QA and standard classification, and to apply the Hugging Face ecosystem for a deep learning task.",
+      "The workflow involves loading and pre-processing the SQuAD data, tokenizing the question-context pairs, and mapping answers to token positions. We will then fine-tune the AutoModelForQuestionAnswering using the Hugging Face Trainer API and evaluate its performance using the Exact Match (EM) and F1 Score metrics."
+    ],
+    "features": [
+      "Transformer Fine-Tuning for Question Answering (QA).",
+      "Uses BERT-base-uncased on the SQuAD v1.1 dataset.",
+      "Implementation via the Hugging Face datasets and transformers APIs.",
+      "Evaluation using Exact Match (EM) and F1 Score metrics."
+    ],
+    "link": "https://colab.research.google.com/drive/1cHJMaC-yK7Ug1CEeaK7cX7dA61agQ4y1#scrollTo=AvCHHO7AmqLB"
+  },
+  {
+    "id": "14",
+    "categories": ["ai-solutions", "personal"],
+    "image": "./assets/images/project/14.png",
+    "title": "AI Agent for LinkedIn Post Generator",
+    "excerpt":"Generate professional, engaging LinkedIn posts in multiple languages with the power of LangChain + GitHub Models.",
+    "tags": ["Personal","LangChain Agent","LinkedIn Post Generator","LLM Chain","Content Generation","Multilingual AI","GitHub Models", "Lovable"],
+    "description": [
+      "This project involves building a specialized AI Agent using LangChain to automate the creation of professional LinkedIn posts. The agent accepts a user-defined post topic and the desired language.",
+      "The core functionality utilizes a refined LLM Chain to generate an engaging, well-structured post (2–4 paragraphs) that is specifically tailored for the LinkedIn platform, ensuring it is delivered in the user's selected language."
+    ],
+    "features": [
+      "LangChain AI Agent for content generation.",
+      "Multilingual Post Creation based on user-specified language.",
+      "LinkedIn-Optimized Output (professional, engaging structure).",
+      "Input variables: Topic and Language."
+    ],
+    "link": "https://github.com/Aronno1920/PostGenerator-AIAgent-LangChain"
+  },
+  {
+    "id": "15",
+    "categories": ["ai-solutions", "personal"],
+    "image": "./assets/images/project/15.png",
+    "title": "AI Agent Project with n8n",
+    "excerpt":"Mini AI workflow system where the frontend + backend connect to n8n, and n8n handles all article processing.",
+    "tags": ["Personal","n8n Workflow Automation","AI Article Summarization","FastAPI & Webhooks","No-Code","Low-Code AI","Gemini Models", "Lovable"],
+    "description": [
+      "This project creates a complete AI article processing workflow using n8n as the core automation engine. A Lovable frontend and FastAPI backend capture a user's email and an article URL, initiating the process via an n8n webhook.",
+      "The n8n workflow then executes scraping, performs AI summarization and key insight extraction, stores the results in Google Sheets, and finally sends the compiled analysis directly back to the user via email."
+    ],
+    "features": [
+      "Full-Stack Workflow: Frontend, FastAPI Backend, and n8n orchestration.",
+      "AI-Powered Article Analysis: Summarization and key insight extraction.",
+      "Automated Data Flow: Webhook trigger, data persistence to Google Sheets, and user email delivery.",
+      "n8n Automation: Used for all core intelligence and tool integration (Firecrawl, OpenAI, Google Sheets, Email)."
+    ],
+    "link": "https://github.com/Aronno1920"
+  },
+  {
+    "id": "16",
+    "categories": ["ai-solutions", "personal"],
+    "image": "./assets/images/project/16.png",
     "title": "Multitools Agent Medical Queries",
     "excerpt":"AI routing for the Medical Agent that automatically routes queries to the most appropriate medical search tools.",
     "tags": ["Personal","Multitools AI Agent","Agent Routing","SQLite","LangChain", "GitHub Models", "Streamlit"],
@@ -20,256 +305,44 @@
     "link": "https://github.com/Aronno1920/Multi-Tool-Agent"
   },
   {
-    "id": "2",
-    "categories": ["ai-solutions", "personal"],
-    "image": "./assets/images/project/2.png",
-    "title": "AI Agent Project with n8n",
-    "excerpt":"Mini AI workflow system where the frontend + backend connect to n8n, and n8n handles all article processing.",
-    "tags": ["Personal","n8n Workflow Automation","AI Article Summarization","FastAPI & Webhooks","No-Code","Low-Code AI","Gemini Models", "Lovable"],
+    "id": "17",
+    "categories": ["software", "official"],
+    "image": "./assets/images/project/17.png",
+    "title": "Employee Assessment System",
+    "excerpt":"Performance management by directly linking employee evaluation to the core responsibilities and expected outcomes defined in each specific job description",
+    "tags": ["ASP.Net","MSSQL Server","Role-based KPIs","Job Description Metrics","Functional Performance Assessment","Evaluation","Job-based Performance Indicators (PIs)"],
     "description": [
-      "This project creates a complete AI article processing workflow using n8n as the core automation engine. A Lovable frontend and FastAPI backend capture a user's email and an article URL, initiating the process via an n8n webhook.",
-      "The n8n workflow then executes scraping, performs AI summarization and key insight extraction, stores the results in Google Sheets, and finally sends the compiled analysis directly back to the user via email."
+      "This system provides absolute clarity in performance management by directly linking employee evaluation to the core responsibilities and expected outcomes defined in each specific job description. It ensures every employee is measured against clear, relevant, and fair role-based benchmarks.",
+      "The platform streamlines appraisals by focusing on tangible job functions, allowing for accurate competency assessment and driving role-specific excellence. Key functionality includes defining unique Performance Indicators (PIs), tracking against specific targets, and automating scoring based on pre-defined job function weightings."
     ],
     "features": [
-      "Full-Stack Workflow: Frontend, FastAPI Backend, and n8n orchestration.",
-      "AI-Powered Article Analysis: Summarization and key insight extraction.",
-      "Automated Data Flow: Webhook trigger, data persistence to Google Sheets, and user email delivery.",
-      "n8n Automation: Used for all core intelligence and tool integration (Firecrawl, OpenAI, Google Sheets, Email)."
+      "Unique PIs defined and assigned for every specific job title.",
+      "Performance metrics linked directly to core duties in job descriptions.",
+      "Automated performance scoring based on job function weightings.",
+      "Reporting features to compare performance across similar roles."
     ],
-    "link": "https://github.com/Aronno1920"
+    "link": "https://www.linkedin.com/in/aronno1920/"
   },
   {
-    "id": "3",
-    "categories": ["ai-solutions", "personal"],
-    "image": "./assets/images/project/3.png",
-    "title": "AI Agent for LinkedIn Post Generator",
-    "excerpt":"Generate professional, engaging LinkedIn posts in multiple languages with the power of LangChain + GitHub Models.",
-    "tags": ["Personal","LangChain Agent","LinkedIn Post Generator","LLM Chain","Content Generation","Multilingual AI","GitHub Models", "Lovable"],
+    "id": "18",
+    "categories": ["software", "official"],
+    "image": "./assets/images/project/18.png",
+    "title": "AI-Powered Online Exam System",
+    "excerpt":"Performance management by directly linking employee evaluation to the core responsibilities and expected outcomes defined in each specific job description",
+    "tags": ["MAUI","ASP.Net","MSSQL Server","Digital Examination Platform","AI-Powered Assessment","Question Bank Management","Online Examination System","MCQ Auto-Grading", "AI Narrative Grading", "Role-Based Marking", "Automated Assessment", "NLP for Exams"],
     "description": [
-      "This project involves building a specialized AI Agent using LangChain to automate the creation of professional LinkedIn posts. The agent accepts a user-defined post topic and the desired language.",
-      "The core functionality utilizes a refined LLM Chain to generate an engaging, well-structured post (2–4 paragraphs) that is specifically tailored for the LinkedIn platform, ensuring it is delivered in the user's selected language."
+      "This is an advanced, secure, web-based platform designed to revolutionize the examination process for educational and corporate bodies. It provides a complete solution, from online registration and question bank management to diverse answering formats including MCQ and narrative responses.",
+      "The system ensures efficiency and fairness through automatic MCQ marking, role-based evaluation for subjective answers, and cutting-edge AI-powered narrative assessment. Features like secure exam delivery, question randomization, and deep performance insights establish it as a robust digital assessment tool."
     ],
     "features": [
-      "LangChain AI Agent for content generation.",
-      "Multilingual Post Creation based on user-specified language.",
-      "LinkedIn-Optimized Output (professional, engaging structure).",
-      "Input variables: Topic and Language."
+      "Online Registration handles secure candidate sign-ups, fee payments, and document uploads.",
+      "Question Bank Management offers a centralized, rich, and searchable repository for all question types.",
+      "Exam Scheduling & Creation allows easy configuration of exam parameters, duration, and rules like negative marking.",
+      "Secure Exam Delivery prevents cheating through randomization, time limits, and optional proctoring integration.",
+      "MCQ Auto-Marking instantly and automatically grades multiple-choice questions upon submission.",
+      "Role-Based & AI Narrative Marking enables human evaluators and AI to score and provide feedback on subjective, long-form answers."
     ],
-    "link": "https://github.com/Aronno1920/PostGenerator-AIAgent-LangChain"
-  },
-  {
-    "id": "4",
-    "categories": ["ai-solutions", "personal"],
-    "image": "./assets/images/project/4.png",
-    "title": "Fine Tuning Transformers for Question Answer",
-    "excerpt":"Question Answering differs from classification tasks by fine-tuning a pre-trained BERT-based model on the SQuAD v1.1 dataset using Hugging Face. The model is then evaluated and tested on real-world questions.",
-    "tags": ["Personal","Transformer Fine-Tuning","Question Answering (QA)","Hugging Face","SQuAD","BERT","Exact Match (EM)"],
-    "description": [
-      "This assignment focuses on fine-tuning a BERT-based Transformer model for the Question Answering (QA) task using the SQuAD v1.1 dataset. The primary goal is to understand the technical difference between QA and standard classification, and to apply the Hugging Face ecosystem for a deep learning task.",
-      "The workflow involves loading and pre-processing the SQuAD data, tokenizing the question-context pairs, and mapping answers to token positions. We will then fine-tune the AutoModelForQuestionAnswering using the Hugging Face Trainer API and evaluate its performance using the Exact Match (EM) and F1 Score metrics."
-    ],
-    "features": [
-      "Transformer Fine-Tuning for Question Answering (QA).",
-      "Uses BERT-base-uncased on the SQuAD v1.1 dataset.",
-      "Implementation via the Hugging Face datasets and transformers APIs.",
-      "Evaluation using Exact Match (EM) and F1 Score metrics."
-    ],
-    "link": "https://colab.research.google.com/drive/1cHJMaC-yK7Ug1CEeaK7cX7dA61agQ4y1#scrollTo=AvCHHO7AmqLB"
-  },
-  {
-    "id": "5",
-    "categories": ["ai-solutions", "personal"],
-    "image": "./assets/images/project/5.png",
-    "title": "Sentiment Analysis (IMDB)",
-    "excerpt":"Sentiment analysis using the IMDB movie reviews dataset, which can classify whether a given review expresses a positive or negative opinion.",
-    "tags": ["Personal","Sentiment Analysis","Text Vectorization","IMDB","TF–IDF","Word2Vec","BERT","NLP Classification"],
-    "description": [
-      "This project focuses on sentiment analysis using the IMDB movie reviews dataset, which is balanced between positive and negative opinions. The core objective is to build binary classification models and critically compare how different text representation methods impact performance.",
-      "We will implement, train, and evaluate classifiers using three key vectorization techniques: TF–IDF, Word2Vec embeddings, and BERT embeddings. The final deliverable includes a comparison of model accuracy, training trade-offs, and an analysis of why certain approaches yielded superior results."
-    ],
-    "features": [
-      "Sentiment Analysis on the IMDB Reviews Dataset.",
-      "Comparative study of TF–IDF, Word2Vec, and BERT embeddings.",
-      "Evaluation using Accuracy, Precision, Recall, and F1 Score.",
-      "Focus on Text Representation impact on classification performance."
-    ],
-    "link": "https://github.com/Aronno1920/Sentiment-Analysis"
-  },
-  {
-    "id": "11",
-    "categories": ["ai-solutions", "personal"],
-    "image": "./assets/images/project/6.png",
-    "title": "Model Deployment and APIs",
-    "excerpt":"Serves predictions from a machine learning classifier trained on the Heart Disease Dataset, Dockerize it, and deploy to Render.",
-    "tags": ["Personal","FastAPI Deployment","Docker","Machine Learning API","Render Cloud Host","Model","Deployement"],
-    "description": [
-      "This project involves deploying a machine learning model trained on the Heart Disease Dataset via a FastAPI web service. The focus is on the complete deployment pipeline, from training a simple classifier (e.g., Logistic Regression) to serving predictions via API endpoints.",
-      "The application is then Dockerized using a Dockerfile and docker-compose.yml for containerization and local testing. The final step is cloud deployment to a host like Render, demonstrating a robust, production-ready ML prediction service."
-    ],
-    "features": [
-      "FastAPI serving predictions from a Heart Disease Classifier.",
-      "Pydantic schema validation for all input features.",
-      "Dockerization for consistent, reproducible environments.",
-      "Cloud Deployment (e.g., Render) of the containerized application."
-    ],
-    "link": "https://github.com/Aronno1920/Predict-Heart-Disease"
-  },
-  {
-    "id": "7",
-    "categories": ["ai-solutions", "personal"],
-    "image": "./assets/images/project/7.png",
-    "title": "Object Tracking & Heatmap Visualization",
-    "excerpt":"Using Object Tracking & Heatmap Visualization, Build a system that counts how many people enter or exit a defined area based on movement across two lines.",
-    "tags": ["Personal","People Flow Detection","Object Tracking (ByteTrack/SORT)","ByteTrack","SORT","YOLO Detection","Heatmap Visualization","Counting"],
-    "description": [
-      "This project builds a People Flow Detection system by integrating object tracking with motion counting and heatmap visualization. The system uses a pre-trained YOLO model for person detection and a high-performance tracker (e.g., ByteTrack) to maintain unique identities across frames of the provided video.",
-      "The core logic involves defining two horizontal lines to monitor directional movement: counting as IN when a person crosses the upper line moving down, and OUT when crossing the lower line moving up. A final heatmap is generated to visualize areas of highest person presence or motion intensity."
-    ],
-    "features": [
-      "Object Detection and Tracking (YOLO and ByteTrack/DeepSORT).",
-      "Directional Flow Counting (IN/OUT logic across two lines).",
-      "Heatmap Visualization of people presence/motion intensity.",
-      "Output includes live counters and bounding boxes with unique IDs."
-    ],
-    "link": "https://colab.research.google.com/drive/1LrghvQSfU4WAIVVYd-zd7vl_-4t-06CF?usp=sharing"
-  },
-  {
-    "id": "12",
-    "categories": ["ai-solutions", "personal"],
-    "image": "./assets/images/project/8.png",
-    "title": "Image Classification with NN vs CNN",
-    "excerpt":"Full-stack web application that allows users to upload an image of a fashion item (e.g., shirt, sneaker, bag) and classifies it using a NN and CNN",
-    "tags": ["Personal","Image Classification","NN","CNN","NN vs. CNN","Fashion MNIST","TensorFlow","Flask","FastAPI","Deep Learning","Deep Learning Architecture"],
-    "description": [
-      "This project conducts a comparative performance analysis between a standard Neural Network (NN) and a Convolutional Neural Network (CNN) on the Fashion MNIST image classification dataset. The objective is to highlight the architectural advantage of CNNs in visual tasks.",
-      "We will prepare the 28x28 grayscale data, building and training both a fully-connected NN and a CNN (using Conv2D and MaxPooling). Final test accuracy, sample predictions, and clear performance metrics will be displayed to quantify the superiority of the CNN architecture."
-    ],
-    "features": [
-      "Comparative Analysis of NN vs. CNN performance.",
-      "Classification on the Fashion MNIST dataset (10 categories).",
-      "Data preprocessing includes normalization and reshaping for both models.",
-      "Output includes test accuracy and visualized sample predictions for each model."
-    ],
-    "link": "https://github.com/Aronno1920/Fashion-Classifier-MNIST"
-  },
-  {
-    "id": "9",
-    "categories": ["ai-solutions", "personal"],
-    "image": "./assets/images/project/9.png",
-    "title": "MNIST Digit Classifier",
-    "excerpt":"Build and evaluate a deep learning model that classifies handwritten digits (0–9) using the MNIST dataset. This project will reinforce core deep learning concepts such as data preprocessing.",
-    "tags": ["Personal","MNIST Classifier","Batch Normalization","Dropout Regularization","Keras","Deep Learning","Deep Learning Architecture"],
-    "description": [
-      "This project focuses on building and evaluating a Deep Neural Network to classify handwritten digits using the iconic MNIST dataset. The primary objective is to reinforce essential deep learning techniques like data preparation and regularization.",
-      "The model architecture must include Batch Normalization for faster convergence and Dropout layers to mitigate overfitting. The final step involves training the model, reporting the test accuracy, and visually comparing training and validation metrics over multiple epochs."
-    ],
-    "features": [
-      "Deep Neural Network for Handwritten Digit Classification (MNIST).",
-      "Mandatory use of Batch Normalization and Dropout layers.",
-      "Data Preprocessing (Normalization and Flattening).",
-      "Visual reporting of Training vs. Validation Accuracy history."
-    ],
-    "link": "https://github.com/Aronno1920/Digit-Classifier-MNIST"
-  },
-  {
-    "id": "10",
-    "categories": ["ai-solutions", "personal"],
-    "image": "./assets/images/project/10.png",
-    "title": "Clustering Assignment: Iris Dataset",
-    "excerpt":"Build and evaluate a deep learning model that classifies handwritten digits (0–9) using the MNIST dataset. This project will reinforce core deep learning concepts such as data preprocessing.",
-    "tags": ["Personal","Clustering Algorithms","K-Means","DBSCAN","Hierarchical","Iris Dataset","StandardScaler","Unsupervised Learning"],
-    "description": [
-      "This assignment focuses on applying and comparing three distinct clustering algorithms—K-Means, Hierarchical Clustering, and DBSCAN—to the famous Iris dataset. The objective is to group the flowers based solely on their four continuous features (sepal and petal dimensions), excluding the target species column.",
-      "The process includes StandardScaler preprocessing, an EDA of feature distributions, and the systematic application of each algorithm, including using the Elbow Method for K-Means and the k-distance graph for DBSCAN. Finally, the clusters will be visualized and optionally evaluated against the true species labels."
-    ],
-    "features": [
-      "Comparative Clustering of K-Means, Hierarchical, and DBSCAN.",
-      "Applied to the Iris Dataset after StandardScaler preprocessing.",
-      "Uses Elbow Method and Dendrogram for optimal parameter selection.",
-      "Includes EDA and Visualization of resulting clusters."
-    ],
-    "link": "https://colab.research.google.com/drive/1mAW9mE-_2IIrZXnF16ybmFjss-2oJW_X?usp=sharing"
-  },
-  {
-    "id": "6",
-    "categories": ["ai-solutions", "personal"],
-    "image": "./assets/images/project/11.png",
-    "title": "Diabetes Detection System",
-    "excerpt":"Build and evaluate a machine learning model that detect diabetes using a given medical features dataset for binary classification.",
-    "tags": ["Personal","Binary Classification","Diabetes Prediction","Logistic Regression","KNN","Decision Tree","Random Forest","Stochastic Gradient Descent","Gradient Boosting","AdaBoost","Extra Trees","Support Vector Machine","Naive Bayes","ROC AUC","Feature Scaling","Machine Learning"],
-    "description": [
-      "This project involves developing a Diabetes Detection System using a given medical features dataset for binary classification. The objective is to build a robust predictive model that can accurately classify the Outcome (presence or absence of diabetes) from features like Glucose, BMI, and Age.",
-      "The system requires implementing and comparing at least three distinct classifiers, such as Logistic Regression, KNN, and Decision Trees. Performance will be rigorously evaluated using a Confusion Matrix, Precision/Recall/F1-score, and visualization of the ROC Curve & AUC."
-    ],
-    "features": [
-      "Binary Classification for Diabetes Detection from medical features.",
-      "Comparative evaluation of Logistic Regression, KNN, and Decision Trees.",
-      "Essential preprocessing includes feature scaling (where applicable).",
-      "Performance metrics: Confusion Matrix, F1-score, and ROC AUC."
-    ],
-    "link": "https://colab.research.google.com/drive/1grLlQDlWzbQRq1Mnhkl9YH1rZk6LhiLF#scrollTo=rVqAjWQg19ip"
-  },
-  {
-    "id": "8",
-    "categories": ["software", "personal"],
-    "image": "./assets/images/project/12.png",
-    "title": "eCommerce Application using Microservice Architecture",
-    "excerpt":"The application includes microservices for Product, Basket, Discount and Ordering modules, which are essential for building e-commerce applications.",
-    "tags": ["Personal",".NET",".NET Core","Clean Architecture","MongoDB","Redis","PostgreSQL","Ocelot","RabbitMQ","gRPC","Microservices Architecture"],
-    "description": [
-      "This project outlines a microservice application built on the Clean Architecture principle, emphasizing separation of concerns and maintainability. It integrates diverse data storage technologies: MongoDB (NoSQL) and Redis (caching) for unstructured data, and PostgreSQL and Sql Server (relational) for structured data.",
-      "Communication relies on RabbitMQ for event-driven coordination, while all external traffic is managed by the Ocelot API Gateway. Key development services include Catalog.API (MongoDB), Basket.API (Redis), and Discount.API (PostgreSQL/Dapper), with a dedicated Discount.Grpc service for high-performance communication."
-    ],
-    "features": [
-      "Multi-Database Architecture (NoSQL, Relational, Caching).",
-      "RabbitMQ for Asynchronous Communication and Ocelot API Gateway.",
-      "gRPC (Google Remote Procedure Call) for high-performance service calls.",
-      "Clean Architecture principle implemented with C#/.NET."
-    ],
-    "link": "https://github.com/Aronno1920/Microservices_Ecommerce"
-  },
-  {
-    "id": "13",
-    "categories": ["software", "personal"],
-    "image": "./assets/images/project/13.png",
-    "title": " ElasticSearch Solutions in .NET CORE",
-    "excerpt":"Integrating Elasticsearch into a .NET Core 9 WebAPI project involves several key steps, including installing the required packages, configuring the client, indexing data, and querying Elasticsearch. ",
-    "tags": ["Personal","ASP.NET Core",".NET 9","Elasticsearch","Full-Text Search","Data Seeding","Performance Tracking","Entity Framework Core","SQL Server"],
-    "description": [
-      "This project develops a .NET 9 Web API for comprehensive product management, showcasing advanced data integration and search capabilities. It implements standard CRUD operations for products, utilizing Entity Framework Core with SQL Server as the primary data store.",
-      "The application uniquely integrates Elasticsearch (via NEST) to provide robust, full-text search functionality, dramatically enhancing query performance over large datasets. The system includes automatic seeding of over 200,000 fake products and features response time middleware for performance tracking and Swagger/OpenAPI documentation."
-    ],
-    "features": [
-      ".NET 9 Web API with comprehensive CRUD endpoints.",
-      "Dual Search Functionality using SQL Server and Elasticsearch.",
-      "Automatic Data Seeding (200,000+ products via Bogus).",
-      "Performance Tracking middleware and Swagger documentation."
-    ],
-    "link": "https://github.com/Aronno1920/ElasticPracticeSolution"
-  },
-  {
-    "id": "14",
-    "categories": ["software"],
-    "image": "./assets/images/project/14.png",
-    "title": "Orion POS for Resturant",
-    "excerpt":"POS software solution primarily designed for the 'Fish & Co.' and 'Krispy Kreme'.",
-    "tags": ["Personal","ASP.NET Core",".NET 9","Elasticsearch","Full-Text Search","Data Seeding","Performance Tracking","Entity Framework Core","SQL Server"],
-    "description": [
-      "OrionPOS is a Point of Sale (POS) software solution primarily designed for the hospitality industry, such as restaurants, cafes, bars, and similar businesses.",
-      "It's known for being highly customizable, open-source (in its earlier versions), and offering a robust set of features to manage daily restaurant operations of 'Fish & Co.' and 'Krispy Kreme'."
-    ],
-    "features": [
-      "Core Operations: Manages all essential restaurant tasks, including order taking, table management, bill printing, inventory tracking, and KDS integration.",
-      "Customization: Highly flexible and modular design allows users to customize operational rules, automation commands, and screen layouts.",
-      "Versions & Support: Has evolved through several versions (V3-V5); newer versions are commercial and offer professional support.",
-      "Database: Typically relies on Microsoft SQL Server for reliable data storage."
-    ],
-    "link": "https://github.com/Aronno1920"
+    "link": "https://www.linkedin.com/in/aronno1920/"
   }
 
-
-  
-
-
-  
 ]

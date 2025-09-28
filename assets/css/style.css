@@ -1166,6 +1166,10 @@ main {
   color: var(--light-gray);
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
+
+  max-height: 350px;
+  overflow-y: auto;
+  scrollbar-width: none;
 }
 
 .project-modal-details p {

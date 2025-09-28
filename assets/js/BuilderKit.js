@@ -180,7 +180,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
 
     const projects = await projectsResponse.json();
-    const sortedProjects = projects.sort((a, b) => a.id - b.id);
+    const sortedProjects = projects.sort((a, b) => b.id - a.id);
 
     renderProjects(sortedProjects);
     initFilters();
