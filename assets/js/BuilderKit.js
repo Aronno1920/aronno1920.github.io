@@ -260,32 +260,24 @@ function initFilters() {
 
   const applyFilter = (category) => {
     const items = getProjectItems();
-    console.log("Applying filter:", category, "-> items:", items.length);
 
     items.forEach((item) => {
       const raw = item.getAttribute("data-categories") || "";
-      // split, trim and normalize each category
       const itemCategories = raw.split(",").map(s => s.trim()).filter(Boolean);
       const shouldShow = category === "all" || itemCategories.includes(category);
 
-      // show/hide (both style and class to match different CSS approaches)
       item.style.display = shouldShow ? "" : "none";
       item.classList.toggle("active", shouldShow);
     });
   };
 
-  // Buttons click -> read data-value if provided; otherwise fall back to normalized text
   filterButtons.forEach((btn) => {
     btn.addEventListener("click", () => {
       const category = btn.dataset.value ? btn.dataset.value.trim() : normalize(btn.textContent);
-      console.log("Button clicked, category:", category);
-
-      // UI sync
       filterButtons.forEach((b) => b.classList.remove("active"));
       btn.classList.add("active");
       if (selectValue) selectValue.textContent = btn.textContent.trim();
 
-      // close select if open
       if (select) {
         select.classList.remove("open");
         select.setAttribute("aria-expanded", "false");
@@ -295,21 +287,16 @@ function initFilters() {
     });
   });
 
-  // Dropdown items click -> same logic, and also sync button active state
   selectItems.forEach((item) => {
     item.addEventListener("click", () => {
       const category = item.dataset.value ? item.dataset.value.trim() : normalize(item.textContent);
-      console.log("Select item clicked, category:", category);
 
       if (selectValue) selectValue.textContent = item.textContent.trim();
-
-      // update buttons active state to match selected category
       filterButtons.forEach((b) => {
         const bval = b.dataset.value ? b.dataset.value.trim() : normalize(b.textContent);
         b.classList.toggle("active", bval === category);
       });
 
-      // close select
       if (select) {
         select.classList.remove("open");
         select.setAttribute("aria-expanded", "false");
