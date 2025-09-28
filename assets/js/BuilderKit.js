@@ -251,7 +251,7 @@ function renderProjects(projects) {
         </figure>
         <div class="project-content">
           <h3 class="h3 project-title">${project.title}</h3>
-          <p class="project-description">${project.excerpt}</p>
+          <p class="project-description">${project.objective}</p>
         </div>
       </a>
     `;
@@ -349,13 +349,15 @@ function initializeProjectModal(projects, container) {
       const modalTitle = modal.querySelector('[project-modal-title]');
       const modalTags = modal.querySelector('[project-modal-meta]');
 
-      const modalDescription = modal.querySelector('[project-modal-desciption]');
+      const modalObjective = modal.querySelector('[project-modal-objective]');
       const modalFeatures = modal.querySelector('[project-modal-features]');
+      const modalResponsibility = modal.querySelector('[project-modal-responsibility]');
+      const modalTechnology = modal.querySelector('[project-modal-technology]');
+      const modalOutcome = modal.querySelector('[project-modal-outcome]');
       const modalLink = modal.querySelector('[project-modal-link]');
 
       // --- START: Formatting text ---
       const projTags = project.tags.map(tag => `<span>${tag}</span>`).join('<span class="dot"></span>');
-      const proDescription = project.description.map(description => `<p>${description}</p>`).join('');
       const proFeature = project.features.map(feature => `<span>- ${feature}</span>`).join('');
       // --- End: Formatting text ---
 
@@ -363,8 +365,11 @@ function initializeProjectModal(projects, container) {
       modalImg.alt = project.title;
       modalTitle.textContent = project.title;
       modalTags.innerHTML = projTags;
-      modalDescription.innerHTML = proDescription;
+      modalObjective.innerHTML = project.objective;
       modalFeatures.innerHTML = proFeature;
+      modalResponsibility.innerHTML= project.responsibility;
+      modalTechnology.innerHTML= project.technology;
+      modalOutcome.innerHTML= project.outcome;
       modalLink.innerHTML = `<a href="${project.link}" target="_blank" class="project-modal-link">View more details</a>`;
       
       modal.classList.add("active");
