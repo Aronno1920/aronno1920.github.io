@@ -1101,7 +1101,7 @@ main {
   box-shadow: var(--shadow-5);
   transform: scale(1.2);
   max-width: 800px;
-  max-height: 90vh;        /* Limit vertical size to 90% of screen height */
+  max-height: 80vh;
   overflow-y: auto;
   opacity: 0;
   transition: var(--transition-1);
@@ -1111,6 +1111,7 @@ main {
 .project-modal-container.active .projects-modal {
   transform: scale(1);
   opacity: 1;
+  scrollbar-width: none;
 }
 
 /*------------------------------*/
@@ -1173,10 +1174,6 @@ main {
   color: var(--light-gray);
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
-
-  max-height: 350px;
-  overflow-y: auto;
-  scrollbar-width: none;
 }
 
 .project-modal-details p {
