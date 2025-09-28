@@ -174,9 +174,11 @@ function initializeModal(container) {
 
 ////// BuilderKit -> Project Section Generation //////
 document.addEventListener("DOMContentLoaded", async () => {
+    const projectsLoadingMessage = document.getElementById("projects-loading-message");
+    if (projectsLoadingMessage) {projectsLoadingMessage.style.display = 'block';}
+
   try {
     const projectsResponse = await fetch("./data/projects.json");
-
     if (!projectsResponse.ok) {
       throw new Error(`HTTP error! Status: ${projectsResponse.status}`);
     }
@@ -188,7 +190,16 @@ document.addEventListener("DOMContentLoaded", async () => {
     initFilters();
   } catch (error) {
     console.error("Failed to load projects:", error);
+    if (projectsLoadingMessage) {
+        projectsLoadingMessage.textContent = 'Error loading projects.';
+        projectsLoadingMessage.style.color = 'red';
+    }
+  } finally {
+    if (projectsLoadingMessage) {
+        projectsLoadingMessage.style.display = 'none';
+    }
   }
+
 });
 
 function renderProjects(projects) {

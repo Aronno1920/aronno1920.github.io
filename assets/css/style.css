@@ -2156,6 +2156,6 @@ textarea.form-input::-webkit-resizer { display: none; }
 }
 
 /* Ensure the projects container has enough space */
-.projects-wrapper {
-    min-height: 100px; /* Reserves some space to prevent layout shift */
+.loading-wrapper {
+    min-height: 80px; /* Reserves some space to prevent layout shift */
 }
