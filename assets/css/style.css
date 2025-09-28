@@ -134,6 +134,11 @@ html { font-family: var(--ff-poppins); }
 
 body { background: var(--smoky-black); }
 
+.no-scroll {
+  overflow: hidden;
+  padding-right: 15px; 
+}
+
 /*-----------------------------------*\
   #REUSED STYLE
 \*-----------------------------------*/

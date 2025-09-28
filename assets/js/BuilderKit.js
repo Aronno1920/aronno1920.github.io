@@ -157,11 +157,13 @@ function initializeModal(container) {
 
     modal.classList.add("active");
     overlay.classList.add("active");
+    document.body.classList.add("no-scroll"); 
   });
 
   const closeModal = () => {
     modal.classList.remove("active");
     overlay.classList.remove("active");
+    document.body.classList.remove("no-scroll"); 
   };
 
   modalCloseBtn.addEventListener("click", closeModal);
@@ -339,12 +341,14 @@ function initializeProjectModal(projects, container) {
       
       modal.classList.add("active");
       overlay.classList.add("active");
+      document.body.classList.add("no-scroll"); 
     }
   });
 
   const closeModal = () => {
     modal.classList.remove("active");
     overlay.classList.remove("active");
+    document.body.classList.remove("no-scroll"); 
   };
 
   closeBtn.addEventListener("click", closeModal);
