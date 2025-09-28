@@ -1121,11 +1121,11 @@ main {
   flex-direction: column;
   max-height: 80vh;
   overflow-y: auto;
+  scrollbar-width: none;
 }
 
 .project-modal-image-box {
   border-radius: 12px;
-  overflow: hidden;
   box-shadow: var(--shadow-2);
   width: 100%;
   height: 300px;
