@@ -5,10 +5,10 @@
     "image": "./assets/images/project/1.png",
     "title": "Flora EFTN",
     "tags": ["Flora Systems Ltd","ASP.NET","oAuth","JWT","MSSQL Server","Electronic Fund Transfer (EFT)","Banking System","Banking System Integration","BEFTN Outward Automation"],
-    "objective": "This project aims to implement a continuous and automated upgrade of Electronic Fund Transfer (EFT) services, featuring extensive integration with diverse Core Banking Systems and multiple transaction channels. The goal is to modernize the fund transfer infrastructure and expand service accessibility.",
-    "responsibility":"",
-    "technology":"",
-    "outcome":"",
+    "objective": "To modernize the Electronic Fund Transfer (EFT) infrastructure through continuous, automated upgrades, focusing on extensive integration with diverse Core Banking Systems and a broad range of transaction channels to expand service accessibility.",
+    "responsibility":"Designed and implemented automated EFT upgrade processes; integrated the system with multiple Core Banking Systems; developed support for diverse transaction channels (Cheque, iBanking, Credit Cards, MFS like UPay/Rocket); built a robust security layer using Ping Federate, JWT, and oAuth; and prepared the infrastructure for a future, bank-wide BEFTN Outward process rollout, eliminating the current manual permission system.",
+    "technology":"ASP.NET (Front and Back End), .NET Framework (3.5), Microsoft SQL Server, Crystal Report, SOAP/Web/Windows Services, SFTP, oAuth, Bitbucket/SVN (Source Control), IIS, Windows Server",
+    "outcome":"Achieved a highly modern, secure, and integrated EFT system. The project eliminated manual permission requirements for BEFTN Outward and positioned the bank for a full service rollout to all branches, significantly increasing efficiency in fund transfer operations and expanding service reach to more customers.",
     "features": [
       "Automated EFT Upgrade with comprehensive Core Banking System integration.",
       "Support for diverse payment channels (Cheque, iBanking, MFS, Credit Cards).",
@@ -26,7 +26,7 @@
     "tags": ["Nitol Niloy Group","Vehicle Operations ERP","ASP.NET","SQL Server","Procurement to Pay (P2P)","Workshop","Inventory Management"],
     "objective":"To develop a comprehensive, web-based ERP system on ASP.NET/SQL Server to streamline all core business processes of a vehicle-related company.",
     "responsibility":"Designed and implemented the full Procurement to Pay (P2P) cycle; developed Inventory Management with bin tracking and stock alerts; created the Workshop Management module (Job Card creation, material consumption); and integrated Financial Accounting (bill generation, GL posting).",
-    "technology":"ASP.NET Framework, Microsoft SQL Server, Web Technologies.",
+    "technology":"ASP.NET (Front and Back End), .NET Framework (4.0), Microsoft SQL Server, Store Procedure, Web Technologies, Crystal Report, Bitbucket/SVN (Source Control), IIS, Windows Server",
     "outcome":"Delivered a centralized ERP solution that significantly reduced operational costs and enhanced productivity by streamlining P2P and workshop processes, providing real-time inventory levels, and ensuring accurate financial reporting.",
     "features": [
       "End-to-End P2P Cycle: From requisition approval to material receipt and vendor payment.",
@@ -41,11 +41,11 @@
     "categories": ["official","software"],
     "image": "./assets/images/project/3.png",
     "title": "Orion POS for Resturant",
-    "tags": ["ORION","Personal","ASP.NET Core",".NET 9","Elasticsearch","Full-Text Search","Data Seeding","Performance Tracking","Entity Framework Core","SQL Server"],
-    "objective": "OrionPOS is a Point of Sale (POS) software solution primarily designed for the hospitality industry, such as restaurants, cafes, bars, and similar businesses.",
-    "responsibility":"",
-    "technology":"",
-    "outcome":"",
+    "tags": ["ORION","Personal","ASP.Net MVC","Entity Framework Core","SQL Server"],
+    "objective": "To develop a comprehensive, highly flexible, and reliable Point of Sale (POS) software solution designed to manage all core business processes of a restaurant or hospitality operation.",
+    "responsibility":"Designed core modules for Order Taking, Table Management, and Billing; implemented integration with Kitchen Display Systems (KDS) and Inventory Tracking; developed a modular system architecture allowing extensive user customization of rules, commands, and screen layouts; and ensured data reliability using a SQL Server backend.",
+    "technology":"ASP.Net, C#, Desktop Vesion (POS), Web Application (Admin Panel), Microsoft SQL Server, Kitchen Display Systems (KDS) integration protocols.",
+    "outcome":"Delivered a flexible and professional POS system capable of streamlining all aspects of restaurant operations, from order entry to inventory control, leading to enhanced productivity, reduced operational costs, and a customized user experience for management and staff.",
     "features": [
       "Core Operations: Manages all essential restaurant tasks, including order taking, table management, bill printing, inventory tracking, and KDS integration.",
       "Customization: Highly flexible and modular design allows users to customize operational rules, automation commands, and screen layouts.",
@@ -98,7 +98,7 @@
     "tags": ["ORION","ASP.Net","MSSQL Server","Role-based KPIs","Job Description Metrics","Functional Performance Assessment","Evaluation","Job-based Performance Indicators (PIs)"],
     "objective": "To build a system that ensures absolute clarity in HR performance evaluation by linking assessment directly to specific job description responsibilities and expected outcomes.",
     "responsibility":"Designed the logic to define and assign unique Performance Indicators (PIs) for each job title; implemented tracking against role-based targets; developed automated performance scoring based on function weightings; and generated cross-role comparison reports.",
-    "technology":"(Conceptual/Business Logic, likely Web/Database platform).",
+    "technology":"ASP.NET (Front and Back End), .NET Framework (4.0), Microsoft SQL Server, Store Procedure, Web Technologies, Crystal Report, Bitbucket/SVN (Source Control), IIS, Windows Server",
     "outcome":"Created a highly transparent and objective appraisal system that successfully drives role-specific excellence by measuring employees against clear, relevant, and fair benchmarks, significantly streamlining the HR appraisal process.",
     "features": [
       "Unique PIs defined and assigned for every specific job title.",
@@ -116,7 +116,7 @@
     "tags": ["ORION","MAUI","ASP.Net","MSSQL Server","Digital Examination Platform","AI-Powered Assessment","Question Bank Management","Online Examination System","MCQ Auto-Grading", "AI Narrative Grading", "Role-Based Marking", "Automated Assessment", "NLP for Exams"],
     "objective": "To develop an advanced, secure, and user-friendly web-based platform to revolutionize the entire examination and assessment process for organizations.",
     "responsibility":"Developed core modules for Online Registration and Question Bank Management; implemented secure exam delivery; integrated MCQ Auto-Marking; created a Role-Based Narrative Marking panel; and deployed AI-Generated Auto Narrative Marking using NLP and machine learning.",
-    "technology":"Web Platform (unspecified), AI/ML, Natural Language Processing (NLP), Database.",
+    "technology":"MAUI (Client), ASP.Net (Admin Panel), .NET Framework (4.5), Microsoft SQL Server, Store Procedure, Web API, Crystal Report, Github (Source Control), IIS, Windows Server, AI/ML, Natural Language Processing (NLP)",
     "outcome":"Delivered a complete digital assessment solution that ensures high efficiency, fairness, and security. The system provides deep, immediate insights into candidate performance through automated and cutting-edge AI-powered evaluation.",
     "features": [
       "Online Registration handles secure candidate sign-ups, fee payments, and document uploads.",
@@ -136,7 +136,7 @@
     "tags": ["ORION","Android","Java",".Net Core API","HR & Employee Self-Service (ESS)","Smart Attendance Tracking","Mobile Leave Management","Payslip/Performance App"],
     "objective": "To develop an all-in-one HR & Employee Self-Service (ESS) Android application to manage work seamlessly and keep employees productive while on the move.",
     "responsibility":"Developed core features including Smart Attendance Tracking, the Leave Application & Approval module, and Out-Station Adjustment submission; integrated secure access to Payslips and salary breakdowns; and implemented a system for company-wide notifications.",
-    "technology":"Android App Development (Native/Hybrid framework), HRMS/API Integration.",
+    "technology":"Android App Development, Java Native, API Integration.",
     "outcome":"Empowered the workforce with instant, secure mobile access to critical HR services, significantly improving employee productivity, enhancing communication, and reducing the administrative workload on the HR department.",
     "features": [
       "Smart Attendance Tracking (Anytime, Anywhere marking).",
@@ -154,7 +154,7 @@
     "tags": ["ORION","Android","Java",".Net Core API","HR & Employee Self-Service (ESS)","Smart Attendance Tracking","Mobile Leave Management","Payslip/Performance App"],
     "objective": "To develop a secure, intelligent, and scalable web-based Document Management System (DMS) to manage the complete document lifecycle from creation to archival.",
     "responsibility":"Established a Centralized Document Repository with advanced indexing; implemented a multi-level Role-Based Approval System with digital signatures; developed Workflow Automation for routing; implemented stringent Version Control and Audit Trails; and ensured Security & Compliance (encryption, GDPR/HIPAA).",
-    "technology":"Web-based Platform (unspecified), Encryption, Workflow Engine, ERP/HRMS/CRM Integration APIs.",
+    "technology":"ASP.NET (Front and Back End), .NET Framework (4.5), Microsoft SQL Server, Web Technologies, Crystal Report, Github (Source Control), ERP/HRMS/CRM Integration APIs.",
     "outcome":"Delivered a comprehensive solution that significantly enhanced document security and compliance, improved productivity through workflow automation, and provided reliable audit-readiness while reducing paperwork.",
     "features": [
       "Centralized Repository with Store and organize files in secure, advanced search and metadata indexing.",
@@ -173,7 +173,7 @@
     "tags": ["ORION","ASP.Net","MSSQL Server","VMS","Vehicle Management System","Fleet Management Software","Fuel Tracking","Maintenance Tracking","Compliance Automation"],
     "objective":"To develop a comprehensive digital platform to automate organizational vehicle operations, focusing on efficient fleet management, cost control, and regulatory compliance.",
     "responsibility": "Implemented the Vehicle Requisition & Assignment workflow; developed detailed Fuel Requisition & Bill Adjustment tracking; implemented Automated Notifications for compliance documents (Registration, Insurance); and created the Vehicle Maintenance Records module.",
-    "technology":"Digital Platform (Web/App, unspecified), Database.",
+    "technology":"ASP.NET (Front and Back End), .NET Framework (4.0, 4.5), Microsoft SQL Server, Web Technologies, Crystal Report, Github (Source Control)",
     "outcome":"Created an efficient fleet management platform that reduced operational costs (especially fuel wastage), ensured 100% compliance via automated alerts, and prolonged vehicle lifespan through structured preventive maintenance tracking.",
     "features": [
       "Streamlined Requisition and transparent vehicle assignment workflow.",
@@ -191,8 +191,8 @@
     "title": "Prescription Mind to Heart",
     "tags": ["ORION","Android","Java",".Net Core API","Field Force Mobile Application","Medical Sales","Pharma Tech","Digital Brochure Sharing","Knowledge Hub","Real-Time Notifications"],
     "objective": "To develop a powerful mobile solution to empower medical representatives and sales teams (field staff) with tools for productivity, information, and communication on the move.",
-    "responsibility":"Developed core modules for access and sharing of Medical Promotion & Campaigns materials; implemented Digital Brochure Sharing ("Brushier Share") with activity tracking; integrated Real-Time Notifications; and created a Medical Articles & Knowledge Hub with offline access.",
-    "technology":"Android Application Development, Mobile Backend/API.",
+    "responsibility":"Developed core modules for access and sharing of Medical Promotion & Campaigns materials; implemented Digital Brochure Sharing ('Brushier Share') with activity tracking; integrated Real-Time Notifications; and created a Medical Articles & Knowledge Hub with offline access.",
+    "technology":"Android App Development, Java Native, API Integration.",
     "outcome":"Significantly increased field force productivity and professionalism by providing instant, digital access to up-to-date knowledge and promotional materials, resulting in stronger customer engagement and reduced printing costs.",
     "features": [
       "Medical Promotion & Campaign material access and sharing.",
@@ -210,7 +210,7 @@
     "tags": ["ORION","Android","Java",".Net Core API","CSR Scholarship Management","Mobile","Admin Panel","Financial Disbursement","Tracking","Student Database","Cheque Reconciliation"],
     "objective":"To streamline Orion's CSR scholarship management process using a dedicated Android application and integrated admin panel, ensuring transparency and efficiency.",
     "responsibility":"Developed the Admin Panel for Scholarship Student Management; implemented Month-Wise Scholarship Setup; managed the full disbursement process including Bank Cheque Update/Reconciliation; and created the Student App for alerts and digital fund receipt confirmation.",
-    "technology":"Android Application Development, Web-based Admin Panel, Notification Services, Database.",
+    "technology":"Android Application Development, Java, Web-based Admin Panel, Notification Services, API Intregration, Microsoft SQL Server",
     "outcome":"Established a highly transparent and efficient digital scholarship management system that ensures CSR accountability through accurate budget tracking, minimizes administrative errors in disbursement, and provides a reliable user experience for recipients.",
     "features": [
       "CSR Scholarship Management via integrated Admin Panel and Android App.",
@@ -246,7 +246,7 @@
     "tags": ["ORION","ASP.Net","MSSQL Server","Supply Chain Management (SCMS)","Procurement","MRP","Inventory Management","Warehouse Management","Logistics & Distribution","Three-Way Match"],
     "objective": "To develop a comprehensive digital platform that integrates and manages the end-to-end supply chain (procurement, inventory, logistics, production) with high visibility and control.",
     "responsibility":"Developed Procurement & Vendor Management workflows; implemented Inventory & Warehouse Management (centralized stock, automated replenishment); created Logistics & Distribution features (route optimization, tracking); and integrated Financial Controls using a Three-Way Match system.",
-    "technology":"Digital Platform (Web/ERP, unspecified), Database, Logistics APIs.",
+    "technology":"ASP.NET (Front and Back End), .NET Framework (4.0, 4.5), Microsoft SQL Server, Web Technologies, Crystal Report, Github (Source Control), Logistics APIs.",
     "outcome":"Delivered an integrated SCMS that achieved end-to-end visibility, realized significant cost optimization through smarter planning and three-way matching, and enhanced overall regulatory compliance and operational efficiency.",
     "features": [
       "End-to-End Supply Chain Integration (Procurement, Inventory, Logistics).",
@@ -318,15 +318,15 @@
     "image": "./assets/images/project/51.png",
     "title": "Diabetes Detection System",
     "tags": ["Personal","Binary Classification","Diabetes Prediction","Logistic Regression","KNN","Decision Tree","Random Forest","Stochastic Gradient Descent","Gradient Boosting","AdaBoost","Extra Trees","Support Vector Machine","Naive Bayes","ROC AUC","Feature Scaling","Machine Learning"],
-    "objective": "This project involves developing a Diabetes Detection System using a given medical features dataset for binary classification. The objective is to build a robust predictive model that can accurately classify the Outcome (presence or absence of diabetes) from features like Glucose, BMI, and Age.",
-    "responsibility":"",
-    "technology":"",
-    "outcome":"",
+    "objective": "To develop a robust binary classification model capable of predicting the presence or absence of diabetes based on a medical features dataset, with a focus on implementing and comparatively evaluating multiple machine learning classifiers.",
+    "responsibility":"Split the dataset into training and testing sets; applied feature scaling (e.g., using StandardScaler); implemented and trained at least three distinct classifiers (Logistic Regression, KNN, Decision Tree); rigorously evaluated and compared each model's performance; and generated visualizations including the ROC Curve and Confusion Matrix.",
+    "technology":"Python, Machine Learning Library (Scikit-learn implied), Pandas, Matplotlib/Seaborn, Logistic Regression, K-Nearest Neighbors (KNN), Decision Tree, StandardScaler.",
+    "outcome":"Successfully identified the optimal model for diabetes prediction (based on the highest ROC AUC and F1-score), demonstrating proficiency in classification workflows, comparative analysis, and advanced performance evaluation crucial for healthcare applications.",
     "features": [
-      "Binary Classification for Diabetes Detection from medical features.",
-      "Comparative evaluation of Logistic Regression, KNN, and Decision Trees.",
-      "Essential preprocessing includes feature scaling (where applicable).",
-      "Performance metrics: Confusion Matrix, F1-score, and ROC AUC."
+      "Binary Classification: Predicts diabetes status (0 or 1) from medical features.",
+      "Model Comparison: Evaluates performance across Logistic Regression, KNN, and Decision Trees.",
+      "Essential Preprocessing: Mandatory use of Feature Scaling to normalize input data ranges.",
+      "Rigorous Evaluation: Uses Confusion Matrix, P/R/F1-score, and ROC AUC for performance assessment."
     ],
     "link": "https://colab.research.google.com/drive/1grLlQDlWzbQRq1Mnhkl9YH1rZk6LhiLF#scrollTo=rVqAjWQg19ip"
   },
@@ -336,15 +336,15 @@
     "image": "./assets/images/project/52.png",
     "title": "Clustering Assignment using Iris Dataset",
     "tags": ["Personal","Clustering Algorithms","K-Means","DBSCAN","Hierarchical","Iris Dataset","StandardScaler","Unsupervised Learning"],
-    "objective": "This assignment focuses on applying and comparing three distinct clustering algorithms—K-Means, Hierarchical Clustering, and DBSCAN—to the famous Iris dataset. The objective is to group the flowers based solely on their four continuous features (sepal and petal dimensions), excluding the target species column.",
-    "responsibility":"",
-    "technology":"",
-    "outcome":"",
+    "objective": "To apply and compare three distinct unsupervised clustering algorithms (K-Means, Hierarchical, DBSCAN) to group the flowers of the Iris dataset, solely using the four continuous features, to understand their effectiveness in finding natural groupings.",
+    "responsibility":"Performed Data Preprocessing (feature scaling using StandardScaler); conducted Exploratory Data Analysis (EDA); systematically applied K-Means (using the Elbow Method to find optimal k), Hierarchical Clustering (using a Dendrogram), and DBSCAN (using a k-distance graph to find eps); and visualized the resulting clusters (e.g., via PCA).",
+    "technology":"Scikit-learn, Pandas, Matplotlib/Seaborn (for EDA and visualization), StandardScaler, PCA (for visualization).",
+    "outcome":"Successfully performed a comparative analysis of partition-based, density-based, and hierarchical clustering techniques. The project demonstrates proficiency in unsupervised learning methodology, optimal parameter selection, and the use of visualization to interpret cluster quality and structure.",
     "features": [
-      "Comparative Clustering of K-Means, Hierarchical, and DBSCAN.",
-      "Applied to the Iris Dataset after StandardScaler preprocessing.",
-      "Uses Elbow Method and Dendrogram for optimal parameter selection.",
-      "Includes EDA and Visualization of resulting clusters."
+      "Comparative Clustering: Directly compares K-Means, Hierarchical, and DBSCAN algorithms.",
+      "Unsupervised Preprocessing: Applied to the Iris Dataset using StandardScaler for feature scaling.",
+      "Parameter Optimization: Uses the Elbow Method (K-Means) and Dendrogram (Hierarchical) to select optimal parameters.",
+      "Insight Generation: Includes EDA and Visualization to assess the final cluster groupings."
     ],
     "link": "https://colab.research.google.com/drive/1mAW9mE-_2IIrZXnF16ybmFjss-2oJW_X?usp=sharing"
   },
@@ -354,15 +354,15 @@
     "image": "./assets/images/project/53.png",
     "title": "Digit Classifier (MNIST)",
     "tags": ["Personal","MNIST Classifier","Batch Normalization","Dropout Regularization","Keras","Deep Learning","Deep Learning Architecture"],
-    "objective": "This project focuses on building and evaluating a Deep Neural Network to classify handwritten digits using the iconic MNIST dataset. The primary objective is to reinforce essential deep learning techniques like data preparation and regularization.",
-    "responsibility":"",
-    "technology":"",
-    "outcome":"",
+    "objective": "To build and evaluate a Deep Neural Network (DNN) for classifying handwritten digits using the MNIST dataset, with a core focus on reinforcing essential deep learning concepts like data preprocessing and regularization techniques.",
+    "responsibility":"Performed necessary data preprocessing (Normalization and Flattening of 28x28 images); designed the DNN architecture incorporating Batch Normalization (for faster convergence) and Dropout layers (to mitigate overfitting); compiled and trained the model (e.g., using categorical_crossentropy and adam); and generated visual plots comparing training and validation accuracy/loss over epochs.",
+    "technology":"Deep Learning Framework (TensorFlow/Keras, implied), MNIST Dataset, Python, Dense Layers, Batch Normalization, Dropout Layers.",
+    "outcome":"Successfully built and optimized a high-accuracy DNN for digit classification, demonstrating practical application of key deep learning regularization techniques, resulting in a reliable model and clear visualization of its learning behavior.",
     "features": [
-      "Deep Neural Network for Handwritten Digit Classification (MNIST).",
-      "Mandatory use of Batch Normalization and Dropout layers.",
-      "Data Preprocessing (Normalization and Flattening).",
-      "Visual reporting of Training vs. Validation Accuracy history."
+      "DNN Architecture: Built a Deep Neural Network for the Handwritten Digit Classification task.",
+      "Essential Regularization: Mandatory use of Batch Normalization and Dropout layers for model stability.",
+      "Data Preparation: Includes essential preprocessing steps like Normalization and Flattening the input data.",
+      "Performance Reporting: Visual comparison of Training vs. Validation Accuracy and final test accuracy report."
     ],
     "link": "https://github.com/Aronno1920/Digit-Classifier-MNIST"
   },
@@ -371,16 +371,16 @@
     "categories": ["ai-solutions", "personal"],
     "image": "./assets/images/project/54.png",
     "title": "Image Classification with NN vs CNN",
-    "tags": ["Personal","Image Classification","NN","CNN","NN vs. CNN","Fashion MNIST","TensorFlow","Flask","FastAPI","Deep Learning","Deep Learning Architecture"],
-    "objective": "This project conducts a comparative performance analysis between a standard Neural Network (NN) and a Convolutional Neural Network (CNN) on the Fashion MNIST image classification dataset. The objective is to highlight the architectural advantage of CNNs in visual tasks.",
-    "responsibility":"",
-    "technology":"",
-    "outcome":"",
+    "tags": ["Personal","Image Classification","NN","CNN","NN vs CNN","Fashion MNIST","TensorFlow","Flask","FastAPI","Deep Learning","Deep Learning Architecture"],
+    "objective": "To conduct a comparative performance analysis between a standard Neural Network (NN) and a Convolutional Neural Network (CNN) on the Fashion MNIST dataset, explicitly highlighting the architectural superiority of CNNs for visual classification tasks.",
+    "responsibility":"Preprocessed the 28x28 grayscale images (normalization, flattening for NN, and reshaping for CNN); designed and built both the fully-connected NN and the CNN (using Conv2D and MaxPooling layers); trained both models on the dataset; and generated final outputs including test accuracy and visualized sample predictions for a quantified comparison.",
+    "technology":"Deep Learning Framework (TensorFlow/Keras, implied), Python, Fashion MNIST Dataset, Dense Layers, Conv2D Layers, MaxPooling Layers.",
+    "outcome":"Provided empirical evidence demonstrating the significant performance advantage of feature extraction via CNN layers over dense layers for image data, reinforcing core concepts in Deep Learning Architecture and improving model accuracy for garment classification.",
     "features": [
-      "Comparative Analysis of NN vs. CNN performance.",
-      "Classification on the Fashion MNIST dataset (10 categories).",
-      "Data preprocessing includes normalization and reshaping for both models.",
-      "Output includes test accuracy and visualized sample predictions for each model."
+      "Comparative Model Study: Directly contrasts a basic NN against a powerful CNN architecture.",
+      "Fashion MNIST Classification: Solves a 10-category image classification problem.",
+      "Data Preparation: Essential preprocessing includes normalization and model-specific reshaping (flattening vs. 28x28x1).",
+      "Quantified Comparison: Displays test accuracy and visualized sample predictions to prove CNN efficacy."
     ],
     "link": "https://github.com/Aronno1920/Fashion-Classifier-MNIST"
   },
@@ -390,15 +390,15 @@
     "image": "./assets/images/project/55.png",
     "title": "Object Tracking & Heatmap Visualization",
     "tags": ["Personal","People Flow Detection","Object Tracking (ByteTrack/SORT)","ByteTrack","SORT","YOLO Detection","Heatmap Visualization","Counting"],
-    "objective": "This project builds a People Flow Detection system by integrating object tracking with motion counting and heatmap visualization. The system uses a pre-trained YOLO model for person detection and a high-performance tracker (e.g., ByteTrack) to maintain unique identities across frames of the provided video.",
-    "responsibility":"",
-    "technology":"",
-    "outcome":"",
+    "objective": "To build a Computer Vision system that integrates object tracking, motion counting, and heatmap generation to monitor and quantify the flow (IN/OUT) of people across a defined area in a video feed.",
+    "responsibility":"Implemented a YOLO model for robust person detection; integrated a high-performance Object Tracker (e.g., ByteTrack) to assign and maintain unique person IDs; developed custom logic to define and monitor movement across two horizontal lines; calculated the IN/OUT directional counts; and generated a final Heatmap visualizing areas of high presence/motion intensity.",
+    "technology":"YOLO (for detection), ByteTrack / DeepSORT / SORT (for tracking), Python, OpenCV (for video/visuals), Roboflow PolygonZone (for defining lines).",
+    "outcome":"Created an automated system for retail analytics, security, or traffic monitoring that provides real-time, quantitative metrics (IN/OUT counts) and spatial insights (heatmap) into human movement patterns, enhancing operational and security assessments.",
     "features": [
-      "Object Detection and Tracking (YOLO and ByteTrack/DeepSORT).",
-      "Directional Flow Counting (IN/OUT logic across two lines).",
-      "Heatmap Visualization of people presence/motion intensity.",
-      "Output includes live counters and bounding boxes with unique IDs."
+      "Object Detection and Tracking: Uses YOLO for detection and a high-performance tracker (ByteTrack/DeepSORT) to maintain unique IDs.",
+      "Directional Flow Counting: Implements specific IN/OUT logic based on crossing two horizontal lines with defined directionality.",
+      "Spatial Visualization: Generates a Heatmap to visualize areas of highest person presence or motion intensity.",
+      "Real-time Output: Provides live counters and bounding boxes with unique IDs overlaid on the video."
     ],
     "link": "https://colab.research.google.com/drive/1LrghvQSfU4WAIVVYd-zd7vl_-4t-06CF?usp=sharing"
   },
