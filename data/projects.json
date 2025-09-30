@@ -510,6 +510,24 @@
       "Mixed Queries → Both database and web search tools"
     ],
     "link": "https://github.com/Aronno1920/Multi-Tool-Agent"
+  },
+  {
+    "id": "62",
+    "categories": ["ai-solutions", "personal"],
+    "image": "./assets/images/project/62.png",
+    "title": "CrewAI for Instagram Content Creation",
+    "tags": ["Personal","CrewAI","CrewAI Tools","LangChain Community", "GitHub Models", "Multi-Agent","Multi-Agent System", "Image Generation", "Instagram Content Creation"],
+    "objective": "To design and implement a Multi-Agent System using Crew AI to fully automate the end-to-end pipeline for Instagram content creation, from initial topic research to final image generation.",
+    "responsibility":"Designed and orchestrated a 4-agent team: Research Agent (information gathering), Content Writer Agent (caption/CTA drafting), Reviewer Agent (editing/approval), and Image Prompt Generator Agent (detailed text-to-image prompts); integrated agents using the Crew AI framework to ensure sequential and collaborative workflow; and connected to an external text-to-image API for final visual asset creation.",
+    "technology":"Crew AI (Framework), LLM (e.g., OpenAI/Anthropic/other models for agents), External Text-to-Image API (Nano Banana, Segmind, Stable Diffusion, etc.), Python, Research Tools (Web search/scrapers accessible by the Research Agent).",
+    "outcome":"Delivered a complete, automated content package (caption, hashtags, 2-3 images) for any given topic. The system demonstrates advanced AI workflow automation, achieving efficiency and consistency in digital marketing content creation by mimicking a human team structure.",
+    "features": [
+      "4-Agent Orchestration: Implements a collaborative team (Researcher, Writer, Reviewer, Prompt Generator).",
+      "Crew AI Framework: Used to define roles, goals, and manage the sequential workflow.",
+      "Full-Cycle Automation: Automates content generation from research/writing to final image creation.",
+      "External API Integration: Connects the text-based workflow to an image generation service for visual output."
+    ],
+    "link": "https://github.com/Aronno1920/Multi-Tool-Agent"
   }
 
 ]
