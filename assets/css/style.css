@@ -52,7 +52,7 @@
   --vegas-gold: hsl(195, 19%, 48%);
   --light-gray: hsl(0, 0%, 84%);
   --light-gray-70: hsla(0, 0%, 84%, 0.7);
-  --bittersweet-shimmer: hsl(0, 43%, 51%); /* You can replace this if needed */
+  --bittersweet-shimmer: hsl(0, 43%, 51%);
 
   /**
    * typography
@@ -463,20 +463,20 @@ main {
 
 .technology div {
   display: flex;
-  flex-wrap: wrap;   /* allows wrapping on smaller screens */
-  justify-content: center; /* centers badges horizontally */
-  gap: 3px;  /* space between badges */
+  flex-wrap: wrap; 
+  justify-content: center;
+  gap: 3px; 
   margin-bottom: 1rem;
 }
 
 .technology div img {
-  height: 20px;   /* keeps all badges uniform */
+  height: 20px; 
   object-fit: contain;
   transition: transform 0.2s ease-in-out;
 }
 
 .technology div img:hover {
-  transform: scale(1.1);  /* slight zoom on hover */
+  transform: scale(1.1); 
 }
 
 
@@ -1101,8 +1101,6 @@ main {
   box-shadow: var(--shadow-5);
   transform: scale(1.2);
   max-width: 800px;
-  /* max-height: 80vh;
-  overflow-y: auto; */
   opacity: 0;
   transition: var(--transition-1);
   z-index: 20;
@@ -1253,7 +1251,6 @@ main {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  gap: 7px;
   margin-bottom: 7px;
 }
 
@@ -1268,6 +1265,7 @@ main {
   width: 4px;
   height: 4px;
   border-radius: 4px;
+  margin: 0px 8px;
 }
 
 .blog-item-title {
@@ -1312,7 +1310,7 @@ main {
 }
 
 .subject-input-wrapper {
-  margin-bottom: 25px; /* Adds the required bottom margin */
+  margin-bottom: 25px; 
 }
 
 .subject-input-wrapper input {
@@ -1423,7 +1421,6 @@ textarea.form-input::-webkit-resizer { display: none; }
       border-radius: 20px;
     }
 }
-
 
 /*-----------------------------------*\
   #RESPONSIVE: larger than 450px screen
@@ -1678,9 +1675,6 @@ textarea.form-input::-webkit-resizer { display: none; }
   }
 
   .form-btn ion-icon { font-size: 18px; }
-
-
-    /* --- Media Queries for Two-Column Layout --- */
 }
 
 
@@ -1964,7 +1958,6 @@ textarea.form-input::-webkit-resizer { display: none; }
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 8px;
   margin-bottom: 7px;
   font-size: var(--fs-6);
   color: var(--vegas-gold);
@@ -1975,6 +1968,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   height: 4px;
   background: var(--light-gray-70);
   border-radius: 50%;
+  margin: 0px 8px;
 }
 
 .blog-category {
@@ -2144,12 +2138,12 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 /* --- Loading Message Styling --- */
 .loading-message {
-    display: none; /* Starts hidden, JavaScript will make it visible */
+    display: none; 
     text-align: center;
     padding: 30px;
     font-size: var(--fs-5);
-    color: var(--orange-yellow-crayola); /* Use your theme color */
-    background: var(--bg-gradient-jet); /* Use a subtle background */
+    color: var(--orange-yellow-crayola); 
+    background: var(--bg-gradient-jet); 
     border-radius: 12px;
     margin-top: 20px;
     font-weight: 500;
