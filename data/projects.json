@@ -277,22 +277,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   ,
   {
     "id": "50",
@@ -528,6 +512,24 @@
       "External API Integration: Connects the text-based workflow to an image generation service for visual output."
     ],
     "link": "https://github.com/Aronno1920/Multi-Tool-Agent"
+  }  ,
+  {
+    "id": "63",
+    "categories": ["ai-solutions", "personal"],
+    "image": "./assets/images/project/63.png",
+    "title": "Bangla FAQ Chatbot",
+    "tags": ["Personal","Bangla","Bangla FAQ","FAQ Chatbot", "RAG", "HuggingFace Model", "GitHub Models", "Multi-Agent"],
+    "objective": "Develop an interactive Bengali FAQ Chatbot using the RAG architecture to demonstrate proficiency in core AI and web integration technologies. Key requirements include: Bengali NLP, FAISS vector retrieval with metadata filtering, and full-stack integration using Flask/Gemini.",
+    "responsibility":"Create a Bengali FAQ dataset (5 topics, ≥3 FAQs each), tag with metadata (topic/difficulty), and initialize FAISS using the Bengali SBERT model. Implement a Flask server to manage user sessions. Execute FAISS similarity search incorporating dynamic metadata filtering. Use the retrieved context to generate answers via the Gemini API. Build a responsive UI (index.html) using Tailwind CSS. Ensure interactive button-based menus for topic and difficulty filtering, and implement a Bengali fallback mechanism.",
+    "technology":"RAG, FAQ Chatbot, HuggingFace Model, GitHub Model, Python.",
+    "outcome":"A functional RAG web application that answers Bengali queries based on the filtered FAQ data. A clean, modular Python codebase (app.py, rag_core.py) demonstrating advanced RAG techniques. A comprehensive requirements.txt file listing all dependencies (LangChain, FAISS, SBERT, Flask).",
+    "features": [
+      "Bengali Language Support: Complete question-answer system in Bengali.",
+      "RAG System: Accurate information retrieval through FAISS vector database.",
+      "Modern UI: Beautiful and user-friendly interface built with Tailwind CSS.",
+      "Bengali Embeddings: Uses l3cube-pune/bengali-sentence-similarity-sbert model."
+    ],
+    "link": "https://github.com/Aronno1920/FAQ-Chatbot"
   }
 
 ]
