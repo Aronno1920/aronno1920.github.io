@@ -450,7 +450,7 @@ main {
   color: var(--light-gray);
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
-  line-height: 1.6;
+  line-height: 1.5;
 }
 
 .about-text p { margin-bottom: 15px; }
@@ -523,7 +523,7 @@ main {
   color: var(--light-gray);
   font-size: var(--fs-6);
   font-weight: var(--fw-3);
-  line-height: 1.6;
+  line-height: 1.5;
 }
 
 
@@ -585,7 +585,7 @@ main {
   color: var(--light-gray);
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
-  line-height: 1.6;
+  line-height: 1.5;
   display: -webkit-box;
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
@@ -702,7 +702,7 @@ main {
   color: var(--light-gray);
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
-  line-height: 1.6;
+  line-height: 1.5;
 }
 
 
@@ -791,7 +791,7 @@ main {
 .timeline-list span {
   color: var(--vegas-gold);
   font-weight: var(--fw-400);
-  line-height: 1.4;
+  line-height: 1.5;
 }
 
 .timeline-item:not(:last-child)::before {
@@ -819,7 +819,7 @@ main {
 .timeline-text {
   color: var(--light-gray);
   font-weight: var(--fw-300);
-  line-height: 1.6;
+  line-height: 1.5;
 }
 
   .timeline-credential{
@@ -1028,7 +1028,7 @@ main {
   font-size: var(--fs-4);
   font-weight: var(--fw-500);
   margin-bottom: 5px;
-  line-height: 1.4;
+  line-height: 1.5;
   transition: var(--transition-1);
 }
 
@@ -1147,7 +1147,7 @@ main {
   color: var(--white-2);
   font-size: var(--fs-4);
   font-weight: var(--fw-500);
-  line-height: 1.4;
+  line-height: 1.5;
   transition: var(--transition-1);
   margin-bottom: 5px;
 }
@@ -1981,7 +1981,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   color: var(--white-2);
   font-size: var(--fs-4);
   font-weight: var(--fw-500);
-  line-height: 1.4;
+  line-height: 1.5;
   transition: var(--transition-1);
 }
 
