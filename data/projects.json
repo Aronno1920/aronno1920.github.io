@@ -424,7 +424,7 @@
   },
   {
     "id": "58",
-    "categories": ["ai-solutions", "personal"],
+    "categories": ["ai-solutions", "personal", "official"],
     "image": "./assets/images/project/58.png",
     "title": "Fine Tuning Transformers for Question Answer",
     "tags": ["Personal","Transformer Fine-Tuning","Question Answering (QA)","Hugging Face","SQuAD","BERT","Exact Match (EM)"],
@@ -478,7 +478,7 @@
   },
   {
     "id": "61",
-    "categories": ["ai-solutions", "personal"],
+    "categories": ["ai-solutions", "personal", "official"],
     "image": "./assets/images/project/61.png",
     "title": "Multitools Agent Medical Queries",
     "tags": ["Personal","Multitools AI Agent","Agent Routing","SQLite","LangChain", "GitHub Models", "Streamlit"],
@@ -515,7 +515,7 @@
   }  ,
   {
     "id": "63",
-    "categories": ["ai-solutions", "personal"],
+    "categories": ["ai-solutions", "personal", "official"],
     "image": "./assets/images/project/63.png",
     "title": "Bangla FAQ Chatbot",
     "tags": ["Personal","Bangla","Bangla FAQ","FAQ Chatbot", "RAG", "HuggingFace Model", "GitHub Models", "Multi-Agent"],
