@@ -29,7 +29,7 @@
     "fullName": "Debbrath Debnath",
     "avatar": "./assets/images/testimonial/person4.jpg",
     "position": "ERP and Technical Lead | Project Management",
-    "text": "Mr. Selim is a technologically sound person. He adapts to new technology in a short time. And he is also a solution provider."
+    "text": "Selim Ahmed is one of the most dependable and thoughtful professionals I’ve worked with. He is not only technically skilled but also brings emotional intelligence into his work. He communicates clearly, gives constructive feedback, and builds strong relationships with teammates. <br/><br/>He is highly proficient in ERP, Database design, API integration, AI Engineering and modern JavaScript frameworks.  <br/><br/>He communicates clearly, gives constructive feedback, and builds strong relationships with teammates. He has a great balance serious when it’s time to deliver, but also supportive and positive in day-to-day interactions. I absolutely recommend him to any organization that values both high performance and a positive, collaborative workplace."
   },
   {
     "id": "person10",
@@ -38,6 +38,22 @@
     "avatar": "./assets/images/testimonial/person10.jpg",
     "position": "Software Engineer | Avalanche Technologies Ltd",
     "text": "I’ve worked with Selim Ahmed and have always admired his technical expertise and adaptability. Starting from strong .NET development skills, he has quickly grown into AI, delivering impactful solutions with creativity and dedication. A true team player and problem solver."
+  },
+  {
+    "id": "person11",
+    "name": "Kazi Zuljalal Md. Maslinia",
+    "fullName": "Kazi Zuljalal Md. Maslinia",
+    "avatar": "./assets/images/testimonial/person11.jpg",
+    "position": "Sr. Software Engineer | ASP.NET | Flutter | MSSQL | ERP | Software Architect",
+    "text": "I’ve had the pleasure of working alongside Selim Ahmed, and he is an exceptional Software Analyst with strong problem-solving skills and a clear, strategic mindset. He approaches projects with professionalism, ensures smooth collaboration, and consistently delivers high-quality results. <br/><br/>He is also an inspiring mentor and team player, always supporting colleagues and sharing knowledge. His dedication to AI and continuous learning motivates everyone around him. <br/><br/>Selim is a highly reliable and forward-thinking professional who brings tremendous value to any team."
+  },
+  {
+    "id": "person12",
+    "name": "Somapti Alam",
+    "fullName": "Somapti Alam",
+    "avatar": "./assets/images/testimonial/person12.jpg",
+    "position": "Software Engineer at Orion | CTM SAP HCM Module | IT Professional | Web Designer & Developer",
+    "text": "I had the opportunity to work with Mr. Selim in the same team at Orion Group, and he has always impressed me with his deep technical expertise and strong leadership qualities. As a Senior .NET Core Developer, he consistently delivers high-quality solutions with clean architecture, thoughtful design, and excellent problem-solving skills. <br/><br/>Selim is also an exceptional team lead—supportive, patient, and always ready to guide others. His ability to break down complex problems and provide clear direction has been invaluable to the team. <br/><br/>He is reliable, professional, and highly dedicated to producing the best outcomes. I strongly recommend Selim for any senior engineering or leadership role. He would be a tremendous asset to any organization."
   },
   {
     "id": "person5",
