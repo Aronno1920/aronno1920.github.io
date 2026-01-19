@@ -298,7 +298,7 @@
   },
   {
     "id": "51",
-    "categories": ["ai-solutions", "personal"],
+    "categories": ["ai-solutions"],
     "image": "./assets/images/project/51.png",
     "title": "Diabetes Detection System",
     "tags": ["Personal","Binary Classification","Diabetes Prediction","Logistic Regression","KNN","Decision Tree","Random Forest","Stochastic Gradient Descent","Gradient Boosting","AdaBoost","Extra Trees","Support Vector Machine","Naive Bayes","ROC AUC","Feature Scaling","Machine Learning"],
@@ -316,7 +316,7 @@
   },
   {
     "id": "52",
-    "categories": ["ai-solutions", "personal"],
+    "categories": ["ai-solutions"],
     "image": "./assets/images/project/52.png",
     "title": "Clustering Assignment using Iris Dataset",
     "tags": ["Personal","Clustering Algorithms","K-Means","DBSCAN","Hierarchical","Iris Dataset","StandardScaler","Unsupervised Learning"],
@@ -334,7 +334,7 @@
   },
   {
     "id": "53",
-    "categories": ["ai-solutions", "personal"],
+    "categories": ["ai-solutions"],
     "image": "./assets/images/project/53.png",
     "title": "Digit Classifier (MNIST)",
     "tags": ["Personal","MNIST Classifier","Batch Normalization","Dropout Regularization","Keras","Deep Learning","Deep Learning Architecture"],
@@ -352,7 +352,7 @@
   },
   {
     "id": "54",
-    "categories": ["ai-solutions", "personal"],
+    "categories": ["ai-solutions"],
     "image": "./assets/images/project/54.png",
     "title": "Image Classification with NN vs CNN",
     "tags": ["Personal","Image Classification","NN","CNN","NN vs CNN","Fashion MNIST","TensorFlow","Flask","FastAPI","Deep Learning","Deep Learning Architecture"],
@@ -370,7 +370,7 @@
   },
   {
     "id": "55",
-    "categories": ["ai-solutions", "personal"],
+    "categories": ["ai-solutions"],
     "image": "./assets/images/project/55.png",
     "title": "Object Tracking & Heatmap Visualization",
     "tags": ["Personal","People Flow Detection","Object Tracking (ByteTrack/SORT)","ByteTrack","SORT","YOLO Detection","Heatmap Visualization","Counting"],
@@ -388,7 +388,7 @@
   },
   {
     "id": "56",
-    "categories": ["ai-solutions", "personal"],
+    "categories": ["ai-solutions"],
     "image": "./assets/images/project/56.png",
     "title": "Model & APIs Deployment on Render",
     "tags": ["Personal","FastAPI Deployment","Docker","Machine Learning API","Render Cloud Host","Model","Deployement"],
@@ -406,7 +406,7 @@
   },
   {
     "id": "57",
-    "categories": ["ai-solutions", "personal"],
+    "categories": ["ai-solutions"],
     "image": "./assets/images/project/57.png",
     "title": "Sentiment Analysis using IMDB Dataset",
     "tags": ["Personal","Sentiment Analysis","Text Vectorization","IMDB","TF–IDF","Word2Vec","BERT","NLP Classification"],
@@ -424,7 +424,7 @@
   },
   {
     "id": "58",
-    "categories": ["ai-solutions", "personal", "official"],
+    "categories": ["ai-solutions", "official"],
     "image": "./assets/images/project/58.png",
     "title": "Fine Tuning Transformers for Question Answer",
     "tags": ["Transformer Fine-Tuning","Question Answering (QA)","Hugging Face","SQuAD","BERT","Exact Match (EM)"],
@@ -442,7 +442,7 @@
   },
   {
     "id": "59",
-    "categories": ["ai-solutions", "personal"],
+    "categories": ["ai-solutions"],
     "image": "./assets/images/project/59.png",
     "title": "AI Agent for LinkedIn Post Generator",
     "tags": ["Personal","LangChain Agent","LinkedIn Post Generator","LLM Chain","Content Generation","Multilingual AI","GitHub Models", "Lovable"],
@@ -460,7 +460,7 @@
   },
   {
     "id": "60",
-    "categories": ["ai-solutions", "personal"],
+    "categories": ["ai-solutions"],
     "image": "./assets/images/project/60.png",
     "title": "AI Agent Project with n8n",
     "tags": ["Personal","n8n Workflow Automation","AI Article Summarization","FastAPI & Webhooks","No-Code","Low-Code AI","Gemini Models", "Lovable"],
@@ -478,7 +478,7 @@
   },
   {
     "id": "61",
-    "categories": ["ai-solutions", "personal", "official"],
+    "categories": ["ai-solutions", "official"],
     "image": "./assets/images/project/61.png",
     "title": "Multitools Agent Medical Queries",
     "tags": ["Multitools AI Agent","Agent Routing","SQLite","LangChain", "GitHub Models", "Streamlit"],
@@ -497,7 +497,7 @@
   },
   {
     "id": "62",
-    "categories": ["ai-solutions", "personal"],
+    "categories": ["ai-solutions"],
     "image": "./assets/images/project/62.png",
     "title": "CrewAI for Instagram Content Creation",
     "tags": ["Personal","CrewAI","CrewAI Tools","LangChain Community", "GitHub Models", "Multi-Agent","Multi-Agent System", "Image Generation", "Instagram Content Creation"],
@@ -515,7 +515,7 @@
   }  ,
   {
     "id": "63",
-    "categories": ["ai-solutions", "personal", "official"],
+    "categories": ["ai-solutions", "official"],
     "image": "./assets/images/project/63.png",
     "title": "Bangla FAQ Chatbot",
     "tags": ["Bangla","Bangla FAQ","FAQ Chatbot", "RAG", "HuggingFace Model", "GitHub Models", "Multi-Agent"],
