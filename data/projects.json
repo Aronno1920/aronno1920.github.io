@@ -478,7 +478,7 @@
   },
   {
     "id": "61",
-    "categories": ["ai-solutions", "official"],
+    "categories": ["ai-solutions"],
     "image": "./assets/images/project/61.png",
     "title": "Multitools Agent Medical Queries",
     "tags": ["Multitools AI Agent","Agent Routing","SQLite","LangChain", "GitHub Models", "Streamlit"],
@@ -515,7 +515,7 @@
   }  ,
   {
     "id": "63",
-    "categories": ["ai-solutions", "official"],
+    "categories": ["ai-solutions"],
     "image": "./assets/images/project/63.png",
     "title": "Bangla FAQ Chatbot",
     "tags": ["Bangla","Bangla FAQ","FAQ Chatbot", "RAG", "HuggingFace Model", "GitHub Models", "Multi-Agent"],
