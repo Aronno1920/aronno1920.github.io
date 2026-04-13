@@ -1175,6 +1175,7 @@ main {
   color: var(--light-gray);
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
+  text-align: justify;
 }
 
 .project-modal-details p {
