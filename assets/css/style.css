@@ -820,6 +820,7 @@ main {
   color: var(--light-gray);
   font-weight: var(--fw-300);
   line-height: 1.5;
+	text-align: justify;
 }
 
   .timeline-credential{
