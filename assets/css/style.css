@@ -6,52 +6,52 @@
   /* gradient backgrounds */
   --bg-gradient-onyx: linear-gradient(
     to bottom right, 
-    hsl(228, 16%, 18%) 3%, 
-    hsl(229, 21%, 15%) 97%
+    hsl(30, 5%, 18%) 3%, 
+    hsl(30, 5%, 14%) 97%
   );
 
   --bg-gradient-jet: linear-gradient(
     to bottom right, 
-    hsla(229, 21%, 15%, 0.25) 0%, 
-    hsla(229, 21%, 15%, 0) 100%
-  ), hsl(229, 21%, 15%);
+    hsla(30, 5%, 14%, 0.25) 0%, 
+    hsla(30, 5%, 14%, 0) 100%
+  ), hsl(30, 5%, 14%);
 
   --bg-gradient-yellow-1: linear-gradient(
     to bottom right, 
-    hsl(235, 85%, 72%) 0%, 
-    hsla(235, 85%, 72%, 0) 50%
+    hsl(39, 90%, 60%) 0%, 
+    hsla(39, 90%, 60%, 0) 50%
   );
 
   --bg-gradient-yellow-2: linear-gradient(
     135deg, 
-    hsla(235, 85%, 72%, 0.251) 0%, 
-    hsla(235, 85%, 72%, 0) 60%
-  ), hsl(229, 21%, 15%);
+    hsla(39, 90%, 60%, 0.251) 0%, 
+    hsla(39, 90%, 60%, 0) 60%
+  ), hsl(30, 5%, 14%);
 
   --border-gradient-onyx: linear-gradient(
     to bottom right, 
-    hsl(228, 14%, 26%) 0%, 
-    hsla(228, 14%, 26%, 0) 50%
+    hsl(30, 5%, 23%) 0%, 
+    hsla(30, 5%, 23%, 0) 50%
   );
 
   --text-gradient-yellow: linear-gradient(
     to right, 
-    hsl(199, 89%, 66%), 
-    hsl(235, 85%, 72%)
+    hsl(28, 82%, 60%), 
+    hsl(39, 90%, 60%)
   );
 
-  /* solid colors (indigo night) */
-  --jet: hsl(228, 14%, 26%);
-  --onyx: hsl(228, 16%, 18%);
-  --eerie-black-1: hsl(229, 21%, 15%);
-  --eerie-black-2: hsl(229, 21%, 11%);
-  --smoky-black: hsl(230, 22%, 8%);
+  /* solid colors (amber lounge) */
+  --jet: hsl(30, 5%, 23%);
+  --onyx: hsl(30, 5%, 18%);
+  --eerie-black-1: hsl(30, 5%, 14%);
+  --eerie-black-2: hsl(30, 5%, 10%);
+  --smoky-black: hsl(30, 5%, 7%);
   --white-1: hsl(0, 0%, 100%);
   --white-2: hsl(0, 0%, 98%);
-  --orange-yellow-crayola: hsl(235, 85%, 72%);
-  --vegas-gold: hsl(199, 89%, 66%);
-  --light-gray: hsl(224, 16%, 88%);
-  --light-gray-70: hsla(224, 16%, 88%, 0.7);
+  --orange-yellow-crayola: hsl(39, 90%, 60%);
+  --vegas-gold: hsl(28, 82%, 60%);
+  --light-gray: hsl(40, 10%, 88%);
+  --light-gray-70: hsla(40, 10%, 88%, 0.7);
   --bittersweet-shimmer: hsl(0, 43%, 51%);
 
   /**
@@ -78,11 +78,11 @@
    * shadows
    */
 
-  --shadow-1: -4px 8px 24px hsla(230, 22%, 5%, 0.25);
-  --shadow-2: 0 16px 30px hsla(230, 22%, 5%, 0.25);
-  --shadow-3: 0 16px 40px hsla(230, 22%, 5%, 0.25);
-  --shadow-4: 0 25px 50px hsla(230, 22%, 5%, 0.15);
-  --shadow-5: 0 24px 80px hsla(230, 22%, 5%, 0.25);
+  --shadow-1: -4px 8px 24px hsla(30, 5%, 4%, 0.25);
+  --shadow-2: 0 16px 30px hsla(30, 5%, 4%, 0.25);
+  --shadow-3: 0 16px 40px hsla(30, 5%, 4%, 0.25);
+  --shadow-4: 0 25px 50px hsla(30, 5%, 4%, 0.15);
+  --shadow-5: 0 24px 80px hsla(30, 5%, 4%, 0.25);
 
   /**
    * transitions
@@ -267,7 +267,7 @@ main {
   #SIDEBAR
 \*-----------------------------------*/
 .sidebar {
-  margin-bottom: 15px;
+  margin-bottom: 30px;
   max-height: 150px;
   overflow: hidden;
   transition: var(--transition-2);
@@ -385,6 +385,9 @@ main {
   color: var(--white-2);
   font-size: var(--fs-7);
 }
+
+/* stacked plain-text lines (e.g. Organizations) keep a hairline gap */
+.contact-info .contact-link + .contact-link { margin-top: 3px; }
 
 .contact-info address { font-style: normal; }
 
@@ -1575,12 +1578,13 @@ textarea.form-input::-webkit-resizer { display: none; }
   }
 
   main {
-    margin-top: 60px;
+    margin-top: 30px;
     margin-bottom: 100px;
   }
 
   .sidebar {
     max-height: 200px;
+    margin-top: 30px;
     margin-bottom: 30px;
   }
 
@@ -1832,7 +1836,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     box-shadow: var(--shadow-5);
   }
 
-  main { margin-bottom: 60px; }
+  main { margin-bottom: 30px; }
 
   .main-content {
     position: relative;
