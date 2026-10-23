@@ -1,16 +1,41 @@
+///////////////////////////////////////////////////////////
+// Shared JSON Loader
+// - Served over HTTP (local server / GitHub Pages): fetches the
+//   live files from /data/*.json as before.
+// - Opened directly from disk (file://): browsers block fetch()
+//   of local files (CORS), so it falls back to the embedded copy
+//   in assets/js/data.js (regenerate it with node sync-data.js).
+///////////////////////////////////////////////////////////
+const loadData = async (fileName) => {
+  if (location.protocol !== "file:") {
+    const response = await fetch(`./data/${fileName}`);
+
+    if (!response.ok) {
+      throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+
+    return response.json();
+  }
+
+  const key = fileName.replace(/\.json$/, "");
+  const embedded = (window.PORTFOLIO_DATA || {})[key];
+
+  if (embedded === undefined) {
+    throw new Error(`No embedded data for "${fileName}". Run "node sync-data.js" to refresh assets/js/data.js.`);
+  }
+
+  return embedded;
+};
+///////////////////////////////////////////////////////////
+
+
 ////// BuilderKit -> Service Section Generation //////
 document.addEventListener("DOMContentLoaded", async () => {
   const serviceLoadingMessage = document.getElementById("service-loading-message");
   if (serviceLoadingMessage) {serviceLoadingMessage.style.display = 'block';}
 
   try {
-    const response = await fetch("./data/services.json");
-
-    if (!response.ok) {
-      throw new Error(`HTTP error! Status: ${response.status}`);
-    }
-
-    const services = await response.json();
+    const services = await loadData("services.json");
     renderServices(services);
   } catch (error) {
     console.error("Failed to load services:", error);
@@ -59,12 +84,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   if (testingMessage) {testingMessage.style.display = 'block';}
 
   try{
-        const response = await fetch("./data/testimonials.json");
-          if (!response.ok) {
-            throw new Error(`HTTP error! Status: ${response.status}`);
-          }
-
-        const testimonials = await response.json();;
+        const testimonials = await loadData("testimonials.json");
         if (!testimonials) return;
 
         const aboutPage = document.querySelector('article.about.active[data-page="about"]');
@@ -209,12 +229,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     if (projectsLoadingMessage) {projectsLoadingMessage.style.display = 'block';}
 
   try {
-    const projectsResponse = await fetch("./data/projects.json");
-    if (!projectsResponse.ok) {
-      throw new Error(`HTTP error! Status: ${projectsResponse.status}`);
-    }
-
-    const projects = await projectsResponse.json();
+    const projects = await loadData("projects.json");
     const sortedProjects = projects.sort((a, b) => b.id - a.id);
 
     renderProjects(sortedProjects);
@@ -396,13 +411,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   if (blogLoadingMessage) {blogLoadingMessage.style.display = 'block';}
 
   try {
-    const response = await fetch("./data/posts.json");
-
-    if (!response.ok) {
-      throw new Error(`HTTP error! Status: ${response.status}`);
-    }
-
-    const posts = await response.json();
+    const posts = await loadData("posts.json");
     renderPosts(posts);
   } catch (error) {
     console.error("Failed to load services:", error);
@@ -456,12 +465,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   if (courseLoadingMessage) {courseLoadingMessage.style.display = 'block';}
 
   try {
-    const response = await fetch("./data/educations.json");
-    if (!response.ok) {
-      throw new Error(`HTTP error! Status: ${response.status}`);
-    }
-
-    const data = await response.json();
+    const data = await loadData("educations.json");
     renderTimelineItems(data.educations, "education-list");
     renderTimelineItems(data.certifications, "certifications-list");
     renderTimelineItems(data.workshops, "workshop-list");
@@ -520,12 +524,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   if (experienceLoadingMessage) {experienceLoadingMessage.style.display = 'block';}
 
   try {
-    const response = await fetch("./data/experiences.json");
-    if (!response.ok) {
-      throw new Error(`HTTP error! Status: ${response.status}`);
-    }
-
-    const data = await response.json();
+    const data = await loadData("experiences.json");
     renderExperiences(data);
   } catch (error) {
     console.error("Failed to load data:", error);

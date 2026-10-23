@@ -306,6 +306,13 @@ main {
   border-radius: 8px;
 }
 
+.designation-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-bottom: 8px;
+}
+
 .info_more-btn {
   position: absolute;
   top: -15px;
@@ -1833,7 +1840,8 @@ textarea.form-input::-webkit-resizer { display: none; }
    */
 
   main {
-    max-width: 1200px;
+    /* 300px sidebar + 25px gap + 900px main-content */
+    max-width: 1225px;
     margin-inline: auto;
     display: flex;
     justify-content: center;
@@ -1842,8 +1850,10 @@ textarea.form-input::-webkit-resizer { display: none; }
   }
 
   .main-content {
-    min-width: 75%;
-    width: 75%;
+    /* fills the space beside the fixed 300px sidebar */
+    flex: 1;
+    min-width: 0;
+    width: auto;
     margin: 0;
   }
 
@@ -1856,10 +1866,13 @@ textarea.form-input::-webkit-resizer { display: none; }
   .sidebar {
     position: sticky;
     top: 60px;
+    width: 300px;
+    flex: 0 0 300px;
+    /* 24px side padding so the two designation pills fit side by side */
+    padding: 60px 24px 30px;
     max-height: max-content;
     height: 100%;
     margin-bottom: 0;
-    padding-top: 60px;
     z-index: 1;
   }
 
@@ -1872,7 +1885,9 @@ textarea.form-input::-webkit-resizer { display: none; }
     text-align: center;
   }
 
-  .info-content .title { margin: auto; }
+  .info-content > .title { margin: auto; }
+
+  .designation-wrapper { justify-content: center; }
 
   .info_more-btn { display: none; }
 

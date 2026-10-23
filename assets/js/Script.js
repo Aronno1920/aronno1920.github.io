@@ -14,7 +14,7 @@ const DOM = {
   modalText: document.querySelector("[data-modal-text]"),
   select: document.querySelector("[data-select]"),
   selectItems: document.querySelectorAll("[data-select-item]"),
-  selectValue: document.querySelector("[data-selecct-value]"),
+  selectValue: document.querySelector("[data-select-value]"),
   filterBtns: document.querySelectorAll("[data-filter-btn]"),
   filterItems: document.querySelectorAll("[data-filter-item]"),
   form: document.querySelector("[data-form]"),
