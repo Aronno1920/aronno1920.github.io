@@ -388,6 +388,71 @@ main {
 
 .contact-info address { font-style: normal; }
 
+/**
+ * birthday quick-add menu
+ */
+
+.contact-item[data-birthday-item] { position: relative; }
+
+.contact-info > .birthday-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  font-family: inherit;
+  cursor: pointer;
+  text-align: left;
+}
+
+.contact-info > .birthday-btn:hover { color: var(--light-gray); }
+
+.birthday-menu {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  z-index: 10;
+  min-width: 210px;
+  padding: 4px;
+  background: var(--eerie-black-2);
+  border: 1px solid var(--jet);
+  border-radius: 14px;
+  box-shadow: var(--shadow-2);
+}
+
+.birthday-menu-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 8px 10px;
+  color: var(--white-2);
+  font-size: var(--fs-7);
+  font-family: inherit;
+  text-decoration: none;
+  white-space: nowrap;
+  background: none;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.birthday-menu-item:hover { background: var(--onyx); }
+
+.birthday-menu-item ion-icon {
+  font-size: 16px;
+  color: var(--orange-yellow-crayola);
+}
+
+/**
+ * smaller than 1250px: .sidebar uses overflow:hidden with a
+ * max-height, so the menu opens upward to avoid being clipped
+ */
+@media (max-width: 1249.98px) {
+  .birthday-menu {
+    top: auto;
+    bottom: calc(100% + 10px);
+  }
+}
+
 .social-list {
   display: flex;
   justify-content: flex-start;
@@ -532,7 +597,6 @@ main {
   font-size: var(--fs-6);
   font-weight: var(--fw-3);
   line-height: 1.5;
-  text-align: justify;
 }
 
 
@@ -1481,10 +1545,16 @@ textarea.form-input::-webkit-resizer { display: none; }
     --fs-8: 12px;
   }
 
-  .sidebar, article {
+  .sidebar {
     width: 520px;
     margin-inline: auto;
     padding: 30px;
+  }
+
+  article {
+    width: 520px;
+    margin-inline: auto;
+    padding: 50px;
   }
 
   .article-title {
@@ -1576,9 +1646,9 @@ textarea.form-input::-webkit-resizer { display: none; }
   .testimonials-title { margin-bottom: 25px; }
 
   .testimonials-list {
-    margin: 0 -30px;
-    padding: 30px;
-    padding-bottom: 35px;
+    margin: 0 -50px;
+    padding: 50px;
+    padding-bottom: 55px;
   }
 
   .content-card {
@@ -1587,7 +1657,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   }
 
   .testimonials-avatar-box {
-    transform: translate(30px, -30px);
+    transform: translate(50px, -50px);
     border-radius: 20px;
   }
 
@@ -1840,8 +1910,10 @@ textarea.form-input::-webkit-resizer { display: none; }
    */
 
   main {
-    /* 300px sidebar + 25px gap + 900px main-content */
-    max-width: 1225px;
+    /* covers ~80% of the screen at any viewport width (10% margin
+       each side); the fixed 300px sidebar leaves the rest of the
+       row to main-content via flex */
+    width: 80%;
     margin-inline: auto;
     display: flex;
     justify-content: center;
@@ -1921,8 +1993,6 @@ textarea.form-input::-webkit-resizer { display: none; }
   /**
 	 * RESUME
 	 */
-
-  .timeline-text { max-width: 700px; }
 
 }
 /*-----------------------------------*\

@@ -48,7 +48,7 @@
               </div>
               <div class="contact-info">
                 <p class="contact-title">Email</p>
-                <a href="#" class="contact-link">aronno1920@hotmail.com</a>
+                <a href="mailto:aronno1920@hotmail.com?subject=Hello%20Selim%20Ahmed%21" class="contact-link">aronno1920@hotmail.com</a>
               </div>
             </li>
             <li class="contact-item">
@@ -60,13 +60,26 @@
                 <a href="tel:+8801711148432" class="contact-link">+880 1711-148432</a>
               </div>
             </li>
-            <li class="contact-item">
+            <li class="contact-item" data-birthday-item>
               <div class="icon-box">
                 <ion-icon name="calendar-outline"></ion-icon>
               </div>
               <div class="contact-info">
                 <p class="contact-title">Birthday</p>
-                <time datetime="1988-06-19">Jun 19, 1988</time>
+                <button type="button" class="contact-link birthday-btn" data-birthday-btn data-name="Selim Ahmed" data-date="1988-06-19" aria-haspopup="true" aria-expanded="false">
+                  <time datetime="1988-06-19">Jun 19, 1988</time>
+                </button>
+
+                <div class="birthday-menu" data-birthday-menu hidden>
+                  <a class="birthday-menu-item" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Selim%20Ahmed%27s%20Birthday&dates=19880619/19880620&recur=RRULE:FREQ=YEARLY;BYMONTH=6;BYMONTHDAY=19&details=Birthday%20of%20Selim%20Ahmed%20(June%2019)%20-%20annual%20reminder." target="_blank" rel="noopener">
+                    <ion-icon name="logo-google"></ion-icon>
+                    Add to Google Calendar
+                  </a>
+                  <button type="button" class="birthday-menu-item" data-birthday-ics>
+                    <ion-icon name="download-outline"></ion-icon>
+                    Save to calendar (.ics)
+                  </button>
+                </div>
               </div>
             </li>
             <li class="contact-item">

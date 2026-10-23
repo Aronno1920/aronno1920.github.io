@@ -113,7 +113,90 @@ const formHandler = () => {
   responseMsg.id = "form-response";
   DOM.form?.appendChild(responseMsg);
 };
-////////////////////////////////////
+//////////////////////////////////
+
+
+/////////// Birthday (Add to Calendar) Handler ///////////
+const calendarHandler = () => {
+  const item = document.querySelector("[data-birthday-item]");
+  const btn = item?.querySelector("[data-birthday-btn]");
+  const menu = item?.querySelector("[data-birthday-menu]");
+  if (!item || !btn || !menu) return;
+
+  const icsBtn = menu.querySelector("[data-birthday-ics]");
+
+  const openMenu = () => {
+    menu.hidden = false;
+    btn.setAttribute("aria-expanded", "true");
+  };
+
+  const closeMenu = () => {
+    menu.hidden = true;
+    btn.setAttribute("aria-expanded", "false");
+  };
+
+  const toggleMenu = () => (menu.hidden ? openMenu() : closeMenu());
+
+  btn.addEventListener("click", toggleMenu);
+
+  // close when clicking outside of the birthday item
+  document.addEventListener("click", (event) => {
+    if (!item.contains(event.target)) closeMenu();
+  });
+
+  // close on Escape
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") closeMenu();
+  });
+
+  // generate a recurring (annual) .ics event and download it
+  icsBtn.addEventListener("click", () => {
+    const { name, date } = btn.dataset; // e.g. "Selim Ahmed", "1988-06-19"
+    const [year, month, day] = date.split("-").map(Number);
+    const pad = (n) => String(n).padStart(2, "0");
+
+    const fromDate = `${year}${pad(month)}${pad(day)}`;
+    const endDate = new Date(Date.UTC(year, month - 1, day + 1));
+    const toDate = `${endDate.getUTCFullYear()}${pad(endDate.getUTCMonth() + 1)}${pad(endDate.getUTCDate())}`;
+    const stamp = new Date().toISOString().replace(/[-:]/g, "").split(".")[0] + "Z";
+
+    const ics = [
+      "BEGIN:VCALENDAR",
+      "VERSION:2.0",
+      "PRODID:-//Selim Ahmed Portfolio//Birthday//EN",
+      "CALSCALE:GREGORIAN",
+      "METHOD:PUBLISH",
+      "BEGIN:VEVENT",
+      `UID:${name.toLowerCase().replace(/\s+/g, "-")}-birthday@aronno1920.github.io`,
+      `DTSTAMP:${stamp}`,
+      `DTSTART;VALUE=DATE:${fromDate}`,
+      `DTEND;VALUE=DATE:${toDate}`,
+      "RRULE:FREQ=YEARLY",
+      `SUMMARY:${name}'s Birthday`,
+      `DESCRIPTION:Birthday of ${name} (June 19) - annual reminder.`,
+      "TRANSP:TRANSPARENT",
+      "BEGIN:VALARM",
+      "ACTION:DISPLAY",
+      `DESCRIPTION:${name}'s birthday is tomorrow!`,
+      "TRIGGER:-P1D",
+      "END:VALARM",
+      "END:VEVENT",
+      "END:VCALENDAR",
+    ].join("\r\n");
+
+    const blob = new Blob([ics], { type: "text/calendar;charset=utf-8" });
+    const link = document.createElement("a");
+    link.href = URL.createObjectURL(blob);
+    link.download = "Selim-Ahmed-Birthday.ics";
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
+    URL.revokeObjectURL(link.href);
+
+    closeMenu();
+  });
+};
+////////////////////////////////////////////
 
 
 /////////// Navigation Handler ///////////
@@ -223,6 +306,7 @@ document.addEventListener("DOMContentLoaded", () => {
   testimonialsHandler();
   filterHandler();
   formHandler();
+  calendarHandler();
   navigationHandler();
 });
 ///////////////////////////////////////////////
