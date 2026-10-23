@@ -1941,13 +1941,17 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .sidebar {
     position: sticky;
-    top: 60px;
+    /* must not exceed main's margin-top (30px), otherwise sticky
+       clamps the sidebar down below the article's top edge */
+    top: 30px;
     width: 300px;
     flex: 0 0 300px;
     /* 24px side padding so the two designation pills fit side by side */
     padding: 60px 24px 30px;
     max-height: max-content;
     height: 100%;
+    /* reset the 30px top/bottom margins from the stacked layout */
+    margin-top: 0;
     margin-bottom: 0;
     z-index: 1;
   }
