@@ -801,7 +801,7 @@ window.PORTFOLIO_DATA = {
       "Automated double-entry accounting posts every sale instantly.",
       "Digital receipts in 58mm, 80mm, and QR formats."
     ],
-    "link": "https://bdspark.com/products"
+    "link": "https://bdspark.com/products/sparklite-point-of-sale-system"
   },
   {
     "id": "66",
@@ -834,7 +834,7 @@ window.PORTFOLIO_DATA = {
       "Admissions CRM with biometric attendance and dynamic fee billing.",
       "Cloud or on-premises deployment options."
     ],
-    "link": "https://bdspark.com/products"
+    "link": "https://bdspark.com/products/sparkschool-school-management-system"
   },
   {
     "id": "65",
@@ -868,7 +868,7 @@ window.PORTFOLIO_DATA = {
       "iOS, Android & Web mobile companion apps.",
       "Cloud or on-premises deployment flexibility."
     ],
-    "link": "https://bdspark.com/products"
+    "link": "https://bdspark.com/products/sparkerp-business-management-platform"
   },
   {
     "id": "64",
@@ -901,7 +901,7 @@ window.PORTFOLIO_DATA = {
       "Thermal & QR badge printing with belongings custody tracking.",
       "1-click emergency evacuation roll calls with live counts."
     ],
-    "link": "https://bdspark.com/products"
+    "link": "https://bdspark.com/products/spark-vms"
   },
   {
     "id": "68",
