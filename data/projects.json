@@ -55,42 +55,6 @@
     "link": "https://github.com/Aronno1920"
   },
   {
-    "id": "4",
-    "categories": ["software", "personal"],
-    "image": "./assets/images/project/4.png",
-    "title": " ElasticSearch Solutions in .NET CORE",
-    "tags": ["Personal","ASP.NET Core",".NET 9","Elasticsearch","Full-Text Search","Data Seeding","Performance Tracking","Entity Framework Core","SQL Server"],
-    "objective": "To develop a modern .NET 9 Web API for product management featuring full CRUD operations and dual search functionality using SQL Server and high-performance Elasticsearch.",
-    "responsibility":"Implemented full CRUD operations using ASP.NET Core and Entity Framework Core (SQL Server); integrated Elasticsearch via NEST for full-text search; implemented automatic data seeding of 200,000+ products (Bogus); and added performance monitoring middleware and Swagger documentation.",
-    "technology":"ASP.NET Core (.NET 9), Entity Framework Core, SQL Server, Elasticsearch, NEST, Bogus, Swagger/OpenAPI.",
-    "outcome":"Created a high-performance product API that significantly improved query speed through Elasticsearch integration, ensuring a scalable system with integrated performance tracking and comprehensive API documentation for external developers.",
-    "features": [
-      ".NET 9 Web API with comprehensive CRUD endpoints.",
-      "Dual Search Functionality using SQL Server and Elasticsearch.",
-      "Automatic Data Seeding (200,000+ products via Bogus).",
-      "Performance Tracking middleware and Swagger documentation."
-    ],
-    "link": "https://github.com/Aronno1920/ElasticPracticeSolution"
-  },
-  {
-    "id": "5",
-    "categories": ["software", "personal"],
-    "image": "./assets/images/project/5.png",
-    "title": "eCommerce Application using Microservice Architecture",
-    "tags": ["Personal",".NET",".NET Core","Clean Architecture","MongoDB","Redis","PostgreSQL","Ocelot","RabbitMQ","gRPC","Microservices Architecture"],
-    "objective": "To build a resilient microservices application using Clean Architecture, integrating polyglot persistence (NoSQL/Relational) and advanced communication (RabbitMQ, gRPC).",
-    "responsibility":"Developed key services (Catalog.API with MongoDB, Basket.API with Redis, Discount.API/Grpc with PostgreSQL/Dapper); implemented event-driven communication via RabbitMQ; configured the Ocelot API Gateway for routing; and implemented a robust security stack (Ping Federate, oAuth/JWT).",
-    "technology":"ASP.NET, C#, MongoDB, Redis, PostgreSQL, RabbitMQ, Ocelot API Gateway, gRPC, Dapper, Ping Federate, oAuth, JWT, Clean Architecture.",
-    "outcome":"Developed a highly scalable and maintainable microservices infrastructure demonstrating expertise in managing complex data structures, high-performance inter-service communication, and enterprise-level security protocols.",
-    "features": [
-      "Multi-Database Architecture (NoSQL, Relational, Caching).",
-      "RabbitMQ for Asynchronous Communication and Ocelot API Gateway.",
-      "gRPC (Google Remote Procedure Call) for high-performance service calls.",
-      "Clean Architecture principle implemented with C#/.NET."
-    ],
-    "link": "https://github.com/Aronno1920/Microservices_Ecommerce"
-  },
-  {
     "id": "6",
     "categories": ["software", "official"],
     "image": "./assets/images/project/6.png",
@@ -125,24 +89,6 @@
       "Secure Exam Delivery prevents cheating through randomization, time limits, and optional proctoring integration.",
       "MCQ Auto-Marking instantly and automatically grades multiple-choice questions upon submission.",
       "Role-Based & AI Narrative Marking enables human evaluators and AI to score and provide feedback on subjective, long-form answers."
-    ],
-    "link": "https://www.linkedin.com/in/aronno1920/"
-  },
-  {
-    "id": "8",
-    "categories": ["application", "official"],
-    "image": "./assets/images/project/8.png",
-    "title": "Orion Portal",
-    "tags": ["ORION","Android","Java",".Net Core API","HR & Employee Self-Service (ESS)","Smart Attendance Tracking","Mobile Leave Management","Payslip/Performance App"],
-    "objective": "To develop an all-in-one HR & Employee Self-Service (ESS) Android application to manage work seamlessly and keep employees productive while on the move.",
-    "responsibility":"Developed core features including Smart Attendance Tracking, the Leave Application & Approval module, and Out-Station Adjustment submission; integrated secure access to Payslips and salary breakdowns; and implemented a system for company-wide notifications.",
-    "technology":"Android App Development, Java Native, API Integration.",
-    "outcome":"Empowered the workforce with instant, secure mobile access to critical HR services, significantly improving employee productivity, enhancing communication, and reducing the administrative workload on the HR department.",
-    "features": [
-      "Smart Attendance Tracking (Anytime, Anywhere marking).",
-      "Comprehensive Leave Management (Application, Tracking, Approval).",
-      "Instant access to Payslips, Salary Breakdown, and Performance Updates.",
-      "Secure Employee Self-Service (ESS) portal with company notifications."
     ],
     "link": "https://www.linkedin.com/in/aronno1920/"
   },
@@ -185,42 +131,6 @@
     "link": "https://www.linkedin.com/in/aronno1920/"
   },
   {
-    "id": "11",
-    "categories": ["application", "official"],
-    "image": "./assets/images/project/11.png",
-    "title": "Prescription Mind to Heart",
-    "tags": ["ORION","Android","Java",".Net Core API","Field Force Mobile Application","Medical Sales","Pharma Tech","Digital Brochure Sharing","Knowledge Hub","Real-Time Notifications"],
-    "objective": "To develop a powerful mobile solution to empower medical representatives and sales teams (field staff) with tools for productivity, information, and communication on the move.",
-    "responsibility":"Developed core modules for access and sharing of Medical Promotion & Campaigns materials; implemented Digital Brochure Sharing ('Brushier Share') with activity tracking; integrated Real-Time Notifications; and created a Medical Articles & Knowledge Hub with offline access.",
-    "technology":"Android App Development, Java Native, API Integration.",
-    "outcome":"Significantly increased field force productivity and professionalism by providing instant, digital access to up-to-date knowledge and promotional materials, resulting in stronger customer engagement and reduced printing costs.",
-    "features": [
-      "Medical Promotion & Campaign material access and sharing.",
-      "Digital Brochure Sharing ('Brushier Share') with tracking features.",
-      "Real-Time Notifications for urgent updates and policy changes.",
-      "Knowledge Hub for continuous learning via medical articles and research."
-    ],
-    "link": "https://www.linkedin.com/in/aronno1920/"
-  },
-  {
-    "id": "12",
-    "categories": ["application", "official"],
-    "image": "./assets/images/project/12.png",
-    "title": "Orion Scholars",
-    "tags": ["ORION","Android","Java",".Net Core API","CSR Scholarship Management","Mobile","Admin Panel","Financial Disbursement","Tracking","Student Database","Cheque Reconciliation"],
-    "objective":"To streamline Orion's CSR scholarship management process using a dedicated Android application and integrated admin panel, ensuring transparency and efficiency.",
-    "responsibility":"Developed the Admin Panel for Scholarship Student Management; implemented Month-Wise Scholarship Setup; managed the full disbursement process including Bank Cheque Update/Reconciliation; and created the Student App for alerts and digital fund receipt confirmation.",
-    "technology":"Android Application Development, Java, Web-based Admin Panel, Notification Services, API Intregration, Microsoft SQL Server",
-    "outcome":"Established a highly transparent and efficient digital scholarship management system that ensures CSR accountability through accurate budget tracking, minimizes administrative errors in disbursement, and provides a reliable user experience for recipients.",
-    "features": [
-      "CSR Scholarship Management via integrated Admin Panel and Android App.",
-      "Month-Wise Scholarship Setup and Bank Cheque Disbursement tracking.",
-      "Budget Management with detailed cost tracking for accountability.",
-      "Digital Confirmation and Real-Time Notifications for students."
-    ],
-    "link": "https://www.linkedin.com/in/aronno1920/"
-  },
-  {
     "id": "13",
     "categories": ["software", "official"],
     "image": "./assets/images/project/13.png",
@@ -255,24 +165,6 @@
       "Financial Control via Three-Way Match and automated MRP."
     ],
     "link": "https://www.linkedin.com/in/aronno1920/"
-  },
-  {
-    "id": "15",
-    "categories": ["software", "official"],
-    "image": "./assets/images/project/15.png",
-    "title": "Website Development",
-    "tags": ["ORION","Wordpress","CodeIgniter","Php","mySQL","Custom WordPress Development","Multi-Business Unit Website","Responsive Web Design","Scalable Content Management"],
-    "objective": "To develop a custom, modern, and responsive WordPress-based website to unify the digital presence for multiple, diverse Orion business units (Gym, Restaurant, Infusion Ltd.).",
-    "responsibility":"Designed and developed a Custom WordPress Theme ensuring responsive design; created and integrated dedicated functional sections for Orion Gym (booking) and Orion Restaurant (reservations); optimized the platform for SEO, security, and performance; and set up the Content Management System backend.",
-    "technology":"WordPress, Custom WordPress Theme Development, HTML5, CSS, PHP, JavaScript, SEO Tools.",
-    "outcome":"Successfully unified diverse business ventures under a single, scalable digital umbrella, resulting in an engaging customer experience, enhanced brand consistency, and a foundation for future business unit integration.",
-    "features": [
-      "Unified Digital Platform managing multiple diverse business units.",
-      "Custom WordPress Theme ensuring consistent branding and responsive design.",
-      "Dedicated modules for Gym (Booking), Restaurant (Reservations), and Corporate Display.",
-      "Optimized for SEO, performance, and security enhancements."
-    ],
-    "link": "https://www.linkedin.com/in/aronno1920/"
   }
 
 
@@ -280,7 +172,7 @@
   ,
   {
     "id": "50",
-    "categories": ["application", "personal"],
+    "categories": ["personal"],
     "image": "./assets/images/project/50.png",
     "title": "TechAid24",
     "tags": ["Personal","TechAid24","Blog Site", "Technical Blog","AI related Bangla Blog"],
@@ -387,24 +279,6 @@
     "link": "https://colab.research.google.com/drive/1LrghvQSfU4WAIVVYd-zd7vl_-4t-06CF?usp=sharing"
   },
   {
-    "id": "56",
-    "categories": ["ai-solutions"],
-    "image": "./assets/images/project/56.png",
-    "title": "Model & APIs Deployment on Render",
-    "tags": ["Personal","FastAPI Deployment","Docker","Machine Learning API","Render Cloud Host","Model","Deployement"],
-    "objective": "To build, containerize (Docker), and deploy a FastAPI web service serving predictions from a machine learning classifier for Heart Disease detection.",
-    "responsibility":"Trained and persisted a basic machine learning model (e.g., Logistic Regression); developed the FastAPI application with Pydantic schemas and necessary endpoints (/predict, /health); wrote the Dockerfile and docker-compose.yml; and successfully deployed the containerized service to a cloud host (Render).",
-    "technology":"FastAPI, Pydantic, Docker, Docker-Compose, Joblib, Scikit-learn, Render (Cloud Host).",
-    "outcome":"Successfully achieved a continuous deployment workflow for an ML model, demonstrating proficiency in MLOps by creating a scalable, production-ready microservice accessible via a well-documented REST API.",
-    "features": [
-      "FastAPI serving predictions from a Heart Disease Classifier.",
-      "Pydantic schema validation for all input features.",
-      "Dockerization for consistent, reproducible environments.",
-      "Cloud Deployment (e.g., Render) of the containerized application."
-    ],
-    "link": "https://github.com/Aronno1920/Predict-Heart-Disease"
-  },
-  {
     "id": "57",
     "categories": ["ai-solutions"],
     "image": "./assets/images/project/57.png",
@@ -421,24 +295,6 @@
       "Focus on Text Representation impact on classification performance."
     ],
     "link": "https://github.com/Aronno1920/Sentiment-Analysis"
-  },
-  {
-    "id": "58",
-    "categories": ["ai-solutions", "official"],
-    "image": "./assets/images/project/58.png",
-    "title": "Fine Tuning Transformers for Question Answer",
-    "tags": ["Transformer Fine-Tuning","Question Answering (QA)","Hugging Face","SQuAD","BERT","Exact Match (EM)"],
-    "objective": "To fine-tune a pre-trained BERT-based model on the SQuAD v1.1 dataset to perform the Question Answering (QA) task, demonstrating proficiency in the Hugging Face ecosystem.",
-    "responsibility":"Loaded and preprocessed the SQuAD dataset (tokenization, answer mapping); loaded the bert-base-uncased model; fine-tuned the model using the Hugging Face Trainer API; and evaluated performance using Exact Match (EM) and F1 Score metrics.",
-    "technology":"Hugging Face transformers, datasets, BERT-base-uncased, SQuAD v1.1, Google Colab.",
-    "outcome":"Successfully trained a state-of-the-art model for extractive QA, achieving measurable performance and demonstrating core competencies in advanced deep learning model fine-tuning and evaluation for NLP.",
-    "features": [
-      "Transformer Fine-Tuning for Question Answering (QA).",
-      "Uses BERT-base-uncased on the SQuAD v1.1 dataset.",
-      "Implementation via the Hugging Face datasets and transformers APIs.",
-      "Evaluation using Exact Match (EM) and F1 Score metrics."
-    ],
-    "link": "https://colab.research.google.com/drive/1cHJMaC-yK7Ug1CEeaK7cX7dA61agQ4y1#scrollTo=AvCHHO7AmqLB"
   },
   {
     "id": "59",
@@ -530,6 +386,86 @@
       "Bengali Embeddings: Uses l3cube-pune/bengali-sentence-similarity-sbert model."
     ],
     "link": "https://github.com/Aronno1920/FAQ-Chatbot"
+  },
+  {
+    "id": "67",
+    "categories": ["software","personal"],
+    "image": "./assets/images/project/67.png",
+    "title": "SparkLite",
+    "tags": ["Personal","bdSpark","Point of Sale (POS)","Retail Automation","Keyboard-First UX","Real-Time Inventory","Multi-Tender Payments","Double-Entry Accounting","Digital Receipts (QR)"],
+    "objective": "To build a modern, keyboard-first retail Point of Sale that keeps checkout under 15 seconds at high-volume counters by unifying sales, live warehouse stock, multi-tender payments, and automated double-entry accounting in one streamlined terminal.",
+    "responsibility": "Designed and implemented the keyboard-first checkout workflow with a full touch terminal mode; built live warehouse stock clamping to block sales of unavailable items in real time; integrated multi-tender settlements (Cash, Card, MFS, Due); automated double-entry accounting postings from every sale; and delivered digital receipts across 58mm, 80mm, and QR formats.",
+    "technology": "Point of Sale (POS) platform with keyboard-first and touch terminal modes, real-time inventory integration, multi-tender payment settlement, automated double-entry accounting, and 58mm/80mm/QR digital receipt generation.",
+    "outcome": "Delivered a counter-first POS where checkout completes in under 15 seconds on average, with real-time stock validation eliminating oversells, automated accounting removing manual bookkeeping, and QR digital receipts modernizing the customer experience.",
+    "features": [
+      "Sub-15-second average checkout, optimized for high-volume counters.",
+      "Keyboard-first workflow with full touch terminal mode fallback.",
+      "Live warehouse stock clamping prevents overselling in real time.",
+      "Multi-tender payments: Cash, Card, MFS, and Due settlement.",
+      "Automated double-entry accounting posts every sale instantly.",
+      "Digital receipts in 58mm, 80mm, and QR formats."
+    ],
+    "link": "https://bdspark.com/products"
+  },
+  {
+    "id": "66",
+    "categories": ["software","personal"],
+    "image": "./assets/images/project/66.png",
+    "title": "SparkSchool",
+    "tags": ["Personal","bdSpark","School ERP","Campus Management",".NET 10","Angular","Admissions CRM","Biometric Attendance","Dynamic Fee Billing","GPS Bus Tracking"],
+    "objective": "To deliver an enterprise school ERP and campus management platform that unites 15 modules — from admissions CRM and biometric attendance to multi-board examinations and dynamic fee billing — on a single .NET 10 + Angular architecture deployable on cloud or on-premises.",
+    "responsibility": "Architected the unified campus platform of 15 modules on .NET 10 and Angular; implemented the admissions CRM pipeline, biometric attendance with instant SMS and push alerts to parents, dynamic fee billing heads, and multi-board examination management; designed 40+ report layouts and automated accounting; and built real-time GPS bus tracking for daily commute safety.",
+    "technology": ".NET 10, Angular, biometric device integration, SMS & push notification services, real-time GPS tracking, cloud and on-premises deployment.",
+    "outcome": "Unified 15 campus modules into one platform with 40+ ready report designs, real-time GPS bus tracking, and instant attendance alerts — replacing fragmented manual processes with a single school management system deployable anywhere.",
+    "features": [
+      "15 unified campus modules on a single platform.",
+      "40+ professionally designed report layouts.",
+      "Real-time GPS bus tracking for daily commute safety.",
+      "Instant SMS & push attendance alerts for parents.",
+      "Admissions CRM with biometric attendance and dynamic fee billing.",
+      "Cloud or on-premises deployment options."
+    ],
+    "link": "https://bdspark.com/products"
+  },
+  {
+    "id": "65",
+    "categories": ["software","personal"],
+    "image": "./assets/images/project/65.png",
+    "title": "SparkERP",
+    "tags": ["Personal","bdSpark","Enterprise Resource Planning (ERP)","Multi-Company Accounting","Multi-Warehouse Inventory","Procurement","Manufacturing","HRM","Field Distribution",".NET","SQL Server"],
+    "objective": "To build an enterprise-grade ERP that natively handles multi-company accounting, multi-warehouse inventory, procurement, manufacturing, HRM, and field distribution in one integrated system, with a mobile companion for operations on the move.",
+    "responsibility": "Designed the multi-entity core with built-in multi-company accounting and real-time ledger posting; implemented multi-warehouse inventory, procurement, manufacturing, and HRM modules; built the field distribution module for route-based sales operations; and delivered iOS, Android, and Web mobile companions synced with the core system.",
+    "technology": ".NET, SQL Server, real-time ledger posting engine, iOS/Android/Web mobile companion apps, cloud and on-premises deployment.",
+    "outcome": "Consolidated 14+ business modules into a single multi-entity ERP with real-time ledger accuracy and a full mobile companion — eliminating per-company system silos and extending core operations to the field.",
+    "features": [
+      "14+ integrated modules covering finance to manufacturing.",
+      "Real-time ledger posting with multi-company consolidation.",
+      "Multi-warehouse inventory and procurement management.",
+      "Dedicated manufacturing and HRM suites.",
+      "iOS, Android & Web mobile companion apps.",
+      "Cloud or on-premises deployment flexibility."
+    ],
+    "link": "https://bdspark.com/products"
+  },
+  {
+    "id": "64",
+    "categories": ["software","personal"],
+    "image": "./assets/images/project/64.png",
+    "title": "SparkVMS",
+    "tags": ["Personal","bdSpark","Visitor Management System","Facility Security","Next.js 16","PostgreSQL","Kiosk Check-In","Government ID Verification","Thermal Badge Printing","Emergency Evacuation"],
+    "objective": "To engineer an enterprise visitor management and facility security platform that cuts visitor check-in to under 30 seconds through self-service kiosks, government ID verification, 1-click host approvals, and 1-click emergency evacuation roll calls.",
+    "responsibility": "Built the platform on Next.js 16 and PostgreSQL; implemented self-service kiosk check-ins with government ID verification and instant host approvals over email/SMS; developed thermal & QR badge printing, belongings custody tracking, access card pool governance, and real-time blocklist screening; and engineered the 1-click emergency evacuation roll call system.",
+    "technology": "Next.js 16, PostgreSQL, kiosk hardware integration, email/SMS approval workflows, thermal & QR badge printing.",
+    "outcome": "Delivered sub-30-second visitor check-ins with complete audit trails — real-time blocklist screening strengthens facility security while 1-click evacuation roll calls and belongings custody tracking modernize safety operations.",
+    "features": [
+      "Self-service kiosk check-in completes in under 30 seconds.",
+      "1-click host approvals via email and SMS.",
+      "Government ID verification at entry points.",
+      "Real-time blocklist screening for every visitor.",
+      "Thermal & QR badge printing with belongings custody tracking.",
+      "1-click emergency evacuation roll calls with live counts."
+    ],
+    "link": "https://bdspark.com/products"
   }
 
 ]
