@@ -420,7 +420,7 @@ window.PORTFOLIO_DATA = {
   {
     "id": "50",
     "categories": [
-      "personal"
+      "software"
     ],
     "image": "./assets/images/project/50.png",
     "title": "TechAid24",
@@ -775,12 +775,11 @@ window.PORTFOLIO_DATA = {
     "id": "67",
     "categories": [
       "software",
-      "personal"
+      "bdspark"
     ],
     "image": "./assets/images/project/67.png",
     "title": "SparkLite",
     "tags": [
-      "Personal",
       "bdSpark",
       "Point of Sale (POS)",
       "Retail Automation",
@@ -808,12 +807,11 @@ window.PORTFOLIO_DATA = {
     "id": "66",
     "categories": [
       "software",
-      "personal"
+      "bdspark"
     ],
     "image": "./assets/images/project/66.png",
     "title": "SparkSchool",
     "tags": [
-      "Personal",
       "bdSpark",
       "School ERP",
       "Campus Management",
@@ -842,12 +840,11 @@ window.PORTFOLIO_DATA = {
     "id": "65",
     "categories": [
       "software",
-      "personal"
+      "bdspark"
     ],
     "image": "./assets/images/project/65.png",
     "title": "SparkERP",
     "tags": [
-      "Personal",
       "bdSpark",
       "Enterprise Resource Planning (ERP)",
       "Multi-Company Accounting",
@@ -877,12 +874,11 @@ window.PORTFOLIO_DATA = {
     "id": "64",
     "categories": [
       "software",
-      "personal"
+      "bdspark"
     ],
     "image": "./assets/images/project/64.png",
     "title": "SparkVMS",
     "tags": [
-      "Personal",
       "bdSpark",
       "Visitor Management System",
       "Facility Security",
@@ -906,6 +902,40 @@ window.PORTFOLIO_DATA = {
       "1-click emergency evacuation roll calls with live counts."
     ],
     "link": "https://bdspark.com/products"
+  },
+  {
+    "id": "68",
+    "categories": [
+      "software",
+      "bdspark"
+    ],
+    "image": "./assets/images/project/68.png",
+    "title": "SparkNG",
+    "tags": [
+      "bdSpark",
+      "Angular",
+      "UI Component Library",
+      "Open Source",
+      "MIT License",
+      "TypeScript",
+      "WCAG 2.1 Accessibility",
+      "Design Tokens",
+      "Theming Presets",
+      "TailwindCSS"
+    ],
+    "objective": "To build and maintain an open source Angular UI component suite of 80+ accessible, design-agnostic components under the MIT license — a community-maintained continuation of the v22 codebase (installable via ng add @bdspark/sparkng), built to stay open.",
+    "responsibility": "Maintain and extend the 80+ component Angular suite; implement design-agnostic theming with swappable presets (Aura, Material, Lara, Nora), overridable design tokens, and a fully unstyled mode compatible with TailwindCSS; target WCAG 2.1 AA accessibility compliance; deliver first-class TypeScript types and tooling; and ensure mobile-first, touch-optimized responsive behavior across every component.",
+    "technology": "Angular (v22+), TypeScript, CSS design tokens, theme presets (Aura/Material/Lara/Nora), TailwindCSS-compatible unstyled mode, npm package @bdspark/sparkng, MIT-licensed open source.",
+    "outcome": "Delivered a production-grade, MIT-licensed Angular component library with 80+ accessible (WCAG 2.1 AA) components and flexible theming — enabling rapid, consistent enterprise UI development while staying community-maintained and open.",
+    "features": [
+      "80+ Angular UI components under the MIT license.",
+      "Design-agnostic theming: swap presets, override design tokens, or go fully unstyled.",
+      "WCAG 2.1 AA accessibility compliance targets.",
+      "First-class TypeScript support with types and tooling assistance.",
+      "Mobile-first responsive design with touch-optimized elements.",
+      "Community-maintained roadmap with open collaboration."
+    ],
+    "link": "https://sparkng.bdspark.com/"
   }
 ],
 

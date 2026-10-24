@@ -172,7 +172,7 @@
   ,
   {
     "id": "50",
-    "categories": ["personal"],
+    "categories": ["software"],
     "image": "./assets/images/project/50.png",
     "title": "TechAid24",
     "tags": ["Personal","TechAid24","Blog Site", "Technical Blog","AI related Bangla Blog"],
@@ -389,10 +389,10 @@
   },
   {
     "id": "67",
-    "categories": ["software","personal"],
+    "categories": ["software","bdspark"],
     "image": "./assets/images/project/67.png",
     "title": "SparkLite",
-    "tags": ["Personal","bdSpark","Point of Sale (POS)","Retail Automation","Keyboard-First UX","Real-Time Inventory","Multi-Tender Payments","Double-Entry Accounting","Digital Receipts (QR)"],
+    "tags": ["bdSpark","Point of Sale (POS)","Retail Automation","Keyboard-First UX","Real-Time Inventory","Multi-Tender Payments","Double-Entry Accounting","Digital Receipts (QR)"],
     "objective": "To build a modern, keyboard-first retail Point of Sale that keeps checkout under 15 seconds at high-volume counters by unifying sales, live warehouse stock, multi-tender payments, and automated double-entry accounting in one streamlined terminal.",
     "responsibility": "Designed and implemented the keyboard-first checkout workflow with a full touch terminal mode; built live warehouse stock clamping to block sales of unavailable items in real time; integrated multi-tender settlements (Cash, Card, MFS, Due); automated double-entry accounting postings from every sale; and delivered digital receipts across 58mm, 80mm, and QR formats.",
     "technology": "Point of Sale (POS) platform with keyboard-first and touch terminal modes, real-time inventory integration, multi-tender payment settlement, automated double-entry accounting, and 58mm/80mm/QR digital receipt generation.",
@@ -409,10 +409,10 @@
   },
   {
     "id": "66",
-    "categories": ["software","personal"],
+    "categories": ["software","bdspark"],
     "image": "./assets/images/project/66.png",
     "title": "SparkSchool",
-    "tags": ["Personal","bdSpark","School ERP","Campus Management",".NET 10","Angular","Admissions CRM","Biometric Attendance","Dynamic Fee Billing","GPS Bus Tracking"],
+    "tags": ["bdSpark","School ERP","Campus Management",".NET 10","Angular","Admissions CRM","Biometric Attendance","Dynamic Fee Billing","GPS Bus Tracking"],
     "objective": "To deliver an enterprise school ERP and campus management platform that unites 15 modules — from admissions CRM and biometric attendance to multi-board examinations and dynamic fee billing — on a single .NET 10 + Angular architecture deployable on cloud or on-premises.",
     "responsibility": "Architected the unified campus platform of 15 modules on .NET 10 and Angular; implemented the admissions CRM pipeline, biometric attendance with instant SMS and push alerts to parents, dynamic fee billing heads, and multi-board examination management; designed 40+ report layouts and automated accounting; and built real-time GPS bus tracking for daily commute safety.",
     "technology": ".NET 10, Angular, biometric device integration, SMS & push notification services, real-time GPS tracking, cloud and on-premises deployment.",
@@ -429,10 +429,10 @@
   },
   {
     "id": "65",
-    "categories": ["software","personal"],
+    "categories": ["software","bdspark"],
     "image": "./assets/images/project/65.png",
     "title": "SparkERP",
-    "tags": ["Personal","bdSpark","Enterprise Resource Planning (ERP)","Multi-Company Accounting","Multi-Warehouse Inventory","Procurement","Manufacturing","HRM","Field Distribution",".NET","SQL Server"],
+    "tags": ["bdSpark","Enterprise Resource Planning (ERP)","Multi-Company Accounting","Multi-Warehouse Inventory","Procurement","Manufacturing","HRM","Field Distribution",".NET","SQL Server"],
     "objective": "To build an enterprise-grade ERP that natively handles multi-company accounting, multi-warehouse inventory, procurement, manufacturing, HRM, and field distribution in one integrated system, with a mobile companion for operations on the move.",
     "responsibility": "Designed the multi-entity core with built-in multi-company accounting and real-time ledger posting; implemented multi-warehouse inventory, procurement, manufacturing, and HRM modules; built the field distribution module for route-based sales operations; and delivered iOS, Android, and Web mobile companions synced with the core system.",
     "technology": ".NET, SQL Server, real-time ledger posting engine, iOS/Android/Web mobile companion apps, cloud and on-premises deployment.",
@@ -449,10 +449,10 @@
   },
   {
     "id": "64",
-    "categories": ["software","personal"],
+    "categories": ["software","bdspark"],
     "image": "./assets/images/project/64.png",
     "title": "SparkVMS",
-    "tags": ["Personal","bdSpark","Visitor Management System","Facility Security","Next.js 16","PostgreSQL","Kiosk Check-In","Government ID Verification","Thermal Badge Printing","Emergency Evacuation"],
+    "tags": ["bdSpark","Visitor Management System","Facility Security","Next.js 16","PostgreSQL","Kiosk Check-In","Government ID Verification","Thermal Badge Printing","Emergency Evacuation"],
     "objective": "To engineer an enterprise visitor management and facility security platform that cuts visitor check-in to under 30 seconds through self-service kiosks, government ID verification, 1-click host approvals, and 1-click emergency evacuation roll calls.",
     "responsibility": "Built the platform on Next.js 16 and PostgreSQL; implemented self-service kiosk check-ins with government ID verification and instant host approvals over email/SMS; developed thermal & QR badge printing, belongings custody tracking, access card pool governance, and real-time blocklist screening; and engineered the 1-click emergency evacuation roll call system.",
     "technology": "Next.js 16, PostgreSQL, kiosk hardware integration, email/SMS approval workflows, thermal & QR badge printing.",
@@ -466,6 +466,26 @@
       "1-click emergency evacuation roll calls with live counts."
     ],
     "link": "https://bdspark.com/products"
+  },
+  {
+    "id": "68",
+    "categories": ["software","bdspark"],
+    "image": "./assets/images/project/68.png",
+    "title": "SparkNG",
+    "tags": ["bdSpark","Angular","UI Component Library","Open Source","MIT License","TypeScript","WCAG 2.1 Accessibility","Design Tokens","Theming Presets","TailwindCSS"],
+    "objective": "To build and maintain an open source Angular UI component suite of 80+ accessible, design-agnostic components under the MIT license — a community-maintained continuation of the v22 codebase (installable via ng add @bdspark/sparkng), built to stay open.",
+    "responsibility": "Maintain and extend the 80+ component Angular suite; implement design-agnostic theming with swappable presets (Aura, Material, Lara, Nora), overridable design tokens, and a fully unstyled mode compatible with TailwindCSS; target WCAG 2.1 AA accessibility compliance; deliver first-class TypeScript types and tooling; and ensure mobile-first, touch-optimized responsive behavior across every component.",
+    "technology": "Angular (v22+), TypeScript, CSS design tokens, theme presets (Aura/Material/Lara/Nora), TailwindCSS-compatible unstyled mode, npm package @bdspark/sparkng, MIT-licensed open source.",
+    "outcome": "Delivered a production-grade, MIT-licensed Angular component library with 80+ accessible (WCAG 2.1 AA) components and flexible theming — enabling rapid, consistent enterprise UI development while staying community-maintained and open.",
+    "features": [
+      "80+ Angular UI components under the MIT license.",
+      "Design-agnostic theming: swap presets, override design tokens, or go fully unstyled.",
+      "WCAG 2.1 AA accessibility compliance targets.",
+      "First-class TypeScript support with types and tooling assistance.",
+      "Mobile-first responsive design with touch-optimized elements.",
+      "Community-maintained roadmap with open collaboration."
+    ],
+    "link": "https://sparkng.bdspark.com/"
   }
 
 ]
